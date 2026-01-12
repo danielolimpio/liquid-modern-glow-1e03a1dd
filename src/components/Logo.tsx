@@ -5,7 +5,7 @@ const Logo = () => {
     <img 
       src={logoImage} 
       alt="AcquaFlux" 
-      className="h-10 w-auto"
+      className="h-14 w-auto"
     />
   );
 };
