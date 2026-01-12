@@ -12,21 +12,27 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-[hsl(210,80%,15%)]/80 via-[hsl(200,75%,25%)]/60 to-[hsl(190,80%,35%)]/40" />
       </div>
 
-      {/* Animated Bubbles */}
+      {/* Animated Oxygen Bubbles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(8)].map((_, i) => (
-          <div
-            key={i}
-            className="bubble"
-            style={{
-              width: `${20 + Math.random() * 40}px`,
-              height: `${20 + Math.random() * 40}px`,
-              left: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 5}s`,
-              animationDuration: `${8 + Math.random() * 6}s`,
-            }}
-          />
-        ))}
+        {[...Array(20)].map((_, i) => {
+          const size = 8 + Math.random() * 50;
+          const wobble = (Math.random() - 0.5) * 40;
+          return (
+            <div
+              key={i}
+              className="bubble"
+              style={{
+                width: `${size}px`,
+                height: `${size}px`,
+                left: `${Math.random() * 100}%`,
+                bottom: `-${size + 20}px`,
+                animationDelay: `${Math.random() * 12}s`,
+                animationDuration: `${10 + Math.random() * 15}s`,
+                '--wobble': `${wobble}px`,
+              } as React.CSSProperties}
+            />
+          );
+        })}
       </div>
 
       {/* Content */}
