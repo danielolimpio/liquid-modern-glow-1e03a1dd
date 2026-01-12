@@ -32,7 +32,12 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-bold mb-6 text-primary-foreground">Soluções</h4>
             <ul className="space-y-3">
-              {["Gestão Operacional", "Analytics & BI", "Gestão Financeira", "Consultoria ESG", "Monitoramento IoT"].map(
+              <li>
+                <a href="/gestao-operacional" className="text-sm hover:text-primary transition-colors">
+                  Gestão Operacional
+                </a>
+              </li>
+              {["Analytics & BI", "Gestão Financeira", "Consultoria ESG", "Monitoramento IoT"].map(
                 (item) => (
                   <li key={item}>
                     <a href="#" className="text-sm hover:text-primary transition-colors">
