@@ -14,20 +14,19 @@ const Hero = () => {
 
       {/* Animated Oxygen Bubbles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(20)].map((_, i) => {
-          const size = 8 + Math.random() * 50;
-          const wobble = (Math.random() - 0.5) * 40;
+        {[...Array(15)].map((_, i) => {
+          const size = 12 + Math.random() * 45;
+          const wobble = (Math.random() - 0.5) * 30;
           return (
             <div
               key={i}
               className="bubble"
               style={{
                 width: `${size}px`,
-                height: `${size}px`,
-                left: `${Math.random() * 100}%`,
-                bottom: `-${size + 20}px`,
-                animationDelay: `${Math.random() * 12}s`,
-                animationDuration: `${10 + Math.random() * 15}s`,
+                left: `${5 + Math.random() * 90}%`,
+                bottom: `${-size}px`,
+                animationDelay: `${Math.random() * 10}s`,
+                animationDuration: `${12 + Math.random() * 12}s`,
                 '--wobble': `${wobble}px`,
               } as React.CSSProperties}
             />

@@ -6,21 +6,26 @@ const CTASection = () => {
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-[hsl(210,80%,25%)] via-[hsl(200,75%,35%)] to-[hsl(190,80%,40%)]" />
       
-      {/* Decorative elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        {[...Array(5)].map((_, i) => (
-          <div
-            key={i}
-            className="bubble"
-            style={{
-              width: `${30 + Math.random() * 50}px`,
-              height: `${30 + Math.random() * 50}px`,
-              left: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 3}s`,
-              animationDuration: `${6 + Math.random() * 4}s`,
-            }}
-          />
-        ))}
+      {/* Animated Oxygen Bubbles */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {[...Array(12)].map((_, i) => {
+          const size = 15 + Math.random() * 40;
+          const wobble = (Math.random() - 0.5) * 25;
+          return (
+            <div
+              key={i}
+              className="bubble"
+              style={{
+                width: `${size}px`,
+                left: `${5 + Math.random() * 90}%`,
+                bottom: `${-size}px`,
+                animationDelay: `${Math.random() * 8}s`,
+                animationDuration: `${10 + Math.random() * 10}s`,
+                '--wobble': `${wobble}px`,
+              } as React.CSSProperties}
+            />
+          );
+        })}
       </div>
 
       {/* Wave overlay */}
