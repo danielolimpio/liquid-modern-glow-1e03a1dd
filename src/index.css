@@ -2,95 +2,98 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 200 30% 98%;
+    --foreground: 210 50% 10%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 200 40% 99%;
+    --card-foreground: 210 50% 10%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 200 40% 99%;
+    --popover-foreground: 210 50% 10%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 200 80% 45%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 185 70% 50%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 200 20% 94%;
+    --muted-foreground: 210 20% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 175 80% 45%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 200 30% 88%;
+    --input: 200 30% 88%;
+    --ring: 200 80% 45%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
+
+    /* Custom AcquaFlux tokens */
+    --aqua-deep: 210 80% 25%;
+    --aqua-primary: 200 85% 50%;
+    --aqua-light: 190 90% 60%;
+    --aqua-cyan: 180 85% 55%;
+    --aqua-turquoise: 175 75% 50%;
+    --aqua-glass: 200 80% 97%;
+    
+    /* Gradients */
+    --gradient-aqua: linear-gradient(135deg, hsl(210 80% 35%) 0%, hsl(190 85% 50%) 50%, hsl(175 80% 55%) 100%);
+    --gradient-border: linear-gradient(90deg, hsl(200 85% 50%) 0%, hsl(175 85% 55%) 100%);
+    --gradient-glass: linear-gradient(135deg, hsla(200, 80%, 97%, 0.8) 0%, hsla(200, 80%, 95%, 0.4) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(210 80% 20%) 0%, hsl(200 75% 35%) 50%, hsl(190 80% 45%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(200 85% 45%) 0%, hsl(175 80% 50%) 100%);
+    
+    /* Shadows */
+    --shadow-aqua: 0 10px 40px -10px hsla(200, 80%, 50%, 0.3);
+    --shadow-card: 0 8px 32px -8px hsla(200, 60%, 50%, 0.15);
+    --shadow-glow: 0 0 40px hsla(190, 80%, 50%, 0.25);
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 210 50% 8%;
+    --foreground: 200 20% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 210 45% 12%;
+    --card-foreground: 200 20% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 210 45% 12%;
+    --popover-foreground: 200 20% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 190 85% 55%;
+    --primary-foreground: 210 50% 10%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 185 70% 45%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 210 40% 18%;
+    --muted-foreground: 200 20% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 175 80% 50%;
+    --accent-foreground: 210 50% 10%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 210 40% 20%;
+    --input: 210 40% 20%;
+    --ring: 190 85% 55%;
   }
 }
 
@@ -100,6 +103,196 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Outfit', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sora', sans-serif;
+  }
+}
+
+@layer components {
+  /* Glassmorphism Card */
+  .glass-card {
+    @apply relative overflow-hidden rounded-2xl;
+    background: var(--gradient-glass);
+    backdrop-filter: blur(20px);
+    border: 1px solid transparent;
+    background-clip: padding-box;
+  }
+
+  .glass-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: var(--gradient-border);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  /* Premium border gradient */
+  .border-gradient {
+    position: relative;
+    background: transparent;
+  }
+
+  .border-gradient::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1.5px;
+    background: var(--gradient-border);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  /* Water wave effect */
+  .water-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200%;
+    height: 100px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%2306b6d4' fill-opacity='0.3' d='M0,192L48,176C96,160,192,128,288,138.7C384,149,480,203,576,213.3C672,224,768,192,864,165.3C960,139,1056,117,1152,128C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E") repeat-x;
+    animation: wave 8s linear infinite;
+  }
+
+  .water-wave-2 {
+    animation: wave 12s linear infinite reverse;
+    opacity: 0.5;
+    bottom: 10px;
+  }
+
+  @keyframes wave {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* Floating animation */
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  /* Ripple effect */
+  .ripple {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ripple::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, hsla(190, 85%, 60%, 0.3) 0%, transparent 70%);
+    animation: ripple-pulse 3s ease-in-out infinite;
+  }
+
+  @keyframes ripple-pulse {
+    0%, 100% { transform: scale(0.8); opacity: 0; }
+    50% { transform: scale(1.2); opacity: 1; }
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    background: var(--gradient-aqua);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Aqua button */
+  .btn-aqua {
+    @apply relative px-8 py-4 rounded-full font-semibold text-white overflow-hidden transition-all duration-300;
+    background: var(--gradient-cta);
+    box-shadow: var(--shadow-aqua);
+  }
+
+  .btn-aqua:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 50px -10px hsla(200, 80%, 50%, 0.4);
+  }
+
+  .btn-aqua::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, hsla(0, 0%, 100%, 0.2) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  /* Section divider wave */
+  .wave-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .wave-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+  }
+
+  /* Bubble animation */
+  .bubble {
+    @apply absolute rounded-full;
+    background: radial-gradient(circle at 30% 30%, hsla(190, 90%, 70%, 0.6), hsla(200, 80%, 50%, 0.2));
+    animation: bubble-rise 8s ease-in-out infinite;
+  }
+
+  @keyframes bubble-rise {
+    0% { transform: translateY(100%) scale(0.5); opacity: 0; }
+    10% { opacity: 0.8; }
+    90% { opacity: 0.8; }
+    100% { transform: translateY(-100vh) scale(1); opacity: 0; }
+  }
+
+  /* Stats counter */
+  .stat-number {
+    @apply text-5xl md:text-6xl font-bold;
+    background: var(--gradient-aqua);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Icon container */
+  .icon-aqua {
+    @apply w-16 h-16 rounded-2xl flex items-center justify-center;
+    background: var(--gradient-cta);
+    box-shadow: var(--shadow-aqua);
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, hsl(var(--primary)), hsl(var(--accent)));
+    border-radius: 4px;
   }
 }
