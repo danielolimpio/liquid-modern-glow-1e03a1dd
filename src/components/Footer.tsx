@@ -53,7 +53,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm hover:text-primary transition-colors">
+                <a href="/monitoramento-iot" className="text-sm hover:text-primary transition-colors">
                   Monitoramento IoT
                 </a>
               </li>
