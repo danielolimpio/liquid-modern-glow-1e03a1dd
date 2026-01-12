@@ -42,7 +42,12 @@ const Footer = () => {
                   Analytics & BI
                 </a>
               </li>
-              {["Gestão Financeira", "Consultoria ESG", "Monitoramento IoT"].map(
+              <li>
+                <a href="/consultoria-esg" className="text-sm hover:text-primary transition-colors">
+                  Consultoria ESG
+                </a>
+              </li>
+              {["Gestão Financeira", "Monitoramento IoT"].map(
                 (item) => (
                   <li key={item}>
                     <a href="#" className="text-sm hover:text-primary transition-colors">

@@ -10,6 +10,7 @@ import Impacto from "./pages/Impacto";
 import Contato from "./pages/Contato";
 import GestaoOperacional from "./pages/GestaoOperacional";
 import AnalyticsBI from "./pages/AnalyticsBI";
+import ConsultoriaESG from "./pages/ConsultoriaESG";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/contato" element={<Contato />} />
           <Route path="/gestao-operacional" element={<GestaoOperacional />} />
           <Route path="/analytics-bi" element={<AnalyticsBI />} />
+          <Route path="/consultoria-esg" element={<ConsultoriaESG />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
