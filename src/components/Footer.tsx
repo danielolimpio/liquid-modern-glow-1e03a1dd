@@ -47,15 +47,16 @@ const Footer = () => {
                   Consultoria ESG
                 </a>
               </li>
-              {["Gestão Financeira", "Monitoramento IoT"].map(
-                (item) => (
-                  <li key={item}>
-                    <a href="#" className="text-sm hover:text-primary transition-colors">
-                      {item}
-                    </a>
-                  </li>
-                )
-              )}
+              <li>
+                <a href="/gestao-financeira" className="text-sm hover:text-primary transition-colors">
+                  Gestão Financeira
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-sm hover:text-primary transition-colors">
+                  Monitoramento IoT
+                </a>
+              </li>
             </ul>
           </div>
 
