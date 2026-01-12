@@ -37,7 +37,12 @@ const Footer = () => {
                   Gestão Operacional
                 </a>
               </li>
-              {["Analytics & BI", "Gestão Financeira", "Consultoria ESG", "Monitoramento IoT"].map(
+              <li>
+                <a href="/analytics-bi" className="text-sm hover:text-primary transition-colors">
+                  Analytics & BI
+                </a>
+              </li>
+              {["Gestão Financeira", "Consultoria ESG", "Monitoramento IoT"].map(
                 (item) => (
                   <li key={item}>
                     <a href="#" className="text-sm hover:text-primary transition-colors">
