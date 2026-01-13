@@ -1,4 +1,7 @@
 import { Star, Quote } from "lucide-react";
+import carlosPhoto from "@/assets/testimonial-carlos.jpg";
+import marinaPhoto from "@/assets/testimonial-marina.jpg";
+import robertoPhoto from "@/assets/testimonial-roberto.jpg";
 
 const testimonials = [
   {
@@ -7,6 +10,7 @@ const testimonials = [
     company: "Indústria Metalúrgica ABC",
     content: "A AcquaFlux transformou nossa gestão hídrica. Reduzimos 35% do consumo e economizamos mais de R$200 mil no primeiro ano.",
     rating: 5,
+    photo: carlosPhoto,
   },
   {
     name: "Marina Santos",
@@ -14,6 +18,7 @@ const testimonials = [
     company: "Grupo Varejo Premium",
     content: "O monitoramento em tempo real nos deu visibilidade total. Identificamos vazamentos que passavam despercebidos há anos.",
     rating: 5,
+    photo: marinaPhoto,
   },
   {
     name: "Roberto Almeida",
@@ -21,6 +26,7 @@ const testimonials = [
     company: "LogTech Transportes",
     content: "Além da economia, a certificação ESG facilitada pela AcquaFlux nos abriu portas para novos contratos internacionais.",
     rating: 5,
+    photo: robertoPhoto,
   },
 ];
 
@@ -56,8 +62,12 @@ const TestimonialsSection = () => {
               </p>
 
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-primary-foreground font-bold">
-                  {testimonial.name[0]}
+                <div className="w-12 h-12 min-w-[3rem] min-h-[3rem] rounded-full overflow-hidden border-2 border-primary/30">
+                  <img 
+                    src={testimonial.photo} 
+                    alt={testimonial.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <p className="font-semibold">{testimonial.name}</p>
