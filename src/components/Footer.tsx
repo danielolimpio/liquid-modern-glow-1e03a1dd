@@ -127,12 +127,15 @@ const Footer = () => {
                 DanielOlimpio
               </a>
             </p>
-            <div className="flex gap-6">
+            <div className="flex flex-wrap gap-4 md:gap-6">
               <a href="/politica-privacidade" className="text-sm text-primary-foreground/40 hover:text-primary transition-colors">
                 Política de Privacidade
               </a>
               <a href="/termos-uso" className="text-sm text-primary-foreground/40 hover:text-primary transition-colors">
                 Termos de Uso
+              </a>
+              <a href="/politica-cookies" className="text-sm text-primary-foreground/40 hover:text-primary transition-colors">
+                Política de Cookies
               </a>
             </div>
           </div>
