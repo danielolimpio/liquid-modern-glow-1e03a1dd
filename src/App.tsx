@@ -12,6 +12,7 @@ import Contato from "./pages/Contato";
 import Blog from "./pages/Blog";
 import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
 import TermosUso from "./pages/TermosUso";
+import PoliticaCookies from "./pages/PoliticaCookies";
 import GestaoOperacional from "./pages/GestaoOperacional";
 import AnalyticsBI from "./pages/AnalyticsBI";
 import ConsultoriaESG from "./pages/ConsultoriaESG";
@@ -37,6 +38,7 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/politica-privacidade" element={<PoliticaPrivacidade />} />
           <Route path="/termos-uso" element={<TermosUso />} />
+          <Route path="/politica-cookies" element={<PoliticaCookies />} />
           <Route path="/gestao-operacional" element={<GestaoOperacional />} />
           <Route path="/analytics-bi" element={<AnalyticsBI />} />
           <Route path="/consultoria-esg" element={<ConsultoriaESG />} />
