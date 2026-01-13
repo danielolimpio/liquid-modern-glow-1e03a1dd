@@ -10,6 +10,7 @@ import Solucoes from "./pages/Solucoes";
 import Impacto from "./pages/Impacto";
 import Contato from "./pages/Contato";
 import Blog from "./pages/Blog";
+import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
 import GestaoOperacional from "./pages/GestaoOperacional";
 import AnalyticsBI from "./pages/AnalyticsBI";
 import ConsultoriaESG from "./pages/ConsultoriaESG";
@@ -33,6 +34,7 @@ const App = () => (
           <Route path="/impacto" element={<Impacto />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/politica-privacidade" element={<PoliticaPrivacidade />} />
           <Route path="/gestao-operacional" element={<GestaoOperacional />} />
           <Route path="/analytics-bi" element={<AnalyticsBI />} />
           <Route path="/consultoria-esg" element={<ConsultoriaESG />} />
