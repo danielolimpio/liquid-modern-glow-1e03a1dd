@@ -83,7 +83,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                <span className="text-sm">+55 (11) 9999-9999</span>
+                <span className="text-sm">+55 (12) 98140-8992</span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
@@ -99,7 +99,15 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-primary-foreground/40">
-              © 2024 AcquaFlux. Todos os direitos reservados.
+              © Copyright 2026 | AcquaFlux | Todos os direitos reservados | Desenvolvido por{" "}
+              <a 
+                href="https://danielolimpio.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors"
+              >
+                DanielOlimpio
+              </a>
             </p>
             <div className="flex gap-6">
               <a href="#" className="text-sm text-primary-foreground/40 hover:text-primary transition-colors">
