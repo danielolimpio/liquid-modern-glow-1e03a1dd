@@ -55,8 +55,8 @@ const Contato = () => {
     { 
       icon: MapPin, 
       title: "Endereço", 
-      value: "São Paulo, SP",
-      description: "Av. Paulista, 1000 - Bela Vista"
+      value: "João Pessoa, PB",
+      description: "Av. Julia Freire, 1200 - Expedicionários"
     },
     { 
       icon: Clock, 
@@ -302,6 +302,43 @@ const Contato = () => {
                   </button>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Map Section */}
+      <section className="py-16 relative overflow-hidden">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <span className="text-xs font-semibold text-primary uppercase tracking-widest mb-4 block">
+              Nossa Localização
+            </span>
+            <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
+              Venha nos{" "}
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                visitar
+              </span>
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Av. Julia Freire, 1200 - Expedicionários - João Pessoa, PB - CEP: 58.041-000
+            </p>
+          </div>
+          
+          <div className="relative group max-w-5xl mx-auto">
+            <div className="absolute -inset-1 bg-gradient-to-r from-primary via-accent to-primary rounded-2xl blur opacity-30" />
+            <div className="relative rounded-2xl overflow-hidden border border-primary/20 bg-background">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.6!2d-34.8461!3d-7.1153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace839f9b0e0c1%3A0x0!2sAv.%20Julia%20Freire%2C%201200%20-%20Expedicion%C3%A1rios%2C%20Jo%C3%A3o%20Pessoa%20-%20PB!5e0!3m2!1spt-BR!2sbr!4v1704067200000!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Localização AcquaFlux"
+                className="w-full"
+              />
             </div>
           </div>
         </div>
