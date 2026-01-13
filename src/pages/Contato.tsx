@@ -43,7 +43,7 @@ const Contato = () => {
     { 
       icon: Phone, 
       title: "Telefone", 
-      value: "+55 (11) 3456-7890",
+      value: "+55 (12) 98140-8992",
       description: "Segunda a Sexta, 8h às 18h"
     },
     { 
