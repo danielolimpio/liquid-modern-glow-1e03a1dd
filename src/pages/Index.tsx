@@ -14,7 +14,7 @@ const Index = () => {
     "@type": "WebPage",
     "name": "AcquaFlux - Gestão Hídrica Inteligente",
     "description": "Soluções completas de gestão hídrica para empresas. Reduza até 70% no consumo de água com tecnologia IoT e consultoria ESG.",
-    "url": "https://acquaflux.com.br/",
+    "url": "https://acquaflux.com/",
     "mainEntity": {
       "@type": "Service",
       "name": "Gestão Hídrica Empresarial",

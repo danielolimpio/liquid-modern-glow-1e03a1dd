@@ -1,5 +1,5 @@
 # Robots.txt para AcquaFlux
-# https://acquaflux.com.br
+# https://acquaflux.com
 
 User-agent: Googlebot
 Allow: /
@@ -23,7 +23,7 @@ Allow: /
 Crawl-delay: 2
 
 # Sitemap
-Sitemap: https://acquaflux.com.br/sitemap.xml
+Sitemap: https://acquaflux.com/sitemap.xml
 
 # Diretórios não indexáveis
 Disallow: /api/

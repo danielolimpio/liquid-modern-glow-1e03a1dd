@@ -19,7 +19,7 @@ const SEO = ({
   noindex = false,
   structuredData,
 }: SEOProps) => {
-  const siteUrl = "https://acquaflux.com.br";
+  const siteUrl = "https://acquaflux.com";
   const fullTitle = title.includes("AcquaFlux") ? title : `${title} | AcquaFlux`;
   const canonicalUrl = canonical ? `${siteUrl}${canonical}` : undefined;
 

@@ -24,7 +24,7 @@ const Contato = () => {
     "@type": "ContactPage",
     "name": "Contato AcquaFlux",
     "description": "Entre em contato com a AcquaFlux para soluções de gestão hídrica.",
-    "url": "https://acquaflux.com.br/contato",
+    "url": "https://acquaflux.com/contato",
     "mainEntity": {
       "@type": "Organization",
       "name": "AcquaFlux",
