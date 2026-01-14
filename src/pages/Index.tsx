@@ -6,10 +6,33 @@ import AboutSection from "@/components/AboutSection";
 import CTASection from "@/components/CTASection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 const Index = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "AcquaFlux - Gestão Hídrica Inteligente",
+    "description": "Soluções completas de gestão hídrica para empresas. Reduza até 70% no consumo de água com tecnologia IoT e consultoria ESG.",
+    "url": "https://acquaflux.com.br/",
+    "mainEntity": {
+      "@type": "Service",
+      "name": "Gestão Hídrica Empresarial",
+      "provider": {
+        "@type": "Organization",
+        "name": "AcquaFlux"
+      }
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="AcquaFlux - Gestão Hídrica Inteligente | Economia de Água para Empresas"
+        description="Soluções completas de gestão hídrica para empresas. Reduza até 70% no consumo de água com tecnologia IoT, monitoramento em tempo real e consultoria ESG especializada."
+        canonical="/"
+        structuredData={structuredData}
+      />
       <Header />
       <Hero />
       <ImpactSection />

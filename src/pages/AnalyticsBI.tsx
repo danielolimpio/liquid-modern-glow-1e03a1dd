@@ -22,6 +22,7 @@ import {
   Shield
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import SEO from "@/components/SEO";
 
 const AnalyticsBI = () => {
   const features = [
@@ -108,6 +109,11 @@ const AnalyticsBI = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Analytics & BI | Inteligência de Dados para Gestão Hídrica"
+        description="Plataforma de Business Intelligence com Machine Learning para gestão hídrica. Dashboards em tempo real, análise preditiva e decisões baseadas em dados."
+        canonical="/analytics-bi"
+      />
       <Header />
       
       {/* Hero Section */}

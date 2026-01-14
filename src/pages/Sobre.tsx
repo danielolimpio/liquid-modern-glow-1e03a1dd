@@ -2,8 +2,24 @@ import { Target, Eye, Users, Award, Globe, Leaf, Building2, TrendingUp, Shield, 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import SEO from "@/components/SEO";
 
 const Sobre = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "Sobre a AcquaFlux",
+    "description": "Conheça a AcquaFlux, empresa brasileira pioneira em soluções sustentáveis para gestão de recursos hídricos desde 2014.",
+    "url": "https://acquaflux.com.br/sobre",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "AcquaFlux",
+      "foundingDate": "2014",
+      "numberOfEmployees": "50+",
+      "areaServed": "Brasil"
+    }
+  };
+
   const stats = [
     { number: "10+", label: "Anos de Experiência", icon: Award },
     { number: "500+", label: "Clientes Atendidos", icon: Users },
@@ -96,9 +112,13 @@ const Sobre = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Sobre a AcquaFlux | Pioneira em Gestão Hídrica Sustentável"
+        description="Conheça a AcquaFlux, empresa brasileira com mais de 10 anos de experiência em soluções sustentáveis para gestão de recursos hídricos. Presença em 15 estados."
+        canonical="/sobre"
+        structuredData={structuredData}
+      />
       <Header />
-      
-      {/* Hero Section */}
       <section className="relative pt-32 pb-24 overflow-hidden">
         {/* Premium gradient background */}
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-accent/10" />

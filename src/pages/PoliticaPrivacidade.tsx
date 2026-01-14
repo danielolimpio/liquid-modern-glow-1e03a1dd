@@ -24,6 +24,7 @@ import {
   ChevronRight,
   ArrowUp
 } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const sections = [
   { id: "informacoes-coletamos", title: "1. Que Informações Coletamos?", icon: Database },
@@ -91,6 +92,11 @@ const PoliticaPrivacidade = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Política de Privacidade | AcquaFlux"
+        description="Política de privacidade da AcquaFlux. Saiba como coletamos, processamos e protegemos suas informações pessoais conforme LGPD e GDPR."
+        canonical="/politica-privacidade"
+      />
       <Header />
 
       {/* Hero Section */}

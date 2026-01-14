@@ -31,6 +31,7 @@ import {
   Smartphone
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import SEO from "@/components/SEO";
 
 const MonitoramentoIoT = () => {
   const recursos = [
@@ -130,6 +131,11 @@ const MonitoramentoIoT = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Monitoramento IoT | Sensores Inteligentes para Gestão Hídrica"
+        description="Monitoramento IoT 24/7 com sensores inteligentes e IA. Detecção de vazamentos em tempo real, análise preditiva e economia de até 60%."
+        canonical="/monitoramento-iot"
+      />
       <Header />
       
       {/* Hero Section */}

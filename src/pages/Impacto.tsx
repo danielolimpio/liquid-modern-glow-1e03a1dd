@@ -25,6 +25,7 @@ import {
   Wrench,
   CloudRain
 } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const Impacto = () => {
   const mainStats = [
@@ -111,6 +112,11 @@ const Impacto = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Impacto Ambiental e Econômico | Resultados Comprovados"
+        description="Conheça o impacto real da AcquaFlux: mais de 2.5 bilhões de litros economizados, R$150M+ em economia e 45K+ toneladas de CO₂ evitadas."
+        canonical="/impacto"
+      />
       <Header />
       
       {/* Hero Section */}

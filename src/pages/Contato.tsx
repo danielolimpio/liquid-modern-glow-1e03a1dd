@@ -16,8 +16,31 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useState } from "react";
+import SEO from "@/components/SEO";
 
 const Contato = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contato AcquaFlux",
+    "description": "Entre em contato com a AcquaFlux para soluções de gestão hídrica.",
+    "url": "https://acquaflux.com.br/contato",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "AcquaFlux",
+      "telephone": "+55-12-98140-8992",
+      "email": "contato@acquaflux.com.br",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Julia Freire, 1200 - Expedicionários",
+        "addressLocality": "João Pessoa",
+        "addressRegion": "PB",
+        "postalCode": "58041-000",
+        "addressCountry": "BR"
+      }
+    }
+  };
+
   const [formData, setFormData] = useState({
     nome: '',
     email: '',
@@ -75,6 +98,12 @@ const Contato = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Contato | Fale com Especialistas em Gestão Hídrica"
+        description="Entre em contato com a AcquaFlux. Solicite diagnóstico gratuito do consumo hídrico da sua empresa. Atendimento em até 24 horas."
+        canonical="/contato"
+        structuredData={structuredData}
+      />
       <Header />
       
       {/* Hero Section */}

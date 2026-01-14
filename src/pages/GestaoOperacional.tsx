@@ -23,6 +23,7 @@ import {
   Users
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import SEO from "@/components/SEO";
 
 const GestaoOperacional = () => {
   const mainFeatures = [
@@ -125,6 +126,11 @@ const GestaoOperacional = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Gestão Operacional | Sistema SEA de Economia de Água"
+        description="Gestão operacional inteligente com o Sistema SEA. Monitoramento remoto 24/7, IoT avançado e economia de até 70% no consumo de água."
+        canonical="/gestao-operacional"
+      />
       <Header />
 
       {/* Hero Section */}
