@@ -10,7 +10,7 @@ const Sobre = () => {
     "@type": "AboutPage",
     "name": "Sobre a AcquaFlux",
     "description": "Conheça a AcquaFlux, empresa brasileira pioneira em soluções sustentáveis para gestão de recursos hídricos desde 2014.",
-    "url": "https://acquaflux.com.br/sobre",
+    "url": "https://acquaflux.com/sobre",
     "mainEntity": {
       "@type": "Organization",
       "name": "AcquaFlux",
