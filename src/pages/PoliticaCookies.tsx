@@ -24,6 +24,7 @@ import {
   Building2,
   Table
 } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const sections = [
   { id: "o-que-sao-cookies", title: "O que são Cookies?", icon: Cookie },
@@ -87,6 +88,11 @@ const PoliticaCookies = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Política de Cookies | AcquaFlux"
+        description="Política de cookies da AcquaFlux. Saiba como utilizamos cookies e tecnologias de rastreamento em nosso site."
+        canonical="/politica-cookies"
+      />
       <Header />
 
       {/* Hero Section */}

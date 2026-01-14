@@ -26,6 +26,7 @@ import {
   Building2
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import SEO from "@/components/SEO";
 
 const GestaoFinanceira = () => {
   const beneficiosFinanceiros = [
@@ -118,6 +119,11 @@ const GestaoFinanceira = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Gestão Financeira Hídrica | ROI de até 300%"
+        description="Transforme consumo de água em economia real. Modelo sem custo inicial com ROI de até 300%. Pagamento baseado na economia gerada."
+        canonical="/gestao-financeira"
+      />
       <Header />
       
       {/* Hero Section */}

@@ -23,6 +23,7 @@ import {
   Heart
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import SEO from "@/components/SEO";
 
 const ConsultoriaESG = () => {
   const pilares = [
@@ -120,6 +121,11 @@ const ConsultoriaESG = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Consultoria ESG | Sustentabilidade e Gestão Hídrica"
+        description="Consultoria ESG especializada em gestão hídrica. Melhore seus indicadores ambientais, sociais e de governança com economia de até 70% em água."
+        canonical="/consultoria-esg"
+      />
       <Header />
       
       {/* Hero Section */}

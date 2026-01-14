@@ -25,6 +25,7 @@ import {
   Building2,
   Eye
 } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const sections = [
   { id: "nossos-servicos", title: "1. Nossos Serviços", icon: BookOpen },
@@ -94,6 +95,11 @@ const TermosUso = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Termos de Uso | AcquaFlux"
+        description="Termos de uso da AcquaFlux. Conheça as condições legais para utilização dos nossos serviços de gestão hídrica."
+        canonical="/termos-uso"
+      />
       <Header />
 
       {/* Hero Section */}

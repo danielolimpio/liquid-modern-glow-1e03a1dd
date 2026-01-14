@@ -24,10 +24,26 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 const Solucoes = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Soluções de Gestão Hídrica AcquaFlux",
+    "provider": { "@type": "Organization", "name": "AcquaFlux" },
+    "serviceType": ["Gestão Operacional", "Monitoramento IoT", "Analytics BI", "Consultoria ESG", "Gestão Financeira"],
+    "areaServed": { "@type": "Country", "name": "Brazil" }
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Soluções de Gestão Hídrica | Sistema SEA e IoT"
+        description="Conheça as soluções AcquaFlux: Sistema SEA, monitoramento IoT, Analytics BI e consultoria ESG. Economia de até 70% no consumo de água."
+        canonical="/solucoes"
+        structuredData={structuredData}
+      />
       <Header />
       
       {/* Hero Section */}

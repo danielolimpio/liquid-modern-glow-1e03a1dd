@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ArrowRight, Calendar, Clock, User, Sparkles, TrendingUp, Droplets, Leaf } from "lucide-react";
 import { Link } from "react-router-dom";
+import SEO from "@/components/SEO";
 
 const Blog = () => {
   const featuredCategories = [
@@ -13,9 +14,12 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Blog | Insights sobre Gestão Hídrica e Sustentabilidade"
+        description="Explore artigos sobre gestão hídrica, sustentabilidade empresarial, tecnologia IoT e tendências ESG. Conteúdo exclusivo da AcquaFlux."
+        canonical="/blog"
+      />
       <Header />
-      
-      {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0 bg-gradient-to-br from-[hsl(210,80%,8%)] via-[hsl(200,70%,15%)] to-[hsl(190,75%,20%)]" />
