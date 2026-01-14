@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "./Logo";
 import { Mail, Phone, MapPin, Linkedin, Instagram, Youtube, Facebook } from "lucide-react";
 
@@ -33,29 +34,29 @@ const Footer = () => {
             <h4 className="font-heading font-bold mb-6 text-primary-foreground">Soluções</h4>
             <ul className="space-y-3">
               <li>
-                <a href="/gestao-operacional" className="text-sm hover:text-primary transition-colors">
+                <Link to="/gestao-operacional" className="text-sm hover:text-primary transition-colors">
                   Gestão Operacional
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/analytics-bi" className="text-sm hover:text-primary transition-colors">
+                <Link to="/analytics-bi" className="text-sm hover:text-primary transition-colors">
                   Analytics & BI
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/consultoria-esg" className="text-sm hover:text-primary transition-colors">
+                <Link to="/consultoria-esg" className="text-sm hover:text-primary transition-colors">
                   Consultoria ESG
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/gestao-financeira" className="text-sm hover:text-primary transition-colors">
+                <Link to="/gestao-financeira" className="text-sm hover:text-primary transition-colors">
                   Gestão Financeira
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/monitoramento-iot" className="text-sm hover:text-primary transition-colors">
+                <Link to="/monitoramento-iot" className="text-sm hover:text-primary transition-colors">
                   Monitoramento IoT
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -64,29 +65,24 @@ const Footer = () => {
             <h4 className="font-heading font-bold mb-6 text-primary-foreground">Empresa</h4>
             <ul className="space-y-3">
               <li>
-                <a href="/sobre" className="text-sm hover:text-primary transition-colors">
+                <Link to="/sobre" className="text-sm hover:text-primary transition-colors">
                   Sobre Nós
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm hover:text-primary transition-colors">
-                  Carreiras
-                </a>
-              </li>
-              <li>
-                <a href="/blog" className="text-sm hover:text-primary transition-colors">
+                <Link to="/blog" className="text-sm hover:text-primary transition-colors">
                   Blog
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm hover:text-primary transition-colors">
-                  Cases de Sucesso
-                </a>
+                <Link to="/impacto" className="text-sm hover:text-primary transition-colors">
+                  Impacto
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm hover:text-primary transition-colors">
-                  Parceiros
-                </a>
+                <Link to="/contato" className="text-sm hover:text-primary transition-colors">
+                  Contato
+                </Link>
               </li>
             </ul>
           </div>
@@ -128,15 +124,15 @@ const Footer = () => {
               </a>
             </p>
             <div className="flex flex-wrap gap-4 md:gap-6">
-              <a href="/politica-privacidade" className="text-sm text-primary-foreground/40 hover:text-primary transition-colors">
+              <Link to="/politica-privacidade" className="text-sm text-primary-foreground/40 hover:text-primary transition-colors">
                 Política de Privacidade
-              </a>
-              <a href="/termos-uso" className="text-sm text-primary-foreground/40 hover:text-primary transition-colors">
+              </Link>
+              <Link to="/termos-uso" className="text-sm text-primary-foreground/40 hover:text-primary transition-colors">
                 Termos de Uso
-              </a>
-              <a href="/politica-cookies" className="text-sm text-primary-foreground/40 hover:text-primary transition-colors">
+              </Link>
+              <Link to="/politica-cookies" className="text-sm text-primary-foreground/40 hover:text-primary transition-colors">
                 Política de Cookies
-              </a>
+              </Link>
             </div>
           </div>
         </div>
