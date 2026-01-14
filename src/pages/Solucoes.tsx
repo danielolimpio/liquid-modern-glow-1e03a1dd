@@ -155,10 +155,15 @@ const Solucoes = () => {
                   ))}
                 </div>
 
-                <button className="w-full mt-6 py-3 px-6 rounded-xl bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 flex items-center justify-center gap-2 group">
+                <a 
+                  href="https://wa.me/5512981408992?text=Olá! Gostaria de solicitar um diagnóstico gratuito da gestão hídrica da minha empresa."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full mt-6 py-3 px-6 rounded-xl bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 flex items-center justify-center gap-2 group"
+                >
                   Solicitar Diagnóstico Gratuito
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -410,10 +415,15 @@ const Solucoes = () => {
             </div>
 
             <div className="text-center">
-              <button className="py-4 px-8 rounded-xl bg-gradient-to-r from-accent via-primary to-accent text-primary-foreground font-semibold text-lg hover:shadow-xl hover:shadow-primary/25 transition-all duration-300 flex items-center gap-3 mx-auto group">
+              <a 
+                href="https://wa.me/5512981408992?text=Olá! Gostaria de solicitar uma proposta do SEA+ para minha empresa."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="py-4 px-8 rounded-xl bg-gradient-to-r from-accent via-primary to-accent text-primary-foreground font-semibold text-lg hover:shadow-xl hover:shadow-primary/25 transition-all duration-300 flex items-center gap-3 mx-auto group"
+              >
                 Solicitar Proposta SEA+
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -480,13 +490,23 @@ const Solucoes = () => {
             é ideal para sua empresa.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="py-4 px-8 rounded-xl bg-primary-foreground text-primary font-semibold text-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 group">
+            <a 
+              href="https://wa.me/5512981408992?text=Olá! Gostaria de falar com um especialista da AcquaFlux sobre soluções hídricas."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="py-4 px-8 rounded-xl bg-primary-foreground text-primary font-semibold text-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 group"
+            >
               Fale com um Especialista
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button className="py-4 px-8 rounded-xl bg-transparent border-2 border-primary-foreground text-primary-foreground font-semibold text-lg hover:bg-primary-foreground/10 transition-all duration-300">
+            </a>
+            <a 
+              href="https://wa.me/5512981408992?text=Olá! Gostaria de solicitar um diagnóstico gratuito da gestão hídrica da minha empresa."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="py-4 px-8 rounded-xl bg-transparent border-2 border-primary-foreground text-primary-foreground font-semibold text-lg hover:bg-primary-foreground/10 transition-all duration-300"
+            >
               Solicitar Diagnóstico Gratuito
-            </button>
+            </a>
           </div>
         </div>
       </section>
