@@ -130,6 +130,7 @@ const GestaoOperacional = () => {
         title="Gestão Operacional | Sistema SEA de Economia de Água"
         description="Gestão operacional inteligente com o Sistema SEA. Monitoramento remoto 24/7, IoT avançado e economia de até 70% no consumo de água."
         canonical="/gestao-operacional"
+        keywords="gestão operacional água, sistema SEA, economia água 70%, monitoramento remoto hídrico, IoT gestão água, eficiência operacional hídrica"
       />
       <Header />
 

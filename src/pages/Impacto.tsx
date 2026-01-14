@@ -116,6 +116,7 @@ const Impacto = () => {
         title="Impacto Ambiental e Econômico | Resultados Comprovados"
         description="Conheça o impacto real da AcquaFlux: mais de 2.5 bilhões de litros economizados, R$150M+ em economia e 45K+ toneladas de CO₂ evitadas."
         canonical="/impacto"
+        keywords="impacto ambiental água, resultados economia água, sustentabilidade hídrica, redução CO2 água, economia litros água, ROI gestão hídrica"
       />
       <Header />
       

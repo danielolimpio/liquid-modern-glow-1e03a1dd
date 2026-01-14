@@ -113,6 +113,7 @@ const AnalyticsBI = () => {
         title="Analytics & BI | Inteligência de Dados para Gestão Hídrica"
         description="Plataforma de Business Intelligence com Machine Learning para gestão hídrica. Dashboards em tempo real, análise preditiva e decisões baseadas em dados."
         canonical="/analytics-bi"
+        keywords="analytics água, business intelligence hídrico, machine learning água, dashboards consumo água, análise dados água, relatórios gestão hídrica"
       />
       <Header />
       

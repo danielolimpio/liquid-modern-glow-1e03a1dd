@@ -99,6 +99,8 @@ const TermosUso = () => {
         title="Termos de Uso | AcquaFlux"
         description="Termos de uso da AcquaFlux. Conheça as condições legais para utilização dos nossos serviços de gestão hídrica."
         canonical="/termos-uso"
+        keywords="termos uso AcquaFlux, condições serviço, termos legais, contrato uso site"
+        noindex={true}
       />
       <Header />
 

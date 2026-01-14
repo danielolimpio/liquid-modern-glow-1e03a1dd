@@ -102,6 +102,7 @@ const Contato = () => {
         title="Contato | Fale com Especialistas em Gestão Hídrica"
         description="Entre em contato com a AcquaFlux. Solicite diagnóstico gratuito do consumo hídrico da sua empresa. Atendimento em até 24 horas."
         canonical="/contato"
+        keywords="contato AcquaFlux, fale conosco gestão hídrica, diagnóstico gratuito água, orçamento economia água, especialistas água"
         structuredData={structuredData}
       />
       <Header />

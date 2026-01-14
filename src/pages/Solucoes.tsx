@@ -42,6 +42,7 @@ const Solucoes = () => {
         title="Soluções de Gestão Hídrica | Sistema SEA e IoT"
         description="Conheça as soluções AcquaFlux: Sistema SEA, monitoramento IoT, Analytics BI e consultoria ESG. Economia de até 70% no consumo de água."
         canonical="/solucoes"
+        keywords="sistema SEA, soluções gestão água, monitoramento IoT hídrico, economia água empresas, TDRR monitoramento, GCI individualização, tecnologia hídrica"
         structuredData={structuredData}
       />
       <Header />

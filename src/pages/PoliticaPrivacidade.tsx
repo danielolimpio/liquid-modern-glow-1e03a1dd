@@ -96,6 +96,8 @@ const PoliticaPrivacidade = () => {
         title="Política de Privacidade | AcquaFlux"
         description="Política de privacidade da AcquaFlux. Saiba como coletamos, processamos e protegemos suas informações pessoais conforme LGPD e GDPR."
         canonical="/politica-privacidade"
+        keywords="política privacidade AcquaFlux, LGPD AcquaFlux, GDPR dados pessoais, proteção dados, privacidade usuário"
+        noindex={true}
       />
       <Header />
 
