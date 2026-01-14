@@ -44,9 +44,14 @@ const Header = () => {
             </ul>
 
             {/* CTA Button */}
-            <Link to="/contato" className="hidden md:block btn-aqua text-sm px-6 py-3">
+            <a 
+              href="https://wa.me/5512981408992?text=Olá! Gostaria de falar com um especialista da AcquaFlux."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:block btn-aqua text-sm px-6 py-3"
+            >
               Fale Conosco
-            </Link>
+            </a>
 
             {/* Mobile Menu Toggle */}
             <button
@@ -77,13 +82,15 @@ const Header = () => {
                   </li>
                 ))}
                 <li>
-                  <Link 
-                    to="/contato"
+                  <a 
+                    href="https://wa.me/5512981408992?text=Olá! Gostaria de falar com um especialista da AcquaFlux."
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onClick={() => setIsOpen(false)}
                     className="w-full btn-aqua text-sm px-6 py-3 mt-2 block text-center"
                   >
                     Fale Conosco
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>

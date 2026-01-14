@@ -1,4 +1,5 @@
 import { Settings, BarChart3, FileCheck, Gauge, Leaf, Shield } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const solutions = [
   {
@@ -48,9 +49,9 @@ const SolutionsSection = () => {
               de ponta com expertise operacional para maximizar a eficiência e reduzir 
               custos da sua empresa.
             </p>
-            <button className="btn-aqua mt-8">
+            <Link to="/solucoes" className="btn-aqua mt-8 inline-block">
               Conheça Nossas Soluções
-            </button>
+            </Link>
           </div>
 
           <div className="relative">

@@ -56,14 +56,24 @@ const CTASection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="group bg-primary-foreground text-foreground px-8 py-4 rounded-full font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
+            <a 
+              href="https://wa.me/5512981408992?text=Olá! Gostaria de falar com um especialista da AcquaFlux."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-primary-foreground text-foreground px-8 py-4 rounded-full font-semibold hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
+            >
               <Phone className="w-5 h-5" />
               Fale com um Especialista
-            </button>
-            <button className="border-2 border-primary-foreground/40 text-primary-foreground px-8 py-4 rounded-full font-semibold hover:bg-primary-foreground/10 transition-all duration-300 flex items-center justify-center gap-2">
+            </a>
+            <a 
+              href="https://wa.me/5512981408992?text=Olá! Gostaria de simular a economia que posso ter com a AcquaFlux."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 border-primary-foreground/40 text-primary-foreground px-8 py-4 rounded-full font-semibold hover:bg-primary-foreground/10 transition-all duration-300 flex items-center justify-center gap-2"
+            >
               Simular Economia
               <ArrowRight className="w-5 h-5" />
-            </button>
+            </a>
           </div>
 
           {/* Trust indicators */}
