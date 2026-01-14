@@ -116,6 +116,7 @@ const Sobre = () => {
         title="Sobre a AcquaFlux | Pioneira em Gestão Hídrica Sustentável"
         description="Conheça a AcquaFlux, empresa brasileira com mais de 10 anos de experiência em soluções sustentáveis para gestão de recursos hídricos. Presença em 15 estados."
         canonical="/sobre"
+        keywords="sobre AcquaFlux, história AcquaFlux, empresa gestão hídrica, pioneira sustentabilidade água, equipe especialistas água, valores AcquaFlux, missão gestão hídrica"
         structuredData={structuredData}
       />
       <Header />

@@ -18,6 +18,7 @@ const Blog = () => {
         title="Blog | Insights sobre Gestão Hídrica e Sustentabilidade"
         description="Explore artigos sobre gestão hídrica, sustentabilidade empresarial, tecnologia IoT e tendências ESG. Conteúdo exclusivo da AcquaFlux."
         canonical="/blog"
+        keywords="blog gestão hídrica, artigos sustentabilidade água, notícias IoT hídrico, tendências ESG água, conteúdo economia água, insights AcquaFlux"
       />
       <Header />
       <section className="relative pt-32 pb-20 overflow-hidden">

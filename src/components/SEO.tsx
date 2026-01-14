@@ -8,6 +8,7 @@ interface SEOProps {
   image?: string;
   noindex?: boolean;
   structuredData?: object;
+  keywords?: string;
 }
 
 const SEO = ({
@@ -18,10 +19,13 @@ const SEO = ({
   image = "/favicon.png",
   noindex = false,
   structuredData,
+  keywords,
 }: SEOProps) => {
   const siteUrl = "https://acquaflux.com";
   const fullTitle = title.includes("AcquaFlux") ? title : `${title} | AcquaFlux`;
   const canonicalUrl = canonical ? `${siteUrl}${canonical}` : undefined;
+  
+  const defaultKeywords = "gestão hídrica, economia de água, sustentabilidade empresarial, monitoramento IoT, consultoria ESG, eficiência hídrica, sistema SEA, água para empresas";
 
   return (
     <Helmet>
@@ -29,8 +33,10 @@ const SEO = ({
       <title>{fullTitle}</title>
       <meta name="title" content={fullTitle} />
       <meta name="description" content={description} />
+      <meta name="keywords" content={keywords || defaultKeywords} />
       {noindex && <meta name="robots" content="noindex, nofollow" />}
       {!noindex && <meta name="robots" content="index, follow" />}
+      {!noindex && <meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1" />}
       
       {/* Canonical */}
       {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}

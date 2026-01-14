@@ -125,6 +125,7 @@ const ConsultoriaESG = () => {
         title="Consultoria ESG | Sustentabilidade e Gestão Hídrica"
         description="Consultoria ESG especializada em gestão hídrica. Melhore seus indicadores ambientais, sociais e de governança com economia de até 70% em água."
         canonical="/consultoria-esg"
+        keywords="consultoria ESG água, sustentabilidade hídrica, indicadores ESG, compliance ambiental água, ODS água, certificação ESG empresas"
       />
       <Header />
       

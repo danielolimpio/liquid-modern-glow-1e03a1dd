@@ -123,6 +123,7 @@ const GestaoFinanceira = () => {
         title="Gestão Financeira Hídrica | ROI de até 300%"
         description="Transforme consumo de água em economia real. Modelo sem custo inicial com ROI de até 300%. Pagamento baseado na economia gerada."
         canonical="/gestao-financeira"
+        keywords="gestão financeira água, ROI economia água, redução custos água, economia fatura água, modelo performance água, investimento gestão hídrica"
       />
       <Header />
       

@@ -135,6 +135,7 @@ const MonitoramentoIoT = () => {
         title="Monitoramento IoT | Sensores Inteligentes para Gestão Hídrica"
         description="Monitoramento IoT 24/7 com sensores inteligentes e IA. Detecção de vazamentos em tempo real, análise preditiva e economia de até 60%."
         canonical="/monitoramento-iot"
+        keywords="monitoramento IoT água, sensores inteligentes água, detecção vazamentos, análise preditiva hídrica, telemetria água, IoT industrial água"
       />
       <Header />
       
