@@ -17,10 +17,9 @@
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
-  # Remover barra final (exceto raiz) para URLs limpas
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_URI} (.+)/$
-  RewriteRule ^ %1 [L,R=301]
+  # Mantém barra final quando o servidor adiciona automaticamente
+  # (importante para evitar mismatch com canonical e status "Canonicalised")
+  # Obs: a regra de remoção de barra final foi removida intencionalmente.
 
   # IMPORTANTE: Servir index.html de subpastas para rotas prerendered
   # Isso permite que /sobre sirva /sobre/index.html
