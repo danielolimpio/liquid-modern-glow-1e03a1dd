@@ -131,90 +131,87 @@ const seoData = {
 // Function to create route-specific HTML
 function createRouteHtml(route, baseHtml) {
   const seo = seoData[route] || seoData['/'];
-  const canonicalUrl = `https://acquaflux.com${route === '/' ? '' : route}`;
-  
+
+  // Padrão: raiz com "/" e demais rotas sem barra no final
+  const canonicalUrl = `https://acquaflux.com${route === '/' ? '/' : route}`;
+
   let html = baseHtml;
-  
+
   // Replace title
   html = html.replace(
     /<title>.*?<\/title>/,
     `<title>${seo.title}</title>`
   );
-  
+
   // Replace meta title
   html = html.replace(
     /<meta name="title" content=".*?".*?\/>/,
     `<meta name="title" content="${seo.title}" />`
   );
-  
+
   // Replace meta description
   html = html.replace(
     /<meta name="description" content=".*?".*?\/>/,
     `<meta name="description" content="${seo.description}" />`
   );
-  
+
   // Replace meta keywords
   html = html.replace(
     /<meta name="keywords" content=".*?".*?\/>/,
     `<meta name="keywords" content="${seo.keywords}" />`
   );
-  
+
   // Replace canonical
   html = html.replace(
     /<link rel="canonical" href=".*?".*?\/>/,
     `<link rel="canonical" href="${canonicalUrl}" />`
   );
-  
+
   // Replace OG URL
   html = html.replace(
     /<meta property="og:url" content=".*?".*?\/>/,
     `<meta property="og:url" content="${canonicalUrl}" />`
   );
-  
+
   // Replace OG title
   html = html.replace(
     /<meta property="og:title" content=".*?".*?\/>/,
     `<meta property="og:title" content="${seo.title}" />`
   );
-  
+
   // Replace OG description
   html = html.replace(
     /<meta property="og:description" content=".*?".*?\/>/,
     `<meta property="og:description" content="${seo.description}" />`
   );
-  
+
   // Replace Twitter URL
   html = html.replace(
     /<meta name="twitter:url" content=".*?".*?\/>/,
     `<meta name="twitter:url" content="${canonicalUrl}" />`
   );
-  
+
   // Replace Twitter title
   html = html.replace(
     /<meta name="twitter:title" content=".*?".*?\/>/,
     `<meta name="twitter:title" content="${seo.title}" />`
   );
-  
+
   // Replace Twitter description
   html = html.replace(
     /<meta name="twitter:description" content=".*?".*?\/>/,
     `<meta name="twitter:description" content="${seo.description}" />`
   );
-  
-  // Replace noscript H1
-  html = html.replace(
-    /<h1>.*?<\/h1>/,
-    `<h1>${seo.h1}</h1>`
-  );
-  
-  // Replace first H2 in noscript
-  if (seo.h2 && seo.h2[0]) {
-    html = html.replace(
-      /<h2>Nossas Soluções<\/h2>/,
-      `<h2>${seo.h2[0]}</h2>`
-    );
-  }
-  
+
+  // Replace noscript placeholders (evita H1/H2 repetidos no Screaming Frog)
+  html = html.replaceAll('__PRERENDER_H1__', seo.h1);
+
+  const h2List = Array.isArray(seo.h2) ? seo.h2 : [];
+  html = html.replaceAll('__PRERENDER_H2_1__', h2List[0] || seoData['/'].h2[0]);
+  html = html.replaceAll('__PRERENDER_H2_2__', h2List[1] || seoData['/'].h2[1]);
+  html = html.replaceAll('__PRERENDER_H2_3__', h2List[2] || seoData['/'].h2[2]);
+  html = html.replaceAll('__PRERENDER_H2_4__', h2List[3] || 'Entre em Contato');
+
   return html;
 }
 
