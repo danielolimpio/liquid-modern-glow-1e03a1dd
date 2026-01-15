@@ -132,8 +132,8 @@ const seoData = {
 function createRouteHtml(route, baseHtml) {
   const seo = seoData[route] || seoData['/'];
 
-  // Padrão: raiz com "/" e demais rotas sem barra no final
-  const canonicalUrl = `https://acquaflux.com${route === '/' ? '/' : route}`;
+  // Padrão canônico com barra final (exceto raiz já é "/")
+  const canonicalUrl = `https://acquaflux.com${route === '/' ? '/' : `${route.replace(/\/+$/, '')}/`}`;
 
   let html = baseHtml;
 
@@ -232,7 +232,8 @@ async function prerender() {
   for (const route of routes) {
     if (route === '/') continue; // Skip root, already has index.html
     
-    const routePath = path.join(distPath, route);
+    const routeDir = route.replace(/^\/+/, "");
+    const routePath = path.join(distPath, routeDir);
     const htmlPath = path.join(routePath, 'index.html');
     
     // Create directory if not exists

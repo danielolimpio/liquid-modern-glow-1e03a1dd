@@ -23,7 +23,18 @@ const SEO = ({
 }: SEOProps) => {
   const siteUrl = "https://acquaflux.com";
   const fullTitle = title.includes("AcquaFlux") ? title : `${title} | AcquaFlux`;
-  const canonicalUrl = canonical ? `${siteUrl}${canonical}` : undefined;
+
+  const normalizeCanonical = (p: string) => {
+    // garante formato /rota/ (exceto raiz)
+    const path = p.startsWith("/") ? p : `/${p}`;
+    if (path === "/") return "/";
+    // evita quebrar URLs com query/hash e arquivos (ex: /arquivo.pdf)
+    const [base, rest] = path.split(/(?=[?#])/);
+    if (base.includes(".")) return path;
+    return `${base.replace(/\/+$/, "")}/` + (rest || "");
+  };
+
+  const canonicalUrl = canonical ? `${siteUrl}${normalizeCanonical(canonical)}` : undefined;
   
   const defaultKeywords = "gestão hídrica, economia de água, sustentabilidade empresarial, monitoramento IoT, consultoria ESG, eficiência hídrica, sistema SEA, água para empresas";
 
