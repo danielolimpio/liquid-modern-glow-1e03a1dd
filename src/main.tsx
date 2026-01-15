@@ -8,3 +8,8 @@ createRoot(document.getElementById("root")!).render(
     <App />
   </HelmetProvider>
 );
+
+// Sinaliza para o prerender (Puppeteer) quando o HTML já está completo
+setTimeout(() => {
+  document.dispatchEvent(new Event("prerender-ready"));
+}, 0);
