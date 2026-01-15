@@ -1,20 +1,31 @@
-# Configurações do Servidor Apache para SPA AcquaFlux
-# Otimizado para SEO e Performance
+# AcquaFlux - Configurações Apache para SEO e SPA
+# Compatível com Hostinger - Otimizado para prerendering
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
 
-  # Força HTTPS (descomente em produção se necessário)
-  # RewriteCond %{HTTPS} !=on
-  # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  # Força HTTPS
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  # Remove barra final (exceto raiz) para URLs limpas
+  # Remover www (padronizar sem www)
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+  # Remover barra final (exceto raiz) para URLs limpas
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_URI} (.+)/$
   RewriteRule ^ %1 [L,R=301]
 
-  # Se não for arquivo nem diretório, redireciona para index.html (SPA)
+  # IMPORTANTE: Servir index.html de subpastas para rotas prerendered
+  # Isso permite que /sobre sirva /sobre/index.html
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}/index.html -f
+  RewriteRule ^(.*)$ /$1/index.html [L]
+
+  # Fallback SPA: qualquer rota não encontrada vai para /index.html
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /index.html [L]
@@ -97,3 +108,6 @@ AddDefaultCharset UTF-8
 
 # ETags para validação de cache
 FileETag MTime Size
+
+# Página 404 customizada (fallback para SPA)
+ErrorDocument 404 /index.html
