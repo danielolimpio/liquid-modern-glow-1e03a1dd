@@ -4,6 +4,10 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+  
+  # Evita redirect automático para adicionar barra final em diretórios
+  # (importante para que /sobre não vire /sobre/ e não cause "Canonicalised" no Screaming Frog)
+  DirectorySlash Off
 
   # Força HTTPS
   RewriteCond %{HTTPS} !=on
