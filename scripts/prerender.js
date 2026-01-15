@@ -1,260 +1,127 @@
-// Prerender script for SEO optimization
-// This script generates static HTML files for each route after build
+// Prerender script for SEO optimization (static snapshots)
+// Gera HTML completo por rota (sem depender de JS no crawler)
 
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+import Prerenderer from "@prerenderer/prerenderer";
+import PuppeteerRenderer from "@prerenderer/renderer-puppeteer";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const distPath = path.resolve(__dirname, '../dist');
+const distPath = path.resolve(__dirname, "../dist");
 
-// All routes to prerender
+// Rotas canônicas com barra final
 const routes = [
-  '/',
-  '/sobre',
-  '/solucoes',
-  '/impacto',
-  '/contato',
-  '/blog',
-  '/gestao-operacional',
-  '/monitoramento-iot',
-  '/analytics-bi',
-  '/consultoria-esg',
-  '/gestao-financeira',
-  '/politica-privacidade',
-  '/termos-uso',
-  '/politica-cookies'
+  "/",
+  "/sobre/",
+  "/solucoes/",
+  "/monitoramento-iot/",
+  "/gestao-operacional/",
+  "/gestao-financeira/",
+  "/analytics-bi/",
+  "/consultoria-esg/",
+  "/impacto/",
+  "/blog/",
+  "/contato/",
+  "/politica-privacidade/",
+  "/politica-cookies/",
+  "/termos-uso/",
 ];
 
-// SEO metadata for each route
-const seoData = {
-  '/': {
-    title: 'AcquaFlux - Gestão Hídrica Inteligente | Economia de Água para Empresas',
-    description: 'Soluções completas de gestão hídrica para empresas. Reduza até 70% no consumo de água com tecnologia IoT, monitoramento em tempo real e consultoria ESG especializada.',
-    keywords: 'gestão hídrica empresarial, economia de água empresas, sistema SEA, monitoramento IoT água, consultoria ESG hídrica',
-    h1: 'Gestão Hídrica para Empresas: Reduza Custos e Aumente sua Eficiência',
-    h2: ['Nossas Soluções', 'Impacto AcquaFlux', 'Sobre a AcquaFlux']
-  },
-  '/sobre': {
-    title: 'Sobre a AcquaFlux | Pioneira em Gestão Hídrica Sustentável',
-    description: 'Conheça a AcquaFlux, empresa brasileira com mais de 10 anos de experiência em soluções sustentáveis para gestão de recursos hídricos. Presença em 15 estados.',
-    keywords: 'sobre AcquaFlux, história AcquaFlux, empresa gestão hídrica, pioneira sustentabilidade água',
-    h1: 'Quem Somos',
-    h2: ['Nossa História', 'Missão e Valores', 'Nossa Equipe']
-  },
-  '/solucoes': {
-    title: 'Soluções de Gestão Hídrica | Sistema SEA e IoT',
-    description: 'Conheça as soluções AcquaFlux: Sistema SEA, monitoramento IoT, Analytics BI e consultoria ESG. Economia de até 70% no consumo de água.',
-    keywords: 'sistema SEA, soluções gestão água, monitoramento IoT hídrico, economia água empresas, TDRR monitoramento',
-    h1: 'Nossas Soluções',
-    h2: ['Sistema SEA', 'Monitoramento TDRR', 'GCI Individualização']
-  },
-  '/impacto': {
-    title: 'Impacto Ambiental | Resultados da Gestão Hídrica AcquaFlux',
-    description: 'Veja o impacto real das soluções AcquaFlux: mais de 2 milhões de litros economizados, 500+ clientes satisfeitos e redução de 70% no consumo.',
-    keywords: 'impacto ambiental água, resultados gestão hídrica, economia água empresas, sustentabilidade hídrica',
-    h1: 'Nosso Impacto',
-    h2: ['Resultados Comprovados', 'Cases de Sucesso', 'Impacto Ambiental']
-  },
-  '/contato': {
-    title: 'Contato | Fale com Especialistas em Gestão Hídrica',
-    description: 'Entre em contato com a AcquaFlux. Solicite diagnóstico gratuito do consumo hídrico da sua empresa. Atendimento em até 24 horas.',
-    keywords: 'contato AcquaFlux, fale conosco gestão hídrica, diagnóstico gratuito água, orçamento economia água',
-    h1: 'Entre em Contato',
-    h2: ['Envie sua Mensagem', 'Informações de Contato', 'Nossa Localização']
-  },
-  '/blog': {
-    title: 'Blog | Artigos sobre Gestão Hídrica e Sustentabilidade',
-    description: 'Artigos, notícias e dicas sobre gestão hídrica empresarial, sustentabilidade, economia de água e tecnologias IoT para o setor hídrico.',
-    keywords: 'blog gestão hídrica, artigos economia água, notícias sustentabilidade, dicas consumo água',
-    h1: 'Blog AcquaFlux',
-    h2: ['Artigos Recentes', 'Categorias', 'Destaques']
-  },
-  '/gestao-operacional': {
-    title: 'Gestão Operacional de Água | Controle e Otimização Hídrica',
-    description: 'Sistema de gestão operacional para controle total do consumo de água. Otimize processos, reduza desperdícios e aumente a eficiência hídrica.',
-    keywords: 'gestão operacional água, controle consumo hídrico, otimização processos água, eficiência operacional hídrica',
-    h1: 'Gestão Operacional',
-    h2: ['Como Funciona', 'Benefícios', 'Resultados']
-  },
-  '/monitoramento-iot': {
-    title: 'Monitoramento IoT | Sensores Inteligentes para Água',
-    description: 'Sistema de monitoramento IoT com sensores inteligentes para gestão hídrica em tempo real. Detecte vazamentos e otimize o consumo de água.',
-    keywords: 'monitoramento IoT água, sensores inteligentes hídricos, telemetria água, monitoramento remoto consumo',
-    h1: 'Monitoramento IoT',
-    h2: ['Tecnologia TDRR', 'Sensores Inteligentes', 'Dashboard em Tempo Real']
-  },
-  '/analytics-bi': {
-    title: 'Analytics e BI | Inteligência de Dados para Gestão Hídrica',
-    description: 'Dashboards e relatórios analíticos para gestão hídrica. Tome decisões baseadas em dados e otimize o consumo de água da sua empresa.',
-    keywords: 'analytics água, business intelligence hídrico, dashboards consumo água, relatórios gestão hídrica',
-    h1: 'Analytics e BI',
-    h2: ['Dashboards Inteligentes', 'Relatórios Personalizados', 'Insights de Dados']
-  },
-  '/consultoria-esg': {
-    title: 'Consultoria ESG | Sustentabilidade e Compliance Hídrico',
-    description: 'Consultoria especializada em ESG para gestão hídrica. Adeque sua empresa às normas ambientais e alcance metas de sustentabilidade.',
-    keywords: 'consultoria ESG água, sustentabilidade empresarial, compliance ambiental hídrico, metas ODS água',
-    h1: 'Consultoria ESG',
-    h2: ['Adequação Ambiental', 'Certificações', 'Relatórios ESG']
-  },
-  '/gestao-financeira': {
-    title: 'Gestão Financeira Hídrica | Economia e Controle de Custos',
-    description: 'Gestão financeira especializada em recursos hídricos. Controle custos, otimize investimentos e comprove ROI em projetos de água.',
-    keywords: 'gestão financeira água, economia custos hídricos, ROI projetos água, controle financeiro consumo',
-    h1: 'Gestão Financeira',
-    h2: ['Controle de Custos', 'Análise de ROI', 'Projeções Financeiras']
-  },
-  '/politica-privacidade': {
-    title: 'Política de Privacidade | AcquaFlux',
-    description: 'Política de privacidade da AcquaFlux. Saiba como coletamos, usamos e protegemos seus dados pessoais.',
-    keywords: 'política privacidade, proteção dados, LGPD, privacidade AcquaFlux',
-    h1: 'Política de Privacidade',
-    h2: ['Coleta de Dados', 'Uso das Informações', 'Seus Direitos']
-  },
-  '/termos-uso': {
-    title: 'Termos de Uso | AcquaFlux',
-    description: 'Termos e condições de uso do site e serviços da AcquaFlux. Leia antes de utilizar nossos serviços.',
-    keywords: 'termos uso, condições serviço, termos AcquaFlux',
-    h1: 'Termos de Uso',
-    h2: ['Condições Gerais', 'Responsabilidades', 'Limitações']
-  },
-  '/politica-cookies': {
-    title: 'Política de Cookies | AcquaFlux',
-    description: 'Política de cookies da AcquaFlux. Entenda como utilizamos cookies para melhorar sua experiência.',
-    keywords: 'política cookies, uso cookies, cookies AcquaFlux',
-    h1: 'Política de Cookies',
-    h2: ['Tipos de Cookies', 'Como Usamos', 'Gerenciamento']
-  }
-};
-
-// Function to create route-specific HTML
-function createRouteHtml(route, baseHtml) {
-  const seo = seoData[route] || seoData['/'];
-
-  // Padrão canônico com barra final (exceto raiz já é "/")
-  const canonicalUrl = `https://acquaflux.com${route === '/' ? '/' : `${route.replace(/\/+$/, '')}/`}`;
-
-  let html = baseHtml;
-
-  // Replace title
-  html = html.replace(
-    /<title>.*?<\/title>/,
-    `<title>${seo.title}</title>`
-  );
-
-  // Replace meta title
-  html = html.replace(
-    /<meta name="title" content=".*?".*?\/>/,
-    `<meta name="title" content="${seo.title}" />`
-  );
-
-  // Replace meta description
-  html = html.replace(
-    /<meta name="description" content=".*?".*?\/>/,
-    `<meta name="description" content="${seo.description}" />`
-  );
-
-  // Replace meta keywords
-  html = html.replace(
-    /<meta name="keywords" content=".*?".*?\/>/,
-    `<meta name="keywords" content="${seo.keywords}" />`
-  );
-
-  // Replace canonical
-  html = html.replace(
-    /<link rel="canonical" href=".*?".*?\/>/,
-    `<link rel="canonical" href="${canonicalUrl}" />`
-  );
-
-  // Replace OG URL
-  html = html.replace(
-    /<meta property="og:url" content=".*?".*?\/>/,
-    `<meta property="og:url" content="${canonicalUrl}" />`
-  );
-
-  // Replace OG title
-  html = html.replace(
-    /<meta property="og:title" content=".*?".*?\/>/,
-    `<meta property="og:title" content="${seo.title}" />`
-  );
-
-  // Replace OG description
-  html = html.replace(
-    /<meta property="og:description" content=".*?".*?\/>/,
-    `<meta property="og:description" content="${seo.description}" />`
-  );
-
-  // Replace Twitter URL
-  html = html.replace(
-    /<meta name="twitter:url" content=".*?".*?\/>/,
-    `<meta name="twitter:url" content="${canonicalUrl}" />`
-  );
-
-  // Replace Twitter title
-  html = html.replace(
-    /<meta name="twitter:title" content=".*?".*?\/>/,
-    `<meta name="twitter:title" content="${seo.title}" />`
-  );
-
-  // Replace Twitter description
-  html = html.replace(
-    /<meta name="twitter:description" content=".*?".*?\/>/,
-    `<meta name="twitter:description" content="${seo.description}" />`
-  );
-
-  // Replace noscript placeholders (evita H1/H2 repetidos no Screaming Frog)
-  html = html.replaceAll('__PRERENDER_H1__', seo.h1);
-
-  const h2List = Array.isArray(seo.h2) ? seo.h2 : [];
-  html = html.replaceAll('__PRERENDER_H2_1__', h2List[0] || seoData['/'].h2[0]);
-  html = html.replaceAll('__PRERENDER_H2_2__', h2List[1] || seoData['/'].h2[1]);
-  html = html.replaceAll('__PRERENDER_H2_3__', h2List[2] || seoData['/'].h2[2]);
-  html = html.replaceAll('__PRERENDER_H2_4__', h2List[3] || 'Entre em Contato');
-
-  return html;
+function removeMetaKeywords(html) {
+  // remove <meta name="keywords" ...>
+  return html.replace(/\s*<meta\s+name=["']keywords["'][^>]*>\s*/gi, "\n");
 }
 
-// Main function
+function normalizeCanonicalTrailingSlash(html) {
+  // garante canonicals com barra final (exceto raiz)
+  return html.replace(
+    /<link\s+rel=["']canonical["']\s+href=["']([^"']+)["']\s*\/>/gi,
+    (m, href) => {
+      try {
+        const u = new URL(href);
+        if (u.pathname !== "/" && !u.pathname.endsWith("/")) {
+          u.pathname = `${u.pathname}/`;
+        }
+        return `<link rel="canonical" href="${u.toString()}" />`;
+      } catch {
+        return m;
+      }
+    }
+  );
+}
+
+function postProcessHtml(html) {
+  let out = html;
+  out = removeMetaKeywords(out);
+  out = normalizeCanonicalTrailingSlash(out);
+  return out;
+}
+
 async function prerender() {
-  console.log('🚀 Starting prerender process...');
-  
-  // Read the base HTML
-  const baseHtmlPath = path.join(distPath, 'index.html');
+  console.log("🚀 Starting prerender (static snapshots)...");
+
+  const baseHtmlPath = path.join(distPath, "index.html");
   if (!fs.existsSync(baseHtmlPath)) {
-    console.error('❌ dist/index.html not found. Run build first.');
+    console.error("❌ dist/index.html not found. Run build first.");
     process.exit(1);
   }
-  
-  const baseHtml = fs.readFileSync(baseHtmlPath, 'utf-8');
-  
-  // Create route directories and HTML files
-  for (const route of routes) {
-    if (route === '/') continue; // Skip root, already has index.html
-    
-    const routeDir = route.replace(/^\/+/, "");
-    const routePath = path.join(distPath, routeDir);
-    const htmlPath = path.join(routePath, 'index.html');
-    
-    // Create directory if not exists
-    if (!fs.existsSync(routePath)) {
-      fs.mkdirSync(routePath, { recursive: true });
+
+  const prerenderer = new Prerenderer({
+    staticDir: distPath,
+    routes,
+    renderer: new PuppeteerRenderer({
+      headless: true,
+      // Espera o app sinalizar que terminou de renderizar
+      renderAfterDocumentEvent: "prerender-ready",
+      // Deixa o Chromium mais estável em CI/containers
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    }),
+  });
+
+  try {
+    await prerenderer.initialize();
+    const renderedRoutes = await prerenderer.renderRoutes(routes);
+
+    // Pós-processamento: remove keywords e normaliza canonical
+    for (const rr of renderedRoutes) {
+      if (!rr || !rr.route || !rr.html) continue;
+
+      const filePath = path.join(
+        distPath,
+        rr.route === "/" ? "index.html" : rr.route.replace(/^\//, ""),
+        rr.route === "/" ? "" : "index.html"
+      );
+
+      // rr.route vem com barra final; isso cria dist/sobre/index.html etc.
+      const target = rr.route === "/" ? path.join(distPath, "index.html") : filePath;
+      const processed = postProcessHtml(rr.html);
+
+      // garante pasta
+      if (rr.route !== "/") {
+        const dir = path.dirname(target);
+        fs.mkdirSync(dir, { recursive: true });
+      }
+
+      fs.writeFileSync(target, processed, "utf-8");
+      console.log(`✅ Snapshot: ${rr.route} -> ${path.relative(distPath, target)}`);
     }
-    
-    // Generate route-specific HTML
-    const routeHtml = createRouteHtml(route, baseHtml);
-    
-    // Write the HTML file
-    fs.writeFileSync(htmlPath, routeHtml);
-    console.log(`✅ Created: ${route}/index.html`);
+
+    // Também limpa keywords no index.html base (caso algo escape)
+    const rootHtml = fs.readFileSync(path.join(distPath, "index.html"), "utf-8");
+    fs.writeFileSync(path.join(distPath, "index.html"), postProcessHtml(rootHtml), "utf-8");
+
+    console.log("🎉 Prerender complete: HTML completo por rota gerado em /dist.");
+  } catch (err) {
+    console.error("❌ Prerender failed:", err);
+    process.exit(1);
+  } finally {
+    try {
+      await prerenderer.destroy();
+    } catch {
+      // ignore
+    }
   }
-  
-  // Update root index.html with home page SEO
-  const homeHtml = createRouteHtml('/', baseHtml);
-  fs.writeFileSync(baseHtmlPath, homeHtml);
-  console.log('✅ Updated: /index.html');
-  
-  console.log('🎉 Prerender complete! All routes have static HTML.');
 }
 
-prerender().catch(console.error);
+prerender();
