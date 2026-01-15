@@ -23,8 +23,15 @@ jobs:
       - name: Build do projeto
         run: npm run build
 
+      - name: Executar prerender para SEO
+        run: node scripts/prerender.js
+
       - name: Mostrar arquivos gerados
-        run: ls -la dist/
+        run: |
+          echo "=== Estrutura de pastas ==="
+          find dist -type f -name "*.html" | head -20
+          echo "=== Conteúdo dist/ ==="
+          ls -la dist/
 
       - name: Deploy FTP para Hostinger
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
