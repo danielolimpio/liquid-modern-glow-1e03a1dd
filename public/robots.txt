@@ -1,31 +1,10 @@
 # Robots.txt para AcquaFlux
-# https://acquaflux.com
-
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 1
-
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 1
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
-User-agent: LinkedInBot
-Allow: /
+# Domínio canônico: https://acquaflux.com/
 
 User-agent: *
 Allow: /
-Crawl-delay: 2
-
-# Sitemap
-Sitemap: https://acquaflux.com/sitemap.xml
-
-# Diretórios não indexáveis
 Disallow: /api/
-Disallow: /_*
 Disallow: /admin/
+Disallow: /_/
+
+Sitemap: https://acquaflux.com/sitemap.xml
