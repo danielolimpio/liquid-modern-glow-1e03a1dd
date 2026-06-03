@@ -167,7 +167,7 @@ const Contato = () => {
                         placeholder="Seu nome"
                         value={formData.nome}
                         onChange={handleChange}
-                        className="relative w-full px-4 py-3 rounded-xl bg-muted/50 border border-primary/10 focus:border-primary/50 focus:outline-none transition-all duration-300 placeholder:text-muted-foreground/50"
+                        className="relative w-full px-4 py-3 rounded-xl bg-muted/50 border border-primary/10 focus:border-primary/50 focus:outline-none transition-all duration-300 placeholder:text-muted-foreground"
                         required
                       />
                     </div>
@@ -179,7 +179,7 @@ const Contato = () => {
                         placeholder="Seu e-mail"
                         value={formData.email}
                         onChange={handleChange}
-                        className="relative w-full px-4 py-3 rounded-xl bg-muted/50 border border-primary/10 focus:border-primary/50 focus:outline-none transition-all duration-300 placeholder:text-muted-foreground/50"
+                        className="relative w-full px-4 py-3 rounded-xl bg-muted/50 border border-primary/10 focus:border-primary/50 focus:outline-none transition-all duration-300 placeholder:text-muted-foreground"
                         required
                       />
                     </div>
@@ -194,7 +194,7 @@ const Contato = () => {
                         placeholder="Telefone"
                         value={formData.telefone}
                         onChange={handleChange}
-                        className="relative w-full px-4 py-3 rounded-xl bg-muted/50 border border-primary/10 focus:border-primary/50 focus:outline-none transition-all duration-300 placeholder:text-muted-foreground/50"
+                        className="relative w-full px-4 py-3 rounded-xl bg-muted/50 border border-primary/10 focus:border-primary/50 focus:outline-none transition-all duration-300 placeholder:text-muted-foreground"
                       />
                     </div>
                     <div className="relative group">
@@ -205,7 +205,7 @@ const Contato = () => {
                         placeholder="Nome da empresa"
                         value={formData.empresa}
                         onChange={handleChange}
-                        className="relative w-full px-4 py-3 rounded-xl bg-muted/50 border border-primary/10 focus:border-primary/50 focus:outline-none transition-all duration-300 placeholder:text-muted-foreground/50"
+                        className="relative w-full px-4 py-3 rounded-xl bg-muted/50 border border-primary/10 focus:border-primary/50 focus:outline-none transition-all duration-300 placeholder:text-muted-foreground"
                       />
                     </div>
                   </div>
@@ -218,7 +218,7 @@ const Contato = () => {
                       rows={5}
                       value={formData.mensagem}
                       onChange={handleChange}
-                      className="relative w-full px-4 py-3 rounded-xl bg-muted/50 border border-primary/10 focus:border-primary/50 focus:outline-none transition-all duration-300 placeholder:text-muted-foreground/50 resize-none"
+                      className="relative w-full px-4 py-3 rounded-xl bg-muted/50 border border-primary/10 focus:border-primary/50 focus:outline-none transition-all duration-300 placeholder:text-muted-foreground resize-none"
                       required
                     />
                   </div>

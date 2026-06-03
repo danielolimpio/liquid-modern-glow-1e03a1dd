@@ -129,7 +129,7 @@ const Blog = () => {
                       <Sparkles className="w-12 h-12 text-white" />
                     </div>
                     <p className="text-muted-foreground font-medium">Artigo em Destaque</p>
-                    <p className="text-sm text-muted-foreground/60 mt-1">Em breve</p>
+                    <p className="text-sm text-muted-foreground mt-1">Em breve</p>
                   </div>
                   
                   {/* Decorative Elements */}
@@ -212,7 +212,7 @@ const Blog = () => {
                       <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center mb-3 border border-primary/20">
                         <Droplets className="w-8 h-8 text-primary" />
                       </div>
-                      <span className="text-xs text-muted-foreground/60">Em breve</span>
+                      <span className="text-xs text-muted-foreground">Em breve</span>
                     </div>
                     
                     {/* Category Tag */}
@@ -301,7 +301,7 @@ const Blog = () => {
                     <input 
                       type="email" 
                       placeholder="Seu melhor email" 
-                      className="w-full px-6 py-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder:text-white/40 focus:outline-none focus:border-primary/50 transition-colors"
+                      className="w-full px-6 py-4 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder:text-white/70 focus:outline-none focus:border-primary/50 transition-colors"
                     />
                   </div>
                   <button className="btn-aqua whitespace-nowrap">
