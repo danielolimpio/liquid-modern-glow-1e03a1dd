@@ -93,7 +93,6 @@ const PoliticaCookies = () => {
         description="Política de cookies da AcquaFlux. Saiba como utilizamos cookies e tecnologias de rastreamento em nosso site."
         canonical="/politica-cookies"
         keywords="política cookies AcquaFlux, cookies site, rastreamento web, LGPD cookies"
-        noindex={true}
       />
       <Header />
 

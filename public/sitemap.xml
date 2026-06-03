@@ -1,109 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  
-  <!-- Página Principal -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://acquaflux.com/</loc>
-    <lastmod>2026-01-14</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Páginas Institucionais -->
   <url>
     <loc>https://acquaflux.com/sobre/</loc>
-    <lastmod>2026-01-14</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://acquaflux.com/contato/</loc>
-    <lastmod>2026-01-14</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-  
   <url>
     <loc>https://acquaflux.com/blog/</loc>
-    <lastmod>2026-01-14</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Páginas de Soluções -->
   <url>
     <loc>https://acquaflux.com/solucoes/</loc>
-    <lastmod>2026-01-14</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-  
   <url>
     <loc>https://acquaflux.com/impacto/</loc>
-    <lastmod>2026-01-14</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://acquaflux.com/gestao-operacional/</loc>
-    <lastmod>2026-01-14</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://acquaflux.com/monitoramento-iot/</loc>
-    <lastmod>2026-01-14</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://acquaflux.com/analytics-bi/</loc>
-    <lastmod>2026-01-14</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://acquaflux.com/consultoria-esg/</loc>
-    <lastmod>2026-01-14</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://acquaflux.com/gestao-financeira/</loc>
-    <lastmod>2026-01-14</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
-  <!-- Páginas Legais (noindex mas no sitemap para completude) -->
   <url>
     <loc>https://acquaflux.com/politica-privacidade/</loc>
-    <lastmod>2026-01-14</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.4</priority>
   </url>
-  
   <url>
     <loc>https://acquaflux.com/termos-uso/</loc>
-    <lastmod>2026-01-14</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.4</priority>
   </url>
-  
   <url>
     <loc>https://acquaflux.com/politica-cookies/</loc>
-    <lastmod>2026-01-14</lastmod>
+    <lastmod>2026-06-03</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.4</priority>
   </url>
-
 </urlset>
