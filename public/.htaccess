@@ -4,10 +4,6 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
-  
-  # Evita redirect automático para adicionar barra final em diretórios
-  # (importante para que /sobre não vire /sobre/ e não cause "Canonicalised" no Screaming Frog)
-  DirectorySlash Off
 
   # Força HTTPS
   RewriteCond %{HTTPS} !=on
@@ -17,9 +13,8 @@
   RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
   RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
-  # Mantém barra final quando o servidor adiciona automaticamente
-  # (importante para evitar mismatch com canonical e status "Canonicalised")
-  # Obs: a regra de remoção de barra final foi removida intencionalmente.
+  # Arquivos SEO devem ser servidos diretamente, sem fallback para o SPA
+  RewriteRule ^(sitemap\.xml|robots\.txt)$ - [L]
 
   # IMPORTANTE: Servir index.html de subpastas para rotas prerendered
   # Isso permite que /sobre sirva /sobre/index.html
@@ -99,12 +94,22 @@
   AddType text/html .html
   AddType text/css .css
   AddType application/javascript .js
+  AddType application/xml .xml
+  AddType text/plain .txt
   AddType application/json .json
   AddType image/svg+xml .svg
   AddType image/webp .webp
   AddType font/woff .woff
   AddType font/woff2 .woff2
 </IfModule>
+
+<Files "sitemap.xml">
+  ForceType application/xml
+</Files>
+
+<Files "robots.txt">
+  ForceType text/plain
+</Files>
 
 # Charset UTF-8
 AddDefaultCharset UTF-8
