@@ -227,22 +227,22 @@ const Sobre = () => {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="p-5 rounded-2xl bg-gradient-to-br from-primary/10 to-transparent border border-primary/10">
                     <Zap className="w-8 h-8 text-primary mb-3" />
-                    <h4 className="font-heading font-bold mb-1">Pioneirismo</h4>
+                    <h3 className="font-heading font-bold mb-1">Pioneirismo</h3>
                     <p className="text-sm text-muted-foreground">Primeira empresa a implementar IoT em gestão hídrica no Brasil</p>
                   </div>
                   <div className="p-5 rounded-2xl bg-gradient-to-br from-accent/10 to-transparent border border-accent/10">
                     <BarChart3 className="w-8 h-8 text-accent mb-3" />
-                    <h4 className="font-heading font-bold mb-1">Resultados</h4>
+                    <h3 className="font-heading font-bold mb-1">Resultados</h3>
                     <p className="text-sm text-muted-foreground">Economia média de 35% no consumo de água dos clientes</p>
                   </div>
                   <div className="p-5 rounded-2xl bg-gradient-to-br from-accent/10 to-transparent border border-accent/10">
                     <Globe className="w-8 h-8 text-accent mb-3" />
-                    <h4 className="font-heading font-bold mb-1">Alcance</h4>
+                    <h3 className="font-heading font-bold mb-1">Alcance</h3>
                     <p className="text-sm text-muted-foreground">Presença em 15 estados e expansão para América Latina</p>
                   </div>
                   <div className="p-5 rounded-2xl bg-gradient-to-br from-primary/10 to-transparent border border-primary/10">
                     <Award className="w-8 h-8 text-primary mb-3" />
-                    <h4 className="font-heading font-bold mb-1">Reconhecimento</h4>
+                    <h3 className="font-heading font-bold mb-1">Reconhecimento</h3>
                     <p className="text-sm text-muted-foreground">Múltiplos prêmios em inovação e sustentabilidade</p>
                   </div>
                 </div>

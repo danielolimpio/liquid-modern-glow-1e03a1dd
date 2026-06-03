@@ -27,7 +27,7 @@ const AboutSection = () => {
                   <Target className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
-                  <h4 className="font-heading font-bold mb-1">Nossa Missão</h4>
+                  <h3 className="font-heading font-bold mb-1">Nossa Missão</h3>
                   <p className="text-sm text-muted-foreground">
                     Democratizar a gestão hídrica eficiente para empresas de todos os portes.
                   </p>
@@ -38,7 +38,7 @@ const AboutSection = () => {
                   <Eye className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
-                  <h4 className="font-heading font-bold mb-1">Nossa Visão</h4>
+                  <h3 className="font-heading font-bold mb-1">Nossa Visão</h3>
                   <p className="text-sm text-muted-foreground">
                     Ser referência global em soluções de gestão hídrica sustentável.
                   </p>
