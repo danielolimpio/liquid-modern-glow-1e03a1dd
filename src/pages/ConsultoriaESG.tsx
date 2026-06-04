@@ -119,6 +119,16 @@ const ConsultoriaESG = () => {
     }
   ];
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Consultoria ESG com foco em Gestão Hídrica",
+    "serviceType": "Consultoria ESG",
+    "description": "Consultoria ESG especializada em gestão hídrica para fortalecer indicadores ambientais, sociais e de governança, com economia de até 70% no consumo de água e suporte a certificações e compliance ambiental.",
+    "provider": { "@type": "Organization", "name": "AcquaFlux", "url": "https://acquaflux.com" },
+    "areaServed": { "@type": "Country", "name": "Brazil" }
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <SEO
@@ -126,6 +136,7 @@ const ConsultoriaESG = () => {
         description="Consultoria ESG especializada em gestão hídrica. Melhore seus indicadores ambientais, sociais e de governança com economia de até 70% em água."
         canonical="/consultoria-esg"
         keywords="consultoria ESG água, sustentabilidade hídrica, indicadores ESG, compliance ambiental água, ODS água, certificação ESG empresas"
+        structuredData={structuredData}
       />
       <Header />
       

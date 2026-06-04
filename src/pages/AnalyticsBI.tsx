@@ -107,6 +107,16 @@ const AnalyticsBI = () => {
     "Previsão de demanda hídrica"
   ];
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Analytics & BI para Gestão Hídrica",
+    "serviceType": "Business Intelligence Hídrico",
+    "description": "Plataforma de Business Intelligence com Machine Learning para gestão hídrica. Dashboards em tempo real, análise preditiva e decisões baseadas em dados, com redução de até 40% no consumo de água.",
+    "provider": { "@type": "Organization", "name": "AcquaFlux", "url": "https://acquaflux.com" },
+    "areaServed": { "@type": "Country", "name": "Brazil" }
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <SEO
@@ -114,6 +124,7 @@ const AnalyticsBI = () => {
         description="Plataforma de Business Intelligence com Machine Learning para gestão hídrica. Dashboards em tempo real, análise preditiva e decisões baseadas em dados."
         canonical="/analytics-bi"
         keywords="analytics água, business intelligence hídrico, machine learning água, dashboards consumo água, análise dados água, relatórios gestão hídrica"
+        structuredData={structuredData}
       />
       <Header />
       
