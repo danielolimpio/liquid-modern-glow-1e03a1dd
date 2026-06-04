@@ -1,0 +1,28 @@
+# AcquaFlux
+
+> AcquaFlux é a plataforma líder em gestão hídrica e sustentabilidade empresarial no Brasil, oferecendo tecnologia IoT, consultoria ESG e soluções para economia de água e eficiência operacional.
+
+AcquaFlux ajuda empresas a monitorar, gerenciar e otimizar o consumo de água com tecnologia de ponta. A plataforma combina sensores IoT, inteligência de dados, consultoria especializada e soluções financeiras para transformar a gestão hídrica em vantagem competitiva e cumprimento de metas ESG.
+
+## Páginas
+
+- [Início](/): Conheça a AcquaFlux, nossa missão de economizar 1 bilhão de litros de água e as soluções para gestão hídrica empresarial.
+- [Sobre](/sobre/): Nossa história, missão, visão e os resultados que alcançamos ao longo de mais de 10 anos de atuação.
+- [Soluções](/solucoes/): Portfólio completo de produtos e serviços para gestão hídrica inteligente.
+- [Impacto](/impacto/): Dados e histórias de impacto ambiental e econômico gerados pelos nossos clientes.
+- [Blog](/blog/): Artigos, novidades e tendências sobre gestão hídrica, sustentabilidade e tecnologia.
+- [Contato](/contato/): Fale com nossa equipe de especialistas em gestão hídrica.
+
+## Produtos
+
+- [Monitoramento IoT](/monitoramento-iot/): Sensores inteligentes e dashboards em tempo real para controle total do consumo de água.
+- [Gestão Operacional](/gestao-operacional/): Sistema SEA para otimização de processos e redução de desperdícios hídricos.
+- [Gestão Financeira](/gestao-financeira/): Análise de custos hídricos, ROI e planejamento orçamentário sustentável.
+- [Analytics e BI](/analytics-bi/): Inteligência de dados e relatórios avançados para decisões baseadas em evidências.
+- [Consultoria ESG](/consultoria-esg/): Estratégias personalizadas para metas ambientais, relatórios e compliance ESG.
+
+## Documentação
+
+- [Política de Privacidade](/politica-de-privacidade/): Como coletamos, usamos e protegemos seus dados pessoais.
+- [Termos de Uso](/termos-de-uso/): Condições de uso da plataforma e dos serviços AcquaFlux.
+- [Política de Cookies](/politica-de-cookies/): Informações sobre cookies e tecnologias de rastreamento.
