@@ -28,8 +28,8 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="AcquaFlux - Gestão Hídrica Inteligente | Economia de Água para Empresas"
-        description="Soluções completas de gestão hídrica para empresas. Reduza até 70% no consumo de água com tecnologia IoT, monitoramento em tempo real e consultoria ESG especializada."
+        title="AcquaFlux | Gestão Hídrica e Economia de Água"
+        description="Soluções completas de gestão hídrica para empresas. Reduza até 70% no consumo de água com tecnologia IoT e consultoria ESG."
         canonical="/"
         keywords="gestão hídrica empresarial, economia de água empresas, sistema SEA, monitoramento IoT água, consultoria ESG hídrica, eficiência hídrica industrial, redução consumo água, sustentabilidade empresarial água"
         structuredData={structuredData}
