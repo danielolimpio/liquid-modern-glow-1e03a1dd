@@ -29,11 +29,44 @@ import SEO from "@/components/SEO";
 const Solucoes = () => {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Soluções de Gestão Hídrica AcquaFlux",
-    "provider": { "@type": "Organization", "name": "AcquaFlux" },
-    "serviceType": ["Gestão Operacional", "Monitoramento IoT", "Analytics BI", "Consultoria ESG", "Gestão Financeira"],
-    "areaServed": { "@type": "Country", "name": "Brazil" }
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": "Soluções de Gestão Hídrica AcquaFlux",
+        "provider": { "@type": "Organization", "name": "AcquaFlux" },
+        "serviceType": ["Gestão Operacional", "Monitoramento IoT", "Analytics BI", "Consultoria ESG", "Gestão Financeira"],
+        "areaServed": { "@type": "Country", "name": "Brazil" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Como o SEA pode reduzir minha fatura em até 70%?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "O Sistema de Economia de Água (SEA) é uma solução completa e sustentável que combina tecnologia avançada com uma abordagem técnico-financeira para otimizar a gestão hídrica da sua empresa. Através de análise detalhada de consumo, identificação de vazamentos, correção de falhas hidráulicas e adequação tarifária, o SEA promove uma economia significativa e duradoura."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como o TDRR pode reduzir meus custos em até 30%?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "O TDRR oferece monitoramento remoto em tempo real de todo o sistema hidráulico da sua empresa. Com sensores inteligentes instalados estrategicamente, você tem visibilidade total do consumo, detecta vazamentos instantaneamente e recebe alertas automáticos de anomalias."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como os Hidrômetros Individuais Podem Transformar a Gestão Hídrica?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A individualização de hidrômetros é uma solução que permite a medição precisa do consumo de água de cada unidade em condomínios, edifícios comerciais e residenciais. Com a GCI, cada morador ou empresa paga apenas pelo que consome, promovendo justiça tarifária e incentivando a economia consciente. Estudos comprovam que a individualização pode reduzir o consumo de água em até 40%."
+            }
+          }
+        ]
+      }
+    ]
   };
 
   return (

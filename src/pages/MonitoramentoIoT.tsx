@@ -129,6 +129,16 @@ const MonitoramentoIoT = () => {
     { number: "500+", title: "Dispositivos Ativos", subtitle: "Em operação" }
   ];
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Monitoramento IoT para Gestão Hídrica",
+    "serviceType": "Monitoramento IoT Hídrico",
+    "description": "Monitoramento IoT 24/7 com sensores inteligentes e inteligência artificial para detecção de vazamentos em tempo real, análise preditiva e otimização de consumo, gerando economia de até 60% em água.",
+    "provider": { "@type": "Organization", "name": "AcquaFlux", "url": "https://acquaflux.com" },
+    "areaServed": { "@type": "Country", "name": "Brazil" }
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <SEO
@@ -136,6 +146,7 @@ const MonitoramentoIoT = () => {
         description="Monitoramento IoT 24/7 com sensores inteligentes e IA. Detecção de vazamentos em tempo real, análise preditiva e economia de até 60%."
         canonical="/monitoramento-iot"
         keywords="monitoramento IoT água, sensores inteligentes água, detecção vazamentos, análise preditiva hídrica, telemetria água, IoT industrial água"
+        structuredData={structuredData}
       />
       <Header />
       
