@@ -53,10 +53,18 @@
     {
       "@context": "https://schema.org",
       "@type": "Organization",
+      "@id": "https://acquaflux.com/#organization",
       "name": "AcquaFlux",
       "alternateName": "AcquaFlux Gestão Hídrica",
-      "url": "https://acquaflux.com",
-      "logo": "https://acquaflux.com/favicon.png",
+      "url": "https://acquaflux.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://acquaflux.com/favicon.png",
+        "width": 512,
+        "height": 512,
+        "caption": "AcquaFlux"
+      },
+      "image": "https://acquaflux.com/favicon.png",
       "description": "Empresa brasileira especializada em soluções sustentáveis para gestão de recursos hídricos, oferecendo tecnologia IoT, consultoria ESG e economia de água para empresas.",
       "foundingDate": "2014",
       "address": {
@@ -67,12 +75,14 @@
         "postalCode": "58041-000",
         "addressCountry": "BR"
       },
-      "contactPoint": {
+      "contactPoint": [{
         "@type": "ContactPoint",
-        "telephone": "+55-12-98140-8992",
+        "telephone": "+5512981408992",
+        "email": "contato@acquaflux.com",
         "contactType": "customer service",
+        "areaServed": "BR",
         "availableLanguage": ["Portuguese"]
-      },
+      }],
       "sameAs": [
         "https://www.linkedin.com/company/acquaflux",
         "https://www.instagram.com/acquaflux",
@@ -81,8 +91,7 @@
       "areaServed": {
         "@type": "Country",
         "name": "Brazil"
-      },
-      "serviceType": ["Gestão Hídrica", "Monitoramento IoT", "Consultoria ESG", "Analytics BI"]
+      }
     }
     </script>
     
