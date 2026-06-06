@@ -18,6 +18,7 @@ import AnalyticsBI from "./pages/AnalyticsBI";
 import ConsultoriaESG from "./pages/ConsultoriaESG";
 import GestaoFinanceira from "./pages/GestaoFinanceira";
 import MonitoramentoIoT from "./pages/MonitoramentoIoT";
+import EconomiaDeAgua from "./pages/EconomiaDeAgua";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -44,6 +45,7 @@ const App = () => (
           <Route path="/consultoria-esg" element={<ConsultoriaESG />} />
           <Route path="/gestao-financeira" element={<GestaoFinanceira />} />
           <Route path="/monitoramento-iot" element={<MonitoramentoIoT />} />
+          <Route path="/economia-de-agua" element={<EconomiaDeAgua />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -80,6 +80,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/economia-de-agua" className="text-sm hover:text-primary transition-colors">
+                  Economia de Água
+                </Link>
+              </li>
+              <li>
                 <Link to="/contato" className="text-sm hover:text-primary transition-colors">
                   Contato
                 </Link>
