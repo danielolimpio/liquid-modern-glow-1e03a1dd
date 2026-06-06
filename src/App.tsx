@@ -18,6 +18,7 @@ import AnalyticsBI from "./pages/AnalyticsBI";
 import ConsultoriaESG from "./pages/ConsultoriaESG";
 import GestaoFinanceira from "./pages/GestaoFinanceira";
 import MonitoramentoIoT from "./pages/MonitoramentoIoT";
+import EconomiaDeAgua from "./pages/EconomiaDeAgua";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
