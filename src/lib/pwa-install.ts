@@ -14,8 +14,56 @@ interface BeforeInstallPromptEvent extends Event {
 let deferredPrompt: BeforeInstallPromptEvent | null = null;
 let promptShown = false;
 
+function isPreviewOrDevHost(): boolean {
+  if (typeof window === "undefined") return true;
+  try {
+    if (window.self !== window.top) return true;
+  } catch {
+    return true;
+  }
+  const h = window.location.hostname;
+  if (h === "localhost" || h === "127.0.0.1") return true;
+  if (h.startsWith("id-preview--") || h.startsWith("preview--")) return true;
+  if (h === "lovableproject.com" || h.endsWith(".lovableproject.com")) return true;
+  if (h === "lovableproject-dev.com" || h.endsWith(".lovableproject-dev.com")) return true;
+  if (h === "beta.lovable.dev" || h.endsWith(".beta.lovable.dev")) return true;
+  if (new URLSearchParams(window.location.search).get("sw") === "off") return true;
+  return false;
+}
+
+async function registerServiceWorker() {
+  if (!("serviceWorker" in navigator)) return;
+  if (isPreviewOrDevHost()) {
+    // Garante que nada fique registrado em contextos de preview/dev.
+    try {
+      const regs = await navigator.serviceWorker.getRegistrations();
+      await Promise.all(
+        regs
+          .filter((r) => {
+            const url = r.active?.scriptURL || r.installing?.scriptURL || r.waiting?.scriptURL || "";
+            return url.endsWith("/sw.js");
+          })
+          .map((r) => r.unregister()),
+      );
+    } catch {}
+    return;
+  }
+  try {
+    await navigator.serviceWorker.register("/sw.js", { scope: "/" });
+  } catch {
+    // Falhas silenciosas — o app continua funcionando sem SW.
+  }
+}
+
 export function setupPwaInstall() {
   if (typeof window === "undefined") return;
+
+  // Registra SW mínimo para reforçar critério de installability do Chrome.
+  if (document.readyState === "complete") {
+    registerServiceWorker();
+  } else {
+    window.addEventListener("load", () => registerServiceWorker(), { once: true });
+  }
 
   // Captura o evento nativo antes que o navegador o consuma.
   window.addEventListener("beforeinstallprompt", (e) => {
