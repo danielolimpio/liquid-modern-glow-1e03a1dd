@@ -23,7 +23,8 @@ const routes = [
   '/gestao-financeira',
   '/politica-privacidade',
   '/termos-uso',
-  '/politica-cookies'
+  '/politica-cookies',
+  '/economia-de-agua'
 ];
 
 // SEO metadata for each route
