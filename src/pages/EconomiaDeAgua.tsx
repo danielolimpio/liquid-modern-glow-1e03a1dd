@@ -20,6 +20,49 @@ import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 
 const EconomiaDeAgua = () => {
+  const faqs = [
+    {
+      q: "Como reduzir a conta de água da empresa?",
+      a: "Combine auditoria de fatura (revisão tarifária e créditos retroativos), correção de falhas hidráulicas (vazamentos, válvulas e descargas) e gestão contínua via monitoramento IoT com BI. Essa combinação reduz a fatura entre 30% e 70%.",
+    },
+    {
+      q: "O que é gestão hídrica empresarial?",
+      a: "É o conjunto de processos, tecnologias e indicadores que controlam captação, consumo, perdas, tarifação e descarte de água em uma organização — telemetria IoT, BI, auditoria de fatura, compliance ESG e metas de eficiência hídrica.",
+    },
+    {
+      q: "Vale a pena auditar a fatura de água?",
+      a: "Sim. A auditoria identifica cobranças indevidas, enquadramentos tarifários incorretos e créditos retroativos. Empresas auditadas pela AcquaFlux recuperam valores significativos sem investimento inicial.",
+    },
+    {
+      q: "Como o IoT ajuda a economizar água?",
+      a: "Sensores IoT medem consumo em tempo real, identificam vazamentos em minutos e alimentam dashboards. Isso elimina perdas invisíveis que representam até 30% do consumo de empresas sem monitoramento.",
+    },
+    {
+      q: "Qual o ROI de um projeto de economia de água?",
+      a: "Payback típico entre 6 e 18 meses, com ROI acima de 200% no primeiro ano — vindo da redução de fatura, créditos retroativos e ganhos operacionais.",
+    },
+    {
+      q: "Onde está o desperdício de água nas empresas?",
+      a: "A maior parte é invisível: vazamentos subterrâneos e em ramais (até 18% do consumo), válvulas de descarga e mictórios mal dimensionados (até 12%), reservatórios com extravasores defeituosos (até 6%), enquadramento tarifário incorreto (cobrança 30%+ acima do devido) e falta de leitura individualizada em condomínios e plantas industriais.",
+    },
+    {
+      q: "O que é auditoria de fatura de água e como funciona?",
+      a: "A auditoria técnica revisa as faturas dos últimos 60 meses para identificar cobranças indevidas, enquadramentos tarifários incorretos e créditos retroativos previstos na regulação da ANA e das agências estaduais. É um trabalho sem investimento inicial e com remuneração baseada em resultado.",
+    },
+    {
+      q: "Como funciona o monitoramento IoT para economia de água?",
+      a: "O TDRR (Telemetria com Detecção Remota de Rompimentos) instala sensores estratégicos que monitoram vazão e pressão 24/7. Vazamentos são identificados em minutos, não em meses. Empresas com TDRR economizam, em média, 30% além do que economizariam só com auditoria.",
+    },
+    {
+      q: "O que é pegada hídrica e como relatar para ESG?",
+      a: "A pegada hídrica (water footprint) mede o volume total de água usada direta e indiretamente pela empresa. A AcquaFlux entrega relatórios compatíveis com GRI 303, CDP Water, ODS 6 e regulações ANA, com water footprint calculada por escopo.",
+    },
+    {
+      q: "Como calcular o ROI de economia de água na prática?",
+      a: "O ROI = (economia anual no valor da fatura + créditos recuperados – custo do projeto) ÷ custo do projeto × 100. Com AcquaFlux, o payback típico é de 6 a 18 meses e o ROI no primeiro ano supera 200%, pois a redução de fatura e os ganhos operacionais superam rapidamente o investimento.",
+    },
+  ];
+
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -43,48 +86,14 @@ const EconomiaDeAgua = () => {
       },
       {
         "@type": "FAQPage",
-        mainEntity: [
-          {
-            "@type": "Question",
-            name: "Como reduzir a conta de água da empresa?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Para reduzir a conta de água empresarial é preciso combinar três frentes: auditoria de fatura (revisão tarifária, créditos retroativos e categoria de consumo), correção de falhas hidráulicas (vazamentos, válvulas, descargas) e gestão contínua via monitoramento IoT com BI. Esta combinação reduz a fatura entre 30% e 70%.",
-            },
+        mainEntity: faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: f.a,
           },
-          {
-            "@type": "Question",
-            name: "O que é gestão hídrica empresarial?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Gestão hídrica empresarial é o conjunto de processos, tecnologias e indicadores que controlam captação, consumo, perdas, tarifação e descarte de água em uma organização. Inclui telemetria IoT, dashboards de BI, auditoria de fatura, compliance ESG e metas de eficiência hídrica.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Vale a pena auditar a fatura de água da empresa?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Sim. A auditoria de fatura de água identifica cobranças indevidas, enquadramentos tarifários incorretos e créditos retroativos. Em média, empresas auditadas pela AcquaFlux recuperam valores significativos e passam a pagar a tarifa correta sem investimento inicial.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Como o IoT ajuda a economizar água?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Sensores IoT medem o consumo em tempo real, identificam vazamentos em minutos, geram alertas automáticos e alimentam dashboards de BI. Isso elimina perdas invisíveis que representam até 30% do consumo total de empresas sem monitoramento.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Qual o ROI de um projeto de economia de água?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Projetos de economia de água com AcquaFlux têm payback típico entre 6 e 18 meses, com ROI superior a 200% no primeiro ano. O retorno vem da redução de fatura, recuperação de créditos e ganhos de eficiência operacional.",
-            },
-          },
-        ],
+        })),
       },
       {
         "@type": "BreadcrumbList",
@@ -180,28 +189,6 @@ const EconomiaDeAgua = () => {
     },
   ];
 
-  const faqs = [
-    {
-      q: "Como reduzir a conta de água da empresa?",
-      a: "Combine auditoria de fatura (revisão tarifária e créditos retroativos), correção de falhas hidráulicas (vazamentos, válvulas e descargas) e gestão contínua via monitoramento IoT com BI. Essa combinação reduz a fatura entre 30% e 70%.",
-    },
-    {
-      q: "O que é gestão hídrica empresarial?",
-      a: "É o conjunto de processos, tecnologias e indicadores que controlam captação, consumo, perdas, tarifação e descarte de água em uma organização — telemetria IoT, BI, auditoria de fatura, compliance ESG e metas de eficiência hídrica.",
-    },
-    {
-      q: "Vale a pena auditar a fatura de água?",
-      a: "Sim. A auditoria identifica cobranças indevidas, enquadramentos tarifários incorretos e créditos retroativos. Empresas auditadas pela AcquaFlux recuperam valores significativos sem investimento inicial.",
-    },
-    {
-      q: "Como o IoT ajuda a economizar água?",
-      a: "Sensores IoT medem consumo em tempo real, identificam vazamentos em minutos e alimentam dashboards. Isso elimina perdas invisíveis que representam até 30% do consumo de empresas sem monitoramento.",
-    },
-    {
-      q: "Qual o ROI de um projeto de economia de água?",
-      a: "Payback típico entre 6 e 18 meses, com ROI acima de 200% no primeiro ano — vindo da redução de fatura, créditos retroativos e ganhos operacionais.",
-    },
-  ];
 
   return (
     <div className="min-h-screen bg-background">
