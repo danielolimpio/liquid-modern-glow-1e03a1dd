@@ -128,11 +128,11 @@ const seoData = {
     h2: ['Tipos de Cookies', 'Como Usamos', 'Gerenciamento']
   },
   '/economia-de-agua': {
-    title: 'Economia de Água para Empresas | Guia de Gestão Hídrica',
-    description: 'Guia completo de economia de água para empresas: como reduzir a conta, auditar fatura, aplicar IoT, BI e ESG. Estratégias e cases AcquaFlux.',
-    keywords: 'economia de água, economia de água para empresas, como reduzir a conta de água, gestão hídrica empresarial, auditoria de fatura de água, desperdício de água nas empresas, monitoramento IoT água, pegada hídrica, ROI economia de água',
+    title: 'Economia de Água para Empresas: Reduza até 70% | AcquaFlux',
+    description: 'Como reduzir a conta de água da empresa? Guia completo com auditoria, IoT, BI e ESG. Estratégias validadas para economia de até 70%. Diagnóstico gratuito.',
+    keywords: 'economia de água, economia de água para empresas, como reduzir a conta de água, reduzir conta de água empresa, conta de água alta empresa, gestão hídrica empresarial, auditoria de fatura de água, desperdício de água nas empresas, vazamento água empresa, monitoramento IoT água, pegada hídrica, ROI economia de água, sustentabilidade hídrica, sistema SEA, TDRR',
     h1: 'Economia de Água para Empresas: guia completo de gestão hídrica',
-    h2: ['O que é economia de água empresarial', 'Como reduzir a conta de água', 'ROI e indicadores', 'Perguntas frequentes']
+    h2: ['O que é economia de água empresarial', 'Como reduzir a conta de água', 'Desperdício de água nas empresas', 'Auditoria de fatura de água', 'Monitoramento IoT e gestão em tempo real', 'Analytics e BI para gestão hídrica', 'ESG, compliance e pegada hídrica', 'ROI e indicadores de eficiência', 'Perguntas frequentes']
   }
 };
 
