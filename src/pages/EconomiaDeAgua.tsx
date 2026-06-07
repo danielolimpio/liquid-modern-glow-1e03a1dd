@@ -206,10 +206,10 @@ const EconomiaDeAgua = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Economia de Água para Empresas | Guia de Gestão Hídrica"
-        description="Guia completo de economia de água para empresas: como reduzir a conta, auditar fatura, aplicar IoT, BI e ESG. Estratégias e cases AcquaFlux."
-        canonical="/economia-de-agua"
-        keywords="economia de água, economia de água para empresas, como reduzir a conta de água, gestão hídrica empresarial, auditoria de fatura de água, desperdício de água nas empresas, monitoramento IoT água, pegada hídrica, ROI economia de água, sistema SEA, TDRR"
+        title="Economia de Água para Empresas: Reduza até 70% | AcquaFlux"
+        description="Como reduzir a conta de água da empresa? Guia completo com auditoria, IoT, BI e ESG. Estratégias validadas para economia de até 70%. Diagnóstico gratuito."
+        canonical="/economia-de-agua/"
+        keywords="economia de água, economia de água para empresas, como reduzir a conta de água, reduzir conta de água empresa, conta de água alta empresa, gestão hídrica empresarial, auditoria de fatura de água, desperdício de água nas empresas, vazamento água empresa, monitoramento IoT água, pegada hídrica, ROI economia de água, sustentabilidade hídrica, sistema SEA, TDRR"
         structuredData={structuredData}
       />
       <Header />
