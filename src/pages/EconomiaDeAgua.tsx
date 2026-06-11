@@ -125,19 +125,19 @@ const EconomiaDeAgua = () => {
   const clusters = [
     {
       icon: TrendingDown,
-      title: "Como reduzir a conta de água da empresa",
+      title: "Como economizar água na empresa: 8 estratégias",
       description:
-        "Estratégias práticas e técnico-financeiras para diminuir a fatura em até 70%, combinando ajuste tarifário, correção hidráulica e gestão contínua.",
-      to: "/solucoes",
-      cta: "Ver solução SEA",
+        "Dicas práticas para reduzir a fatura entre 30% e 70% combinando auditoria, IoT, individualização, reuso de água e cultura de uso racional.",
+      to: "/como-economizar-agua-empresa",
+      cta: "Ver as 8 dicas",
     },
     {
       icon: AlertTriangle,
       title: "Desperdício de água nas empresas: onde está o ralo invisível",
       description:
         "Vazamentos não visíveis, válvulas mal calibradas, descargas superdimensionadas e enquadramento tarifário incorreto somam até 40% da fatura.",
-      to: "/monitoramento-iot",
-      cta: "Detectar com IoT",
+      to: "/desperdicio-de-agua-empresas",
+      cta: "Identificar perdas",
     },
     {
       icon: FileCheck,
@@ -154,6 +154,22 @@ const EconomiaDeAgua = () => {
         "Sensores inteligentes medem consumo 24/7, detectam vazamentos em minutos e alimentam dashboards. Redução média de 30% em perdas operacionais.",
       to: "/monitoramento-iot",
       cta: "Conhecer o TDRR",
+    },
+    {
+      icon: BarChart3,
+      title: "Analytics e BI para gestão hídrica",
+      description:
+        "Dashboards executivos com KPIs hídricos, análise preditiva e benchmarking. Decisões baseadas em dados, não em estimativas.",
+      to: "/analytics-bi",
+      cta: "Ver Analytics & BI",
+    },
+    {
+      icon: Leaf,
+      title: "Pegada hídrica empresarial (water footprint) e ESG",
+      description:
+        "Cálculo ISO 14046 e relatórios GRI 303, CDP Water e ODS 6. Métricas auditáveis de sustentabilidade hídrica para investidores e licitações.",
+      to: "/pegada-hidrica-empresarial",
+      cta: "Calcular pegada hídrica",
     },
     {
       icon: BarChart3,

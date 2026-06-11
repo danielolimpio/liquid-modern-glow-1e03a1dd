@@ -85,6 +85,21 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/como-economizar-agua-empresa" className="text-sm hover:text-primary transition-colors">
+                  Como Economizar Água
+                </Link>
+              </li>
+              <li>
+                <Link to="/desperdicio-de-agua-empresas" className="text-sm hover:text-primary transition-colors">
+                  Desperdício de Água
+                </Link>
+              </li>
+              <li>
+                <Link to="/pegada-hidrica-empresarial" className="text-sm hover:text-primary transition-colors">
+                  Pegada Hídrica
+                </Link>
+              </li>
+              <li>
                 <Link to="/contato" className="text-sm hover:text-primary transition-colors">
                   Contato
                 </Link>

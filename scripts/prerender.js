@@ -24,17 +24,20 @@ const routes = [
   '/politica-privacidade',
   '/termos-uso',
   '/politica-cookies',
-  '/economia-de-agua'
+  '/economia-de-agua',
+  '/desperdicio-de-agua-empresas',
+  '/como-economizar-agua-empresa',
+  '/pegada-hidrica-empresarial'
 ];
 
 // SEO metadata for each route
 const seoData = {
   '/': {
-    title: 'AcquaFlux - Gestão Hídrica Inteligente | Economia de Água para Empresas',
-    description: 'Soluções completas de gestão hídrica para empresas. Reduza até 70% no consumo de água com tecnologia IoT, monitoramento em tempo real e consultoria ESG especializada.',
-    keywords: 'gestão hídrica empresarial, economia de água empresas, sistema SEA, monitoramento IoT água, consultoria ESG hídrica',
-    h1: 'Gestão Hídrica para Empresas: Reduza Custos e Aumente sua Eficiência',
-    h2: ['Nossas Soluções', 'Impacto AcquaFlux', 'Sobre a AcquaFlux']
+    title: 'AcquaFlux | Gestão Hídrica e Economia de Água para Empresas',
+    description: 'Reduza até 70% na conta de água da sua empresa. Gestão hídrica completa: auditoria de fatura, monitoramento IoT, BI, ESG e combate ao desperdício de água. Diagnóstico gratuito.',
+    keywords: 'gestão hídrica, economia de água, economia de água para empresas, como economizar água, como reduzir a conta de água, desperdício de água nas empresas, dicas para economizar água, conta de água alta, reuso de água, pegada hídrica, water footprint, sustentabilidade empresarial, monitoramento IoT água, consultoria ESG, eficiência hídrica, sistema SEA, TDRR, individualização de hidrômetros, GCI, segurança hídrica, uso racional da água',
+    h1: 'Gestão Hídrica para Empresas: Economize Água e Reduza Custos',
+    h2: ['Nossas Soluções de Gestão Hídrica', 'Impacto e Economia de Água Comprovados', 'Sobre a AcquaFlux']
   },
   '/sobre': {
     title: 'Sobre a AcquaFlux | Pioneira em Gestão Hídrica Sustentável',
@@ -133,6 +136,27 @@ const seoData = {
     keywords: 'economia de água, economia de água para empresas, como reduzir a conta de água, reduzir conta de água empresa, conta de água alta empresa, gestão hídrica empresarial, auditoria de fatura de água, desperdício de água nas empresas, vazamento água empresa, monitoramento IoT água, pegada hídrica, ROI economia de água, sustentabilidade hídrica, sistema SEA, TDRR',
     h1: 'Economia de Água para Empresas: guia completo de gestão hídrica',
     h2: ['O que é economia de água empresarial', 'Como reduzir a conta de água', 'Desperdício de água nas empresas', 'Auditoria de fatura de água', 'Monitoramento IoT e gestão em tempo real', 'Analytics e BI para gestão hídrica', 'ESG, compliance e pegada hídrica', 'ROI e indicadores de eficiência', 'Perguntas frequentes']
+  },
+  '/desperdicio-de-agua-empresas': {
+    title: 'Desperdício de Água nas Empresas: causas e como evitar | AcquaFlux',
+    description: 'Como evitar o desperdício de água em empresas? Veja onde estão os vazamentos invisíveis, o impacto na fatura e estratégias práticas para eliminar até 40% das perdas hídricas.',
+    keywords: 'desperdício de água, desperdício de água nas empresas, como evitar o desperdício de água, vazamento de água empresa, perdas hídricas, vazamento invisível, conscientização sobre o uso da água, uso racional da água, gestão hídrica empresarial',
+    h1: 'Desperdício de água nas empresas: causas, impactos e como evitar',
+    h2: ['O que é desperdício de água empresarial', 'Onde está o ralo invisível', 'Como evitar o desperdício de água', 'Impacto financeiro do desperdício', 'Perguntas frequentes']
+  },
+  '/como-economizar-agua-empresa': {
+    title: 'Como Economizar Água na Empresa: 8 Estratégias | AcquaFlux',
+    description: 'Como economizar água na empresa? 8 estratégias comprovadas para reduzir a conta entre 30% e 70%: auditoria, IoT, individualização, reuso e ESG. Diagnóstico gratuito.',
+    keywords: 'como economizar água, como economizar água na empresa, dicas para economizar água, economizar água, como diminuir a conta de água, conta de água alta, economia de água, uso racional da água, reuso de água, conscientização sobre o uso da água',
+    h1: 'Como economizar água na empresa: 8 estratégias para diminuir a conta de água',
+    h2: ['8 dicas para economizar água em empresas', 'Como diminuir a conta de água sem CAPEX', 'Conscientização e uso racional da água', 'Perguntas frequentes']
+  },
+  '/pegada-hidrica-empresarial': {
+    title: 'Pegada Hídrica Empresarial: cálculo, ESG e relatórios | AcquaFlux',
+    description: 'O que é pegada hídrica? Como calcular o water footprint da sua empresa (ISO 14046) e reportar em ESG, GRI 303, CDP Water e ODS 6. Guia completo AcquaFlux.',
+    keywords: 'pegada hídrica, water footprint, pegada hídrica empresarial, ISO 14046, GRI 303, CDP Water, ODS 6, sustentabilidade hídrica, ESG água, segurança hídrica, escassez hídrica, água virtual',
+    h1: 'Pegada hídrica empresarial: o que é, como calcular e reportar',
+    h2: ['O que é pegada hídrica', 'Como calcular a pegada hídrica de uma empresa', 'Pegada hídrica e ESG: frameworks e relatórios', 'Segurança hídrica e escassez', 'Perguntas frequentes']
   }
 };
 
