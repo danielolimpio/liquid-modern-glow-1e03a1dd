@@ -24,7 +24,10 @@ const routes = [
   '/politica-privacidade',
   '/termos-uso',
   '/politica-cookies',
-  '/economia-de-agua'
+  '/economia-de-agua',
+  '/desperdicio-de-agua-empresas',
+  '/como-economizar-agua-empresa',
+  '/pegada-hidrica-empresarial'
 ];
 
 // SEO metadata for each route

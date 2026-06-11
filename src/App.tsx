@@ -19,6 +19,9 @@ import ConsultoriaESG from "./pages/ConsultoriaESG";
 import GestaoFinanceira from "./pages/GestaoFinanceira";
 import MonitoramentoIoT from "./pages/MonitoramentoIoT";
 import EconomiaDeAgua from "./pages/EconomiaDeAgua";
+import DesperdicioDeAgua from "./pages/DesperdicioDeAgua";
+import ComoEconomizarAgua from "./pages/ComoEconomizarAgua";
+import PegadaHidrica from "./pages/PegadaHidrica";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -46,6 +49,9 @@ const App = () => (
           <Route path="/gestao-financeira" element={<GestaoFinanceira />} />
           <Route path="/monitoramento-iot" element={<MonitoramentoIoT />} />
           <Route path="/economia-de-agua" element={<EconomiaDeAgua />} />
+          <Route path="/desperdicio-de-agua-empresas" element={<DesperdicioDeAgua />} />
+          <Route path="/como-economizar-agua-empresa" element={<ComoEconomizarAgua />} />
+          <Route path="/pegada-hidrica-empresarial" element={<PegadaHidrica />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
