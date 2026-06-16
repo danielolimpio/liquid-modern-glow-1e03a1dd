@@ -40,7 +40,7 @@ const Solucoes = () => {
         "@type": "Service",
         "name": "Soluções de Gestão Hídrica AcquaFlux",
         "provider": { "@type": "Organization", "name": "AcquaFlux" },
-        "serviceType": ["Gestão Operacional", "Monitoramento IoT", "Analytics BI", "Consultoria ESG", "Gestão Financeira"],
+        "serviceType": ["Gestão Operacional", "Monitoramento IoT", "Analytics BI", "Consultoria ESG", "Gestão Financeira", "Restituição de Créditos de Água RCI-A"],
         "areaServed": { "@type": "Country", "name": "Brazil" }
       },
       {
@@ -68,6 +68,14 @@ const Solucoes = () => {
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "A individualização de hidrômetros é uma solução que permite a medição precisa do consumo de água de cada unidade em condomínios, edifícios comerciais e residenciais. Com a GCI, cada morador ou empresa paga apenas pelo que consome, promovendo justiça tarifária e incentivando a economia consciente. Estudos comprovam que a individualização pode reduzir o consumo de água em até 40%."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O que é a Restituição de Créditos de Água RCI-A?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A RCI-A é a revisão de contas indévitas de água e esgoto. Auditamos até 10 anos de faturas, identificamos cobranças indevidas — como categoria tarifária errada, esgoto cobrado sobre volume não retornado à rede e faixas progressivas mal aplicadas — e recuperamos os créditos junto à concessionária, sem custo inicial para o cliente."
             }
           }
         ]
