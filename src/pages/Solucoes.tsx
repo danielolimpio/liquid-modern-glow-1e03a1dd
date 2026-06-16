@@ -533,7 +533,7 @@ const Solucoes = () => {
                 <p className="text-muted-foreground leading-relaxed relative">
                   Aplicamos a metodologia de Revisão de Contas Indévitas (RCI) à água e esgoto. Analisamos até 10 anos de 
                   faturas, identificamos inconsistências, documentamos o valor recuperável e contestamos junto à concessionária 
-                  via via administrativa — mais rápido que processos judiciais.
+                  via administrativa — mais rápido que processos judiciais.
                 </p>
               </div>
 
