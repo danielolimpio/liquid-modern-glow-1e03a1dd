@@ -86,10 +86,10 @@ const Solucoes = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Soluções de Gestão Hídrica | Sistema SEA e IoT"
-        description="Conheça as soluções AcquaFlux: Sistema SEA, monitoramento IoT, Analytics BI e consultoria ESG. Economia de até 70% no consumo de água."
+        title="Soluções AcquaFlux | SEA, IoT, BI, ESG e RCI-A"
+        description="Conheça as soluções AcquaFlux: Sistema SEA, monitoramento IoT, Analytics BI, consultoria ESG e RCI-A — restituição de créditos de água. Economia de até 70% no consumo e recuperação de valores pagos indevidamente."
         canonical="/solucoes"
-        keywords="sistema SEA, soluções gestão água, monitoramento IoT hídrico, economia água empresas, TDRR monitoramento, GCI individualização, tecnologia hídrica"
+        keywords="sistema SEA, soluções gestão água, monitoramento IoT hídrico, economia água empresas, TDRR monitoramento, GCI individualização, tecnologia hídrica, RCI-A, recuperação de créditos de água, restituição conta de água, auditoria fatura água"
         structuredData={structuredData}
       />
       <Header />
