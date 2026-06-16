@@ -493,6 +493,187 @@ const Solucoes = () => {
         </div>
       </section>
 
+      {/* RCI-A - Restituição de Créditos de Água */}
+      <section className="py-20 md:py-32 relative overflow-hidden bg-muted/20">
+        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl" />
+        
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="text-center mb-16">
+            <span className="text-xs font-semibold text-primary uppercase tracking-widest mb-4 block">
+              Recuperação Financeira de Créditos Hídricos
+            </span>
+            <h2 className="font-heading text-3xl md:text-5xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">RCI-A</span> – Restituição de Créditos de Água
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Recuperação de valores pagos indevidamente em contas de água e esgoto. Auditamos até 10 anos de faturas e geramos créditos reais para sua empresa.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
+            {/* Explicação */}
+            <div className="space-y-8">
+              <div className="relative p-6 rounded-2xl bg-gradient-to-br from-muted/50 to-muted/20 border border-primary/10">
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-primary/5 to-accent/5" />
+                <h3 className="font-heading text-xl font-bold text-primary mb-4 relative">
+                  Por que isso importa para sua empresa
+                </h3>
+                <p className="text-muted-foreground leading-relaxed relative">
+                  Sua conta de água tem erros que ninguém audita: categoria tarifária errada, esgoto cobrado sobre volume 
+                  que não retorna à rede, faixas progressivas mal aplicadas e tributos indevidos. Em operações industriais, 
+                  hospitais e hotéis, até <strong className="text-primary">30% da fatura pode ser cobrança indevida</strong>.
+                </p>
+              </div>
+
+              <div className="relative p-6 rounded-2xl bg-gradient-to-br from-muted/50 to-muted/20 border border-primary/10">
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-primary/5 to-accent/5" />
+                <h3 className="font-heading text-xl font-bold text-primary mb-4 relative">
+                  Como a AcquaFlux resolve
+                </h3>
+                <p className="text-muted-foreground leading-relaxed relative">
+                  Aplicamos a metodologia de Revisão de Contas Indévitas (RCI) à água e esgoto. Analisamos até 10 anos de 
+                  faturas, identificamos inconsistências, documentamos o valor recuperável e contestamos junto à concessionária 
+                  via via administrativa — mais rápido que processos judiciais.
+                </p>
+              </div>
+
+              <div className="relative group">
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-primary via-accent to-primary rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-500" />
+                <div className="relative p-6 bg-background rounded-2xl border border-primary/20">
+                  <h4 className="font-heading font-bold text-lg mb-4 flex items-center gap-2">
+                    <FileSearch className="w-5 h-5 text-primary" />
+                    O que auditamos na RCI-A
+                  </h4>
+                  <ul className="space-y-3">
+                    {[
+                      "Categoria tarifária errada ou enquadramento indevido",
+                      "Esgoto cobrado sobre volume não retornado à rede",
+                      "Faixas progressivas e tarifas aplicadas incorretamente",
+                      "Tributos, juros e multas indevidas",
+                      "Correção prospectiva do enquadramento tarifário",
+                      "Documentação completa para contestação administrativa"
+                    ].map((item, index) => (
+                      <li key={index} className="flex items-start gap-3">
+                        <div className="w-5 h-5 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <CheckCircle2 className="w-3 h-3 text-primary-foreground" />
+                        </div>
+                        <span className="text-sm text-muted-foreground">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Stats & Cards */}
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 rounded-3xl blur-2xl" />
+              <div className="relative bg-gradient-to-br from-background to-muted/30 rounded-3xl p-8 border border-primary/10">
+                <div className="text-center mb-8">
+                  <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-accent mb-4">
+                    <Coins className="w-10 h-10 text-primary-foreground" />
+                  </div>
+                  <h3 className="font-heading text-2xl font-bold">Resultados da RCI-A</h3>
+                </div>
+                
+                <div className="grid grid-cols-2 gap-4">
+                  {[
+                    { icon: History, value: "10 anos", label: "De contas auditáveis" },
+                    { icon: TrendingDown, value: "até 30%", label: "De cobranças indevidas" },
+                    { icon: Clock, value: "60-150", label: "Dias de desfecho típico" },
+                    { icon: PiggyBank, value: "Zero", label: "Custo inicial" }
+                  ].map((stat, index) => (
+                    <div 
+                      key={index}
+                      className="relative group"
+                    >
+                      <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-accent rounded-xl opacity-0 group-hover:opacity-30 blur transition duration-300" />
+                      <div className="relative p-4 rounded-xl bg-muted/30 border border-primary/10 text-center hover:border-primary/30 transition-all duration-300">
+                        <stat.icon className="w-6 h-6 text-primary mx-auto mb-2" />
+                        <div className="font-heading text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                          {stat.value}
+                        </div>
+                        <div className="text-xs text-muted-foreground">{stat.label}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <a 
+                  href="https://wa.me/5512981408992?text=Olá! Gostaria de solicitar uma auditoria RCI-A para revisão de contas de água e esgoto."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full mt-6 py-3 px-6 rounded-xl bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 flex items-center justify-center gap-2 group"
+                >
+                  Solicitar Diagnóstico RCI-A
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Diferenciais */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            {[
+              { icon: Receipt, title: "Faturas sob análise", desc: "Revisão minuciosa de cada conta de água e esgoto" },
+              { icon: Scale, title: "Contestação administrativa", desc: "Recuperação via concessionária, sem processos judiciais" },
+              { icon: Shield, title: "Sem risco", desc: "Fee apenas sobre o valor efetivamente recuperado" },
+              { icon: FileCheck, title: "Documentação completa", desc: "Laudo técnico para sustentar cada crédito" }
+            ].map((item, index) => (
+              <div 
+                key={index}
+                className="group relative"
+              >
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-accent rounded-xl opacity-0 group-hover:opacity-30 blur transition duration-300" />
+                <div className="relative p-6 rounded-xl bg-background border border-primary/10 hover:border-primary/30 transition-all duration-300 text-center h-full">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <item.icon className="w-7 h-7 text-primary-foreground" />
+                  </div>
+                  <h4 className="font-semibold mb-2">{item.title}</h4>
+                  <p className="text-sm text-muted-foreground">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Modelo Comercial */}
+          <div className="grid md:grid-cols-3 gap-6 mb-16">
+            {[
+              { icon: Building2, title: "Para quem é", desc: "Indústrias, hospitais, hotéis, shoppings, lavanderias e empresas com múltiplos hidrômetros ou consumo expressivo de água." },
+              { icon: PiggyBank, title: "Modelo comercial", desc: "Sucesso garantido: fee apenas sobre o valor efetivamente recuperado. Sem investimento inicial e sem custos fixos." },
+              { icon: Clock, title: "Prazo típico", desc: "Desfecho em 60 a 150 dias. Ciclo rápido de análise, documentação e contestação administrativa." }
+            ].map((item, index) => (
+              <div 
+                key={index}
+                className="group relative"
+              >
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-accent rounded-xl opacity-0 group-hover:opacity-30 blur transition duration-300" />
+                <div className="relative p-6 rounded-xl bg-muted/20 border border-primary/10 hover:border-primary/30 transition-all duration-300 h-full">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <item.icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <h4 className="font-semibold mb-2">{item.title}</h4>
+                  <p className="text-sm text-muted-foreground">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <a 
+              href="https://wa.me/5512981408992?text=Olá! Gostaria de uma proposta para Restituição de Créditos de Água RCI-A."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="py-4 px-8 rounded-xl bg-gradient-to-r from-primary via-accent to-primary text-primary-foreground font-semibold text-lg hover:shadow-xl hover:shadow-primary/25 transition-all duration-300 inline-flex items-center gap-3 mx-auto group"
+            >
+              Peça um diagnóstico de RCI-A
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+
       {/* Segmentos Atendidos */}
       <section className="py-20 md:py-32 relative overflow-hidden">
         <div className="container mx-auto px-6">
