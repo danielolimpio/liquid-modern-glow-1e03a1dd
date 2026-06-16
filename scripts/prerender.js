@@ -47,11 +47,11 @@ const seoData = {
     h2: ['Nossa História', 'Missão e Valores', 'Nossa Equipe']
   },
   '/solucoes': {
-    title: 'Soluções de Gestão Hídrica | Sistema SEA e IoT',
-    description: 'Conheça as soluções AcquaFlux: Sistema SEA, monitoramento IoT, Analytics BI e consultoria ESG. Economia de até 70% no consumo de água.',
-    keywords: 'sistema SEA, soluções gestão água, monitoramento IoT hídrico, economia água empresas, TDRR monitoramento',
+    title: 'Soluções AcquaFlux | SEA, IoT, BI, ESG e RCI-A',
+    description: 'Conheça as soluções AcquaFlux: Sistema SEA, monitoramento IoT, Analytics BI, consultoria ESG e RCI-A — restituição de créditos de água. Economia de até 70% no consumo e recuperação de valores pagos indevidamente.',
+    keywords: 'sistema SEA, soluções gestão água, monitoramento IoT hídrico, economia água empresas, TDRR monitoramento, RCI-A, recuperação de créditos de água, restituição conta de água, auditoria fatura água',
     h1: 'Nossas Soluções',
-    h2: ['Sistema SEA', 'Monitoramento TDRR', 'GCI Individualização']
+    h2: ['Sistema SEA', 'Monitoramento TDRR', 'GCI Individualização', 'RCI-A Restituição de Créditos']
   },
   '/impacto': {
     title: 'Impacto Ambiental | Resultados da Gestão Hídrica AcquaFlux',
