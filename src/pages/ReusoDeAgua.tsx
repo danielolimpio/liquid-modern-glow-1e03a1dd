@@ -145,7 +145,7 @@ const ReusoDeAgua = () => {
         description="Reuso de água nas empresas: normas ABNT, tipos, custos, ROI, cases brasileiros e integração com ESG. Reduza até 70% da captação com o guia técnico da AcquaFlux."
         canonical="/reuso-de-agua-nas-empresas/"
         keywords="reuso de água, reuso de água nas empresas, sistema de reuso de água, reuso de água industrial, reuso de água predial, ABNT NBR 16783, CONAMA 54, água de reuso, tratamento de águas cinzas, reaproveitamento de água, economia de água industrial, ROI reuso de água, ESG reuso, GRI 303, CDP Water, sustentabilidade hídrica, gestão hídrica empresarial"
-        ogImage="/assets/reuso-agua-empresas-capa.jpg"
+        image="/assets/reuso-agua-empresas-capa.jpg"
         structuredData={structuredData}
       />
       <Header />

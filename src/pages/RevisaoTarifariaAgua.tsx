@@ -154,7 +154,7 @@ const RevisaoTarifariaAgua = () => {
         description="Revisão tarifária de água e RCI-A: como auditar faturas de até 10 anos, recuperar cobranças indevidas e reduzir sua conta. Sem CAPEX. Base legal, prazos e cases."
         canonical="/revisao-tarifaria-de-agua/"
         keywords="revisão tarifária de água, RCI-A, restituição de créditos de água, auditoria de conta de água, cobrança indevida água, enquadramento tarifário água, recuperar valores pagos água, restituição fatura água, revisão de fatura água, categoria tarifária concessionária, repetição de indébito água, sabesp cobrança indevida, cagece cobrança indevida, embasa cobrança indevida, cesan cobrança indevida, saae, corsan"
-        ogImage="/assets/revisao-tarifaria-agua-capa.jpg"
+        image="/assets/revisao-tarifaria-agua-capa.jpg"
         structuredData={structuredData}
       />
       <Header />
