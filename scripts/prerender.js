@@ -27,7 +27,9 @@ const routes = [
   '/economia-de-agua',
   '/desperdicio-de-agua-empresas',
   '/como-economizar-agua-empresa',
-  '/pegada-hidrica-empresarial'
+  '/pegada-hidrica-empresarial',
+  '/reuso-de-agua-nas-empresas',
+  '/revisao-tarifaria-de-agua'
 ];
 
 // SEO metadata for each route
@@ -157,6 +159,20 @@ const seoData = {
     keywords: 'pegada hídrica, water footprint, pegada hídrica empresarial, ISO 14046, GRI 303, CDP Water, ODS 6, sustentabilidade hídrica, ESG água, segurança hídrica, escassez hídrica, água virtual',
     h1: 'Pegada hídrica empresarial: o que é, como calcular e reportar',
     h2: ['O que é pegada hídrica', 'Como calcular a pegada hídrica de uma empresa', 'Pegada hídrica e ESG: frameworks e relatórios', 'Segurança hídrica e escassez', 'Perguntas frequentes']
+  },
+  '/reuso-de-agua-nas-empresas': {
+    title: 'Reuso de Água nas Empresas: Guia Completo 2026 | AcquaFlux',
+    description: 'Reuso de água nas empresas: normas ABNT, tipos, custos, ROI, cases brasileiros e integração com ESG. Reduza até 70% da captação com o guia técnico da AcquaFlux.',
+    keywords: 'reuso de água, reuso de água nas empresas, sistema de reuso de água, reuso de água industrial, reuso de água predial, ABNT NBR 16783, CONAMA 54, água de reuso, tratamento de águas cinzas, reaproveitamento de água, economia de água industrial, ROI reuso de água, ESG reuso, GRI 303, CDP Water, sustentabilidade hídrica, gestão hídrica empresarial',
+    h1: 'Reuso de água nas empresas: guia completo com sistemas, custos e ROI',
+    h2: ['O que é reuso de água nas empresas', 'Panorama do reuso de água no Brasil', 'Tipos e classes de reuso de água', 'Normas e regulamentações', 'Etapas para implantar um sistema de reuso', 'Tecnologias de tratamento', 'Custos, ROI e payback', 'Reuso, ESG e reporte', 'Perguntas frequentes']
+  },
+  '/revisao-tarifaria-de-agua': {
+    title: 'Revisão Tarifária de Água: Como Recuperar Créditos | AcquaFlux',
+    description: 'Revisão tarifária de água e RCI-A: como auditar faturas de até 10 anos, recuperar cobranças indevidas e reduzir sua conta. Sem CAPEX. Base legal, prazos e cases.',
+    keywords: 'revisão tarifária de água, RCI-A, restituição de créditos de água, auditoria de conta de água, cobrança indevida água, enquadramento tarifário água, recuperar valores pagos água, restituição fatura água, revisão de fatura água, categoria tarifária concessionária, repetição de indébito água',
+    h1: 'Revisão tarifária de água: como recuperar valores pagos indevidamente',
+    h2: ['O que é revisão tarifária de água', 'Por que existem cobranças indevidas', 'Base legal e jurídica', 'O que é o serviço RCI-A', 'Passo a passo da revisão', 'Erros tarifários mais comuns', 'Cases reais', 'Quando vale a pena', 'Perguntas frequentes']
   }
 };
 
