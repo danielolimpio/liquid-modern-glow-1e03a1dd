@@ -663,7 +663,7 @@ const PoliticaPrivacidade = () => {
                   <h3 className="text-2xl font-bold mb-2">AcquaFlux – Gestão Hídrica para Empresas</h3>
                   <p className="text-muted-foreground mb-6">Reduza custos e aumente sua eficiência no consumo de água.</p>
                   <Link 
-                    to="/contato" 
+                    to="/contato/" 
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold hover:shadow-lg hover:shadow-primary/30 transition-all"
                   >
                     <Mail className="w-4 h-4" />

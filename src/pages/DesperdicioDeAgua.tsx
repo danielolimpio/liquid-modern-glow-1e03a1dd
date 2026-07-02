@@ -78,7 +78,7 @@ const DesperdicioDeAgua = () => {
             <ol className="flex flex-wrap items-center gap-2">
               <li><Link to="/" className="hover:text-primary">Início</Link></li>
               <li aria-hidden>/</li>
-              <li><Link to="/economia-de-agua" className="hover:text-primary">Economia de Água</Link></li>
+              <li><Link to="/economia-de-agua/" className="hover:text-primary">Economia de Água</Link></li>
               <li aria-hidden>/</li>
               <li className="text-foreground">Desperdício de Água</li>
             </ol>
@@ -140,11 +140,11 @@ const DesperdicioDeAgua = () => {
               frente sozinha entrega ganho marginal; juntas, reduzem a fatura entre 30% e 70%.
             </p>
             <div className="grid md:grid-cols-2 gap-4 mt-6">
-              <Link to="/monitoramento-iot" className="glass-card p-5 rounded-xl hover:scale-[1.02] transition">
+              <Link to="/monitoramento-iot/" className="glass-card p-5 rounded-xl hover:scale-[1.02] transition">
                 <h3 className="font-bold mb-2">Detectar vazamentos com IoT</h3>
                 <p className="text-sm text-muted-foreground">TDRR identifica perdas em minutos.</p>
               </Link>
-              <Link to="/gestao-financeira" className="glass-card p-5 rounded-xl hover:scale-[1.02] transition">
+              <Link to="/gestao-financeira/" className="glass-card p-5 rounded-xl hover:scale-[1.02] transition">
                 <h3 className="font-bold mb-2">Auditar a fatura</h3>
                 <p className="text-sm text-muted-foreground">Recuperar créditos retroativos e reenquadrar tarifa.</p>
               </Link>
@@ -185,7 +185,7 @@ const DesperdicioDeAgua = () => {
           <p className="text-lg text-muted-foreground mb-8">
             Diagnóstico gratuito. Sem investimento inicial. Pagamento sobre a economia comprovada.
           </p>
-          <Link to="/contato" className="btn-aqua px-8 py-4">Solicitar diagnóstico gratuito</Link>
+          <Link to="/contato/" className="btn-aqua px-8 py-4">Solicitar diagnóstico gratuito</Link>
         </div>
       </section>
 

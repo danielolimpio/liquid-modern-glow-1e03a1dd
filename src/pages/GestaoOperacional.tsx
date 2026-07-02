@@ -172,14 +172,14 @@ const GestaoOperacional = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                to="/contato"
+                to="/contato/"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold rounded-2xl hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300 group"
               >
                 Solicitar Diagnóstico
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
-                to="/solucoes"
+                to="/solucoes/"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-primary/30 text-primary font-semibold rounded-2xl hover:bg-primary/10 hover:border-primary/50 transition-all duration-300"
               >
                 Conhecer Soluções
@@ -457,14 +457,14 @@ const GestaoOperacional = () => {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                     <Link
-                      to="/contato"
+                      to="/contato/"
                       className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold rounded-2xl hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300 group"
                     >
                       Fale com Especialista
                       <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </Link>
                     <Link
-                      to="/impacto"
+                      to="/impacto/"
                       className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-primary/30 text-primary font-semibold rounded-2xl hover:bg-primary/10 hover:border-primary/50 transition-all duration-300"
                     >
                       Ver Impacto

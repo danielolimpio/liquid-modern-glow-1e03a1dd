@@ -245,11 +245,11 @@ const EconomiaDeAgua = () => {
               IoT, BI e ESG para uma economia hídrica de 30% a 70% — comprovada por dados.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link to="/contato" className="btn-aqua px-8 py-4">
+              <Link to="/contato/" className="btn-aqua px-8 py-4">
                 Diagnóstico gratuito
               </Link>
               <Link
-                to="/solucoes"
+                to="/solucoes/"
                 className="px-8 py-4 rounded-full border border-primary/30 hover:bg-primary/10 transition"
               >
                 Ver soluções
@@ -361,7 +361,7 @@ const EconomiaDeAgua = () => {
             ))}
           </ul>
           <div className="mt-8">
-            <Link to="/monitoramento-iot" className="btn-aqua px-6 py-3 inline-flex items-center gap-2">
+            <Link to="/monitoramento-iot/" className="btn-aqua px-6 py-3 inline-flex items-center gap-2">
               Detectar perdas com IoT <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -380,7 +380,7 @@ const EconomiaDeAgua = () => {
             previstos na regulação da ANA e das agências estaduais. É um trabalho sem
             investimento inicial e com remuneração baseada em resultado.
           </p>
-          <Link to="/gestao-financeira" className="btn-aqua px-6 py-3 inline-flex items-center gap-2">
+          <Link to="/gestao-financeira/" className="btn-aqua px-6 py-3 inline-flex items-center gap-2">
             Auditar minha fatura <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
@@ -398,7 +398,7 @@ const EconomiaDeAgua = () => {
             identificados em minutos, não em meses. Empresas com TDRR economizam, em média,
             30% além do que economizariam só com auditoria.
           </p>
-          <Link to="/monitoramento-iot" className="btn-aqua px-6 py-3 inline-flex items-center gap-2">
+          <Link to="/monitoramento-iot/" className="btn-aqua px-6 py-3 inline-flex items-center gap-2">
             Conhecer o TDRR <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
@@ -416,7 +416,7 @@ const EconomiaDeAgua = () => {
             <strong>desvio vs. meta</strong>. Análise preditiva antecipa picos de consumo e
             falhas operacionais.
           </p>
-          <Link to="/analytics-bi" className="btn-aqua px-6 py-3 inline-flex items-center gap-2">
+          <Link to="/analytics-bi/" className="btn-aqua px-6 py-3 inline-flex items-center gap-2">
             Ver Analytics & BI <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
@@ -434,7 +434,7 @@ const EconomiaDeAgua = () => {
             compatíveis com GRI 303, CDP Water, ODS 6 e regulações ANA, com{" "}
             <strong>water footprint</strong> calculada por escopo.
           </p>
-          <Link to="/consultoria-esg" className="btn-aqua px-6 py-3 inline-flex items-center gap-2">
+          <Link to="/consultoria-esg/" className="btn-aqua px-6 py-3 inline-flex items-center gap-2">
             Consultoria ESG <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
@@ -459,7 +459,7 @@ const EconomiaDeAgua = () => {
               </div>
             ))}
           </div>
-          <Link to="/impacto" className="text-primary font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all">
+          <Link to="/impacto/" className="text-primary font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all">
             Ver cases e impacto comprovado <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
@@ -495,7 +495,7 @@ const EconomiaDeAgua = () => {
             comprovada.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/contato" className="btn-aqua px-8 py-4">
+            <Link to="/contato/" className="btn-aqua px-8 py-4">
               Solicitar diagnóstico gratuito
             </Link>
             <a

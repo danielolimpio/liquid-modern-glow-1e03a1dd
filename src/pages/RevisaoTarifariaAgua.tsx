@@ -166,7 +166,7 @@ const RevisaoTarifariaAgua = () => {
             <ol className="flex flex-wrap items-center gap-2">
               <li><Link to="/" className="hover:text-primary">Início</Link></li>
               <li aria-hidden>/</li>
-              <li><Link to="/blog" className="hover:text-primary">Blog</Link></li>
+              <li><Link to="/blog/" className="hover:text-primary">Blog</Link></li>
               <li aria-hidden>/</li>
               <li className="text-foreground">Revisão Tarifária de Água</li>
             </ol>
@@ -332,7 +332,7 @@ const RevisaoTarifariaAgua = () => {
                 camadas em um único fluxo: engenharia hidráulica (validação de
                 categoria, hidrômetro e enquadramento), jurídico especializado
                 (fundamentação legal e negociação) e dados (auditoria estatística das
-                faturas com uso de <Link to="/analytics-bi" className="text-primary underline">Analytics e BI hídrico</Link>).
+                faturas com uso de <Link to="/analytics-bi/" className="text-primary underline">Analytics e BI hídrico</Link>).
               </p>
               <p>
                 O diferencial: modelo <strong>100% success fee</strong>. A empresa
@@ -511,7 +511,7 @@ const RevisaoTarifariaAgua = () => {
                   Análise gratuita das últimas 12 faturas. Sem compromisso.
                 </p>
                 <div className="flex flex-wrap gap-3 justify-center">
-                  <Link to="/contato" className="btn-aqua">Solicitar análise gratuita</Link>
+                  <Link to="/contato/" className="btn-aqua">Solicitar análise gratuita</Link>
                   <a href={WHATS_URL} target="_blank" rel="noopener noreferrer" className="btn-outline">
                     Enviar fatura por WhatsApp
                   </a>
@@ -549,9 +549,9 @@ const RevisaoTarifariaAgua = () => {
                   centenas de cases de sucesso.
                 </p>
                 <div className="mt-3 flex flex-wrap gap-2">
-                  <Link to="/solucoes" className="text-primary text-sm underline">Ver serviço RCI-A</Link>
+                  <Link to="/solucoes/" className="text-primary text-sm underline">Ver serviço RCI-A</Link>
                   <span className="text-muted-foreground">·</span>
-                  <Link to="/gestao-financeira" className="text-primary text-sm underline">Gestão Financeira Hídrica</Link>
+                  <Link to="/gestao-financeira/" className="text-primary text-sm underline">Gestão Financeira Hídrica</Link>
                 </div>
               </div>
             </section>
@@ -580,7 +580,7 @@ const RevisaoTarifariaAgua = () => {
               <p className="text-sm text-muted-foreground mb-4">
                 Envie sua fatura e descubra quanto sua empresa pode restituir em até 48h.
               </p>
-              <Link to="/contato" className="btn-aqua w-full text-center block">Solicitar análise</Link>
+              <Link to="/contato/" className="btn-aqua w-full text-center block">Solicitar análise</Link>
             </div>
 
             <div className="glass-card p-6 rounded-2xl">

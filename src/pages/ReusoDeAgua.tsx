@@ -158,7 +158,7 @@ const ReusoDeAgua = () => {
             <ol className="flex flex-wrap items-center gap-2">
               <li><Link to="/" className="hover:text-primary">Início</Link></li>
               <li aria-hidden>/</li>
-              <li><Link to="/blog" className="hover:text-primary">Blog</Link></li>
+              <li><Link to="/blog/" className="hover:text-primary">Blog</Link></li>
               <li aria-hidden>/</li>
               <li className="text-foreground">Reuso de Água nas Empresas</li>
             </ol>
@@ -481,7 +481,7 @@ const ReusoDeAgua = () => {
 
               <h3 className="text-2xl font-semibold text-foreground mt-6 mb-3">5.5. Operação, monitoramento e melhoria contínua</h3>
               <p>
-                Aqui entra a plataforma <Link to="/monitoramento-iot" className="text-primary underline">Monitoramento IoT da AcquaFlux</Link>,
+                Aqui entra a plataforma <Link to="/monitoramento-iot/" className="text-primary underline">Monitoramento IoT da AcquaFlux</Link>,
                 com dashboards em tempo real, alertas de qualidade da água tratada e
                 geração automática dos indicadores para o relato ESG.
               </p>
@@ -553,7 +553,7 @@ const ReusoDeAgua = () => {
 
               <p>
                 Nas simulações reais que a AcquaFlux faz com o serviço de
-                <Link to="/analytics-bi" className="text-primary underline"> Analytics e BI hídrico</Link>,
+                <Link to="/analytics-bi/" className="text-primary underline"> Analytics e BI hídrico</Link>,
                 os cenários otimistas de reuso em indústrias com alta tarifa (acima
                 de R$ 30/m³) apresentam TIR superior a 25% ao ano — patamar
                 dificilmente encontrado em outros investimentos operacionais.
@@ -575,7 +575,7 @@ const ReusoDeAgua = () => {
               </ul>
               <p className="mt-4">
                 Para explorar a integração completa entre reuso, ESG e pegada hídrica,
-                leia o guia <Link to="/pegada-hidrica-empresarial" className="text-primary underline">Pegada Hídrica Empresarial</Link>.
+                leia o guia <Link to="/pegada-hidrica-empresarial/" className="text-primary underline">Pegada Hídrica Empresarial</Link>.
               </p>
             </section>
 
@@ -618,7 +618,7 @@ const ReusoDeAgua = () => {
                   economia estimada, CAPEX aproximado e payback projetado.
                 </p>
                 <div className="flex flex-wrap gap-3 justify-center">
-                  <Link to="/contato" className="btn-aqua">Solicitar diagnóstico</Link>
+                  <Link to="/contato/" className="btn-aqua">Solicitar diagnóstico</Link>
                   <a href={WHATS_URL} target="_blank" rel="noopener noreferrer" className="btn-outline">
                     Falar no WhatsApp
                   </a>
@@ -657,9 +657,9 @@ const ReusoDeAgua = () => {
                   faturas de concessionárias em todo o Brasil.
                 </p>
                 <div className="mt-3 flex flex-wrap gap-2">
-                  <Link to="/sobre" className="text-primary text-sm underline">Conheça a AcquaFlux</Link>
+                  <Link to="/sobre/" className="text-primary text-sm underline">Conheça a AcquaFlux</Link>
                   <span className="text-muted-foreground">·</span>
-                  <Link to="/solucoes" className="text-primary text-sm underline">Ver soluções</Link>
+                  <Link to="/solucoes/" className="text-primary text-sm underline">Ver soluções</Link>
                 </div>
               </div>
             </section>
@@ -689,7 +689,7 @@ const ReusoDeAgua = () => {
               <p className="text-sm text-muted-foreground mb-4">
                 Descubra em 48h quanto sua empresa pode economizar com reuso de água.
               </p>
-              <Link to="/contato" className="btn-aqua w-full text-center block">Solicitar agora</Link>
+              <Link to="/contato/" className="btn-aqua w-full text-center block">Solicitar agora</Link>
             </div>
 
             <div className="glass-card p-6 rounded-2xl">

@@ -89,7 +89,7 @@ const ComoEconomizarAgua = () => {
             <ol className="flex flex-wrap items-center gap-2">
               <li><Link to="/" className="hover:text-primary">Início</Link></li>
               <li aria-hidden>/</li>
-              <li><Link to="/economia-de-agua" className="hover:text-primary">Economia de Água</Link></li>
+              <li><Link to="/economia-de-agua/" className="hover:text-primary">Economia de Água</Link></li>
               <li aria-hidden>/</li>
               <li className="text-foreground">Como Economizar Água na Empresa</li>
             </ol>
@@ -186,7 +186,7 @@ const ComoEconomizarAgua = () => {
           <p className="text-lg text-muted-foreground mb-8">
             Diagnóstico gratuito com auditoria preliminar das suas faturas em até 7 dias.
           </p>
-          <Link to="/contato" className="btn-aqua px-8 py-4">Solicitar diagnóstico gratuito</Link>
+          <Link to="/contato/" className="btn-aqua px-8 py-4">Solicitar diagnóstico gratuito</Link>
         </div>
       </section>
 
