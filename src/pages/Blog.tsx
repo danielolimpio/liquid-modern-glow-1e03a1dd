@@ -234,7 +234,7 @@ const Blog = () => {
                 Entre em contato e descubra como podemos transformar sua gestão hídrica.
               </p>
             </div>
-            <Link to="/contato" className="btn-aqua whitespace-nowrap flex items-center gap-2">
+            <Link to="/contato/" className="btn-aqua whitespace-nowrap flex items-center gap-2">
               Fale Conosco
               <ArrowRight className="w-5 h-5" />
             </Link>

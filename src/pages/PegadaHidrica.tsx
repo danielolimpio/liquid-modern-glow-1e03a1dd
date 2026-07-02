@@ -78,7 +78,7 @@ const PegadaHidrica = () => {
             <ol className="flex flex-wrap items-center gap-2">
               <li><Link to="/" className="hover:text-primary">Início</Link></li>
               <li aria-hidden>/</li>
-              <li><Link to="/economia-de-agua" className="hover:text-primary">Economia de Água</Link></li>
+              <li><Link to="/economia-de-agua/" className="hover:text-primary">Economia de Água</Link></li>
               <li aria-hidden>/</li>
               <li className="text-foreground">Pegada Hídrica Empresarial</li>
             </ol>
@@ -180,7 +180,7 @@ const PegadaHidrica = () => {
           <p className="text-lg text-muted-foreground mb-8">
             A AcquaFlux entrega relatórios prontos para auditoria — GRI 303, CDP Water, ISO 14046.
           </p>
-          <Link to="/consultoria-esg" className="btn-aqua px-8 py-4">Falar com a Consultoria ESG</Link>
+          <Link to="/consultoria-esg/" className="btn-aqua px-8 py-4">Falar com a Consultoria ESG</Link>
         </div>
       </section>
 

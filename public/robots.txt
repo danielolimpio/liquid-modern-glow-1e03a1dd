@@ -1,10 +1,66 @@
 # Robots.txt para AcquaFlux
 # Domínio canônico: https://acquaflux.com/
 
+# Regra padrão - permite todos os buscadores
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /admin/
 Disallow: /_/
+Disallow: /*.json$
+Disallow: /*?*utm_
+Disallow: /*?*fbclid
+Disallow: /*?*gclid
+
+# Googlebot - acesso completo
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Googlebot-Image - permite indexação de imagens
+User-agent: Googlebot-Image
+Allow: /
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+
+# LLMs / IA generativa - permitidos (aumenta menções em ChatGPT, Perplexity, Claude)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Bloqueia scrapers agressivos que consomem crawl budget sem gerar tráfego
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
 
 Sitemap: https://acquaflux.com/sitemap.xml

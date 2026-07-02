@@ -119,12 +119,30 @@
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "AcquaFlux",
-      "url": "https://acquaflux.com",
+      "url": "https://acquaflux.com/",
+      "inLanguage": "pt-BR",
+      "publisher": { "@id": "https://acquaflux.com/#organization" },
       "potentialAction": {
         "@type": "SearchAction",
         "target": "https://acquaflux.com/?s={search_term_string}",
         "query-input": "required name=search_term_string"
       }
+    }
+    </script>
+
+    <!-- Structured Data - SiteNavigationElement (reforça sitelinks no Google) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        { "@type": "SiteNavigationElement", "position": 1, "name": "Início", "url": "https://acquaflux.com/" },
+        { "@type": "SiteNavigationElement", "position": 2, "name": "Sobre", "url": "https://acquaflux.com/sobre/" },
+        { "@type": "SiteNavigationElement", "position": 3, "name": "Soluções", "url": "https://acquaflux.com/solucoes/" },
+        { "@type": "SiteNavigationElement", "position": 4, "name": "Impacto", "url": "https://acquaflux.com/impacto/" },
+        { "@type": "SiteNavigationElement", "position": 5, "name": "Blog", "url": "https://acquaflux.com/blog/" },
+        { "@type": "SiteNavigationElement", "position": 6, "name": "Contato", "url": "https://acquaflux.com/contato/" }
+      ]
     }
     </script>
   </head>
@@ -139,11 +157,11 @@
           <a href="/">AcquaFlux - Gestão Hídrica Inteligente</a>
           <ul>
             <li><a href="/">Início</a></li>
-            <li><a href="/sobre">Sobre</a></li>
-            <li><a href="/solucoes">Soluções</a></li>
-            <li><a href="/impacto">Impacto</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/contato">Contato</a></li>
+            <li><a href="/sobre/">Sobre</a></li>
+            <li><a href="/solucoes/">Soluções</a></li>
+            <li><a href="/impacto/">Impacto</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/contato/">Contato</a></li>
           </ul>
         </nav>
       </header>
@@ -156,14 +174,26 @@
           <section>
             <h2>__PRERENDER_H2_1__</h2>
             <ul>
-              <li><a href="/gestao-operacional">Gestão Operacional</a> - Sistema completo para controle e otimização do uso de água</li>
-              <li><a href="/monitoramento-iot">Monitoramento IoT</a> - Sensores inteligentes para monitoramento em tempo real</li>
-              <li><a href="/analytics-bi">Analytics e BI</a> - Dashboards e relatórios para tomada de decisão</li>
-              <li><a href="/consultoria-esg">Consultoria ESG</a> - Adequação às normas ambientais e sustentabilidade</li>
-              <li><a href="/gestao-financeira">Gestão Financeira</a> - Controle de custos e economia hídrica</li>
+              <li><a href="/gestao-operacional/">Gestão Operacional</a> - Sistema completo para controle e otimização do uso de água</li>
+              <li><a href="/monitoramento-iot/">Monitoramento IoT</a> - Sensores inteligentes para monitoramento em tempo real</li>
+              <li><a href="/analytics-bi/">Analytics e BI</a> - Dashboards e relatórios para tomada de decisão</li>
+              <li><a href="/consultoria-esg/">Consultoria ESG</a> - Adequação às normas ambientais e sustentabilidade</li>
+              <li><a href="/gestao-financeira/">Gestão Financeira</a> - Controle de custos e economia hídrica</li>
             </ul>
           </section>
-          
+
+          <section>
+            <h2>Artigos e Guias</h2>
+            <ul>
+              <li><a href="/economia-de-agua/">Economia de Água para Empresas</a></li>
+              <li><a href="/desperdicio-de-agua-empresas/">Desperdício de Água nas Empresas</a></li>
+              <li><a href="/como-economizar-agua-empresa/">Como Economizar Água na Empresa</a></li>
+              <li><a href="/pegada-hidrica-empresarial/">Pegada Hídrica Empresarial</a></li>
+              <li><a href="/reuso-de-agua-nas-empresas/">Reuso de Água nas Empresas</a></li>
+              <li><a href="/revisao-tarifaria-de-agua/">Revisão Tarifária de Água (RCI-A)</a></li>
+            </ul>
+          </section>
+
           <section>
             <h2>__PRERENDER_H2_2__</h2>
             <ul>
@@ -191,12 +221,13 @@
       <footer>
         <p>&copy; 2026 AcquaFlux. Todos os direitos reservados.</p>
         <nav>
-          <a href="/politica-privacidade">Política de Privacidade</a>
-          <a href="/termos-uso">Termos de Uso</a>
-          <a href="/politica-cookies">Política de Cookies</a>
+          <a href="/politica-privacidade/">Política de Privacidade</a>
+          <a href="/termos-uso/">Termos de Uso</a>
+          <a href="/politica-cookies/">Política de Cookies</a>
         </nav>
       </footer>
     </noscript>
+
     
     <script type="module" src="/src/main.tsx"></script>
   </body>

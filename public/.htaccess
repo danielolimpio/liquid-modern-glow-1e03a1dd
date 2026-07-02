@@ -14,7 +14,14 @@
   RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
   # Arquivos SEO devem ser servidos diretamente, sem fallback para o SPA
-  RewriteRule ^(sitemap\.xml|robots\.txt)$ - [L]
+  RewriteRule ^(sitemap\.xml|robots\.txt|llms\.txt|manifest\.webmanifest|favicon\.png|sw\.js)$ - [L]
+
+  # FORÇA TRAILING SLASH em URLs de rota (evita duplicação /impacto vs /impacto/)
+  # Ignora arquivos com extensão (.js, .css, .xml, .png, etc.)
+  RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{2,5}|/)$
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.*)$ /$1/ [R=301,L]
+
 
   # IMPORTANTE: Servir index.html de subpastas para rotas prerendered
   # Isso permite que /sobre sirva /sobre/index.html

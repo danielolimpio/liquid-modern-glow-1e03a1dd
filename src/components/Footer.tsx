@@ -34,27 +34,27 @@ const Footer = () => {
             <h4 className="font-heading font-bold mb-6 text-primary-foreground">Soluções</h4>
             <ul className="space-y-3">
               <li>
-                <Link to="/gestao-operacional" className="text-sm hover:text-primary transition-colors">
+                <Link to="/gestao-operacional/" className="text-sm hover:text-primary transition-colors">
                   Gestão Operacional
                 </Link>
               </li>
               <li>
-                <Link to="/analytics-bi" className="text-sm hover:text-primary transition-colors">
+                <Link to="/analytics-bi/" className="text-sm hover:text-primary transition-colors">
                   Analytics & BI
                 </Link>
               </li>
               <li>
-                <Link to="/consultoria-esg" className="text-sm hover:text-primary transition-colors">
+                <Link to="/consultoria-esg/" className="text-sm hover:text-primary transition-colors">
                   Consultoria ESG
                 </Link>
               </li>
               <li>
-                <Link to="/gestao-financeira" className="text-sm hover:text-primary transition-colors">
+                <Link to="/gestao-financeira/" className="text-sm hover:text-primary transition-colors">
                   Gestão Financeira
                 </Link>
               </li>
               <li>
-                <Link to="/monitoramento-iot" className="text-sm hover:text-primary transition-colors">
+                <Link to="/monitoramento-iot/" className="text-sm hover:text-primary transition-colors">
                   Monitoramento IoT
                 </Link>
               </li>
@@ -65,42 +65,42 @@ const Footer = () => {
             <h4 className="font-heading font-bold mb-6 text-primary-foreground">Empresa</h4>
             <ul className="space-y-3">
               <li>
-                <Link to="/sobre" className="text-sm hover:text-primary transition-colors">
+                <Link to="/sobre/" className="text-sm hover:text-primary transition-colors">
                   Sobre Nós
                 </Link>
               </li>
               <li>
-                <Link to="/blog" className="text-sm hover:text-primary transition-colors">
+                <Link to="/blog/" className="text-sm hover:text-primary transition-colors">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link to="/impacto" className="text-sm hover:text-primary transition-colors">
+                <Link to="/impacto/" className="text-sm hover:text-primary transition-colors">
                   Impacto
                 </Link>
               </li>
               <li>
-                <Link to="/economia-de-agua" className="text-sm hover:text-primary transition-colors">
+                <Link to="/economia-de-agua/" className="text-sm hover:text-primary transition-colors">
                   Economia de Água
                 </Link>
               </li>
               <li>
-                <Link to="/como-economizar-agua-empresa" className="text-sm hover:text-primary transition-colors">
+                <Link to="/como-economizar-agua-empresa/" className="text-sm hover:text-primary transition-colors">
                   Como Economizar Água
                 </Link>
               </li>
               <li>
-                <Link to="/desperdicio-de-agua-empresas" className="text-sm hover:text-primary transition-colors">
+                <Link to="/desperdicio-de-agua-empresas/" className="text-sm hover:text-primary transition-colors">
                   Desperdício de Água
                 </Link>
               </li>
               <li>
-                <Link to="/pegada-hidrica-empresarial" className="text-sm hover:text-primary transition-colors">
+                <Link to="/pegada-hidrica-empresarial/" className="text-sm hover:text-primary transition-colors">
                   Pegada Hídrica
                 </Link>
               </li>
               <li>
-                <Link to="/contato" className="text-sm hover:text-primary transition-colors">
+                <Link to="/contato/" className="text-sm hover:text-primary transition-colors">
                   Contato
                 </Link>
               </li>
@@ -144,13 +144,13 @@ const Footer = () => {
               </a>
             </p>
             <div className="flex flex-wrap gap-4 md:gap-6">
-              <Link to="/politica-privacidade" className="text-sm text-primary-foreground/40 hover:text-primary transition-colors">
+              <Link to="/politica-privacidade/" className="text-sm text-primary-foreground/40 hover:text-primary transition-colors">
                 Política de Privacidade
               </Link>
-              <Link to="/termos-uso" className="text-sm text-primary-foreground/40 hover:text-primary transition-colors">
+              <Link to="/termos-uso/" className="text-sm text-primary-foreground/40 hover:text-primary transition-colors">
                 Termos de Uso
               </Link>
-              <Link to="/politica-cookies" className="text-sm text-primary-foreground/40 hover:text-primary transition-colors">
+              <Link to="/politica-cookies/" className="text-sm text-primary-foreground/40 hover:text-primary transition-colors">
                 Política de Cookies
               </Link>
             </div>

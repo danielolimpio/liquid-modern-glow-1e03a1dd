@@ -49,7 +49,7 @@ const SolutionsSection = () => {
               de ponta com expertise operacional para maximizar a eficiência e reduzir 
               custos da sua empresa.
             </p>
-            <Link to="/solucoes" className="btn-aqua mt-8 inline-block">
+            <Link to="/solucoes/" className="btn-aqua mt-8 inline-block">
               Conheça Nossas Soluções
             </Link>
           </div>
