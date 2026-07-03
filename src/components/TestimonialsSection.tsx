@@ -65,7 +65,11 @@ const TestimonialsSection = () => {
                 <div className="w-12 h-12 min-w-[3rem] min-h-[3rem] rounded-full overflow-hidden border-2 border-primary/30">
                   <img 
                     src={testimonial.photo} 
-                    alt={testimonial.name}
+                    alt={`Foto de ${testimonial.name}, cliente AcquaFlux`}
+                    width={48}
+                    height={48}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                 </div>
