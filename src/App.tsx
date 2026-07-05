@@ -24,6 +24,8 @@ import ComoEconomizarAgua from "./pages/ComoEconomizarAgua";
 import PegadaHidrica from "./pages/PegadaHidrica";
 import ReusoDeAgua from "./pages/ReusoDeAgua";
 import RevisaoTarifariaAgua from "./pages/RevisaoTarifariaAgua";
+import DeteccaoVazamentosOcultos from "./pages/DeteccaoVazamentosOcultos";
+import MedicaoSetorizadaAgua from "./pages/MedicaoSetorizadaAgua";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -56,6 +58,8 @@ const App = () => (
           <Route path="/pegada-hidrica-empresarial" element={<PegadaHidrica />} />
           <Route path="/reuso-de-agua-nas-empresas" element={<ReusoDeAgua />} />
           <Route path="/revisao-tarifaria-de-agua" element={<RevisaoTarifariaAgua />} />
+          <Route path="/deteccao-vazamentos-ocultos-empresas" element={<DeteccaoVazamentosOcultos />} />
+          <Route path="/medicao-setorizada-de-agua" element={<MedicaoSetorizadaAgua />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
