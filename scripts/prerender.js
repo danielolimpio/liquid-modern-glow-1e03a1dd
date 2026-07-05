@@ -29,7 +29,9 @@ const routes = [
   '/como-economizar-agua-empresa',
   '/pegada-hidrica-empresarial',
   '/reuso-de-agua-nas-empresas',
-  '/revisao-tarifaria-de-agua'
+  '/revisao-tarifaria-de-agua',
+  '/deteccao-vazamentos-ocultos-empresas',
+  '/medicao-setorizada-de-agua'
 ];
 
 // SEO metadata for each route
@@ -173,6 +175,20 @@ const seoData = {
     keywords: 'revisão tarifária de água, RCI-A, restituição de créditos de água, auditoria de conta de água, cobrança indevida água, enquadramento tarifário água, recuperar valores pagos água, restituição fatura água, revisão de fatura água, categoria tarifária concessionária, repetição de indébito água',
     h1: 'Revisão tarifária de água: como recuperar valores pagos indevidamente',
     h2: ['O que é revisão tarifária de água', 'Por que existem cobranças indevidas', 'Base legal e jurídica', 'O que é o serviço RCI-A', 'Passo a passo da revisão', 'Erros tarifários mais comuns', 'Cases reais', 'Quando vale a pena', 'Perguntas frequentes']
+  },
+  '/deteccao-vazamentos-ocultos-empresas': {
+    title: 'Detecção de Vazamentos Ocultos em Empresas: IoT e Setorização',
+    description: 'Vazamentos ocultos consomem até 40% da água da empresa sem aparecer. Aprenda a detectar com IoT, teste noturno e setorização — e a recuperar prejuízos evitáveis.',
+    keywords: 'detecção de vazamentos, vazamento oculto, vazamento de água empresa, monitoramento IoT água, medição setorizada, teste noturno hidrômetro, geofonamento, perdas hídricas, DMA, gestão de perdas de água, telemetria hídrica, sensor de vazão, vazamento invisível, conta de água alta, vazamento na rede hidráulica',
+    h1: 'Detecção de vazamentos ocultos em empresas: como IoT e medição setorizada evitam prejuízos silenciosos',
+    h2: ['O que é um vazamento oculto', 'Panorama de perdas no Brasil', 'Sinais silenciosos de alerta', 'Monitoramento contínuo com IoT', 'Medição setorizada e DMAs', 'Métodos práticos de detecção', 'Custos e recuperação de créditos', 'Perguntas frequentes']
+  },
+  '/medicao-setorizada-de-agua': {
+    title: 'Medição Setorizada de Água: Reduza até 40% do Consumo Empresarial',
+    description: 'Medição setorizada divide a rede hidráulica em zonas de consumo e revela onde a água escapa. Aprenda a projetar DMAs, escolher hidrômetros e reduzir sua fatura.',
+    keywords: 'medição setorizada, medição setorizada de água, DMA água, District Metered Area, hidrômetro setorial, submedição industrial, individualização de hidrômetros, rede hidráulica setorizada, gestão de perdas de água, telemetria hídrica, hidrômetro Woltmann, hidrômetro multijato, hidrômetro ultrassônico, IoT água, mapeamento hidráulico',
+    h1: 'Medição setorizada de água: como mapear a rede hidráulica e reduzir até 40% do consumo empresarial',
+    h2: ['O que é medição setorizada', 'O conceito de DMA aplicado à empresa', 'Benefícios comprovados', 'Como projetar a setorização', 'Tipos de hidrômetro', 'Integração com telemetria IoT', 'Custos, payback e ROI', 'Perguntas frequentes']
   }
 };
 

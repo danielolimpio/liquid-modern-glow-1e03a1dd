@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { Calendar, Clock, ArrowRight, Sparkles } from "lucide-react";
 import reusoCapa from "@/assets/reuso-agua-empresas-capa.jpg";
 import revisaoCapa from "@/assets/revisao-tarifaria-agua-capa.jpg";
+import vazamentosCapa from "@/assets/vazamentos-ocultos-capa.jpg";
+import setorizadaCapa from "@/assets/medicao-setorizada-capa.jpg";
 
 export type BlogPost = {
   href: string;
@@ -15,6 +17,28 @@ export type BlogPost = {
 };
 
 export const featuredPosts: BlogPost[] = [
+  {
+    href: "/deteccao-vazamentos-ocultos-empresas",
+    title: "Detecção de Vazamentos Ocultos em Empresas: IoT, Setorização e Prejuízos Evitados",
+    excerpt:
+      "Um furo de 2 mm desperdiça 96 m³ por mês. Descubra como IoT hídrico, teste noturno e setorização identificam vazamentos invisíveis antes do prejuízo.",
+    cover: vazamentosCapa,
+    alt: "Técnico apontando lanterna para vazamento em tubulação industrial de aço inox com manômetros",
+    category: "IoT & Perdas",
+    date: "05 Jul 2026",
+    readMinutes: 13,
+  },
+  {
+    href: "/medicao-setorizada-de-agua",
+    title: "Medição Setorizada de Água: Reduza até 40% do Consumo Empresarial",
+    excerpt:
+      "Divida a rede hidráulica em DMAs e transforme dados em decisão. Projeto passo a passo, tipos de hidrômetro, integração IoT e ROI real.",
+    cover: setorizadaCapa,
+    alt: "Barrilete industrial com múltiplos hidrômetros setoriais e planta hidráulica ao lado",
+    category: "Engenharia Hídrica",
+    date: "05 Jul 2026",
+    readMinutes: 12,
+  },
   {
     href: "/reuso-de-agua-nas-empresas",
     title: "Reuso de Água nas Empresas: Guia Completo com Sistemas, Custos e ROI",
