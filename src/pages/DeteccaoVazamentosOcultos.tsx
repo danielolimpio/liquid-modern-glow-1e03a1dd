@@ -139,7 +139,7 @@ const DeteccaoVazamentosOcultos = () => {
         description="Vazamentos ocultos consomem até 40% da água da empresa sem aparecer. Aprenda a detectar com IoT, teste noturno e setorização — e a recuperar prejuízos evitáveis."
         canonical="/deteccao-vazamentos-ocultos-empresas/"
         keywords="detecção de vazamentos, vazamento oculto, vazamento de água empresa, monitoramento IoT água, medição setorizada, teste noturno hidrômetro, geofonamento, perdas hídricas, DMA, gestão de perdas de água, telemetria hídrica, sensor de vazão, vazamento invisível, conta de água alta, vazamento na rede hidráulica"
-        image="/assets/vazamentos-ocultos-capa.jpg"
+        image="/og/vazamentos-ocultos-capa.jpg"
         structuredData={structuredData}
       />
       <Header />
