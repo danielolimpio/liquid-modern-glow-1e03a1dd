@@ -438,7 +438,9 @@ const DeteccaoVazamentosOcultos = () => {
                 O ganho não é apenas técnico. Setorização gera responsabilidade: quando cada
                 gerente vê o consumo da sua área em tempo real, o combate ao desperdício deixa de
                 ser abstrato. Empresas com bons programas de setorização reduzem entre 20% e 40%
-                do consumo já no primeiro ciclo de doze meses.
+                do consumo já no primeiro ciclo de doze meses. Para o passo a passo detalhado —
+                projeto de DMAs, tipos de hidrômetro e ROI — veja nosso guia dedicado sobre{" "}
+                <Link to="/medicao-setorizada-de-agua/" className="text-primary underline">medição setorizada de água</Link>.
               </p>
             </section>
 
