@@ -190,6 +190,7 @@ const MedicaoSetorizadaAgua = () => {
           height={864}
           className="w-full rounded-2xl shadow-2xl"
           fetchPriority="high"
+          decoding="async"
         />
         <figcaption className="text-sm text-muted-foreground mt-3 text-center">
           Barrilete setorizado com hidrômetros independentes por área — a base física da gestão
@@ -239,7 +240,10 @@ const MedicaoSetorizadaAgua = () => {
                 de setorização hídrica para indústrias, hospitais, hotéis, condomínios logísticos e
                 edifícios corporativos em todo o Brasil. Você vai encontrar o passo a passo do
                 projeto, a escolha de equipamentos, a integração com IoT, o cálculo de ROI e como
-                usar os dados para pleitear revisão de fatura junto à concessionária.
+                usar os dados para pleitear revisão de fatura junto à concessionária. Se o objetivo
+                imediato é encontrar perdas invisíveis, combine este material com nosso guia sobre{" "}
+                <Link to="/deteccao-vazamentos-ocultos-empresas/" className="text-primary underline">detecção de vazamentos ocultos em empresas</Link>{" "}
+                — a setorização é a base física que torna aquela metodologia possível.
               </p>
             </section>
 
@@ -311,6 +315,7 @@ const MedicaoSetorizadaAgua = () => {
                   width={1536}
                   height={864}
                   loading="lazy"
+                  decoding="async"
                   className="w-full rounded-2xl shadow-xl"
                 />
                 <figcaption className="text-sm text-muted-foreground mt-3 text-center">

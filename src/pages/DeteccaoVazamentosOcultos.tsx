@@ -191,6 +191,7 @@ const DeteccaoVazamentosOcultos = () => {
           height={864}
           className="w-full rounded-2xl shadow-2xl"
           fetchPriority="high"
+          decoding="async"
         />
         <figcaption className="text-sm text-muted-foreground mt-3 text-center">
           Inspeção técnica de vazamento oculto em barrilete industrial — a água só é vista quando o
@@ -238,7 +239,10 @@ const DeteccaoVazamentosOcultos = () => {
                 projetos reais executados pela equipe da AcquaFlux em indústrias, condomínios
                 logísticos, hospitais, hotéis e edifícios corporativos — e mostra o passo a passo
                 que qualquer gestor pode aplicar para transformar vazamentos ocultos em economia
-                imediata.
+                imediata. Se você ainda está mapeando o panorama, comece pelo nosso pilar sobre{" "}
+                <Link to="/economia-de-agua/" className="text-primary underline">economia de água para empresas</Link>{" "}
+                e pelo diagnóstico das principais causas de{" "}
+                <Link to="/desperdicio-de-agua-empresas/" className="text-primary underline">desperdício de água nas empresas</Link>.
               </p>
             </section>
 
@@ -393,6 +397,7 @@ const DeteccaoVazamentosOcultos = () => {
                   width={1536}
                   height={864}
                   loading="lazy"
+                  decoding="async"
                   className="w-full rounded-2xl shadow-xl"
                 />
                 <figcaption className="text-sm text-muted-foreground mt-3 text-center">
@@ -436,7 +441,9 @@ const DeteccaoVazamentosOcultos = () => {
                 O ganho não é apenas técnico. Setorização gera responsabilidade: quando cada
                 gerente vê o consumo da sua área em tempo real, o combate ao desperdício deixa de
                 ser abstrato. Empresas com bons programas de setorização reduzem entre 20% e 40%
-                do consumo já no primeiro ciclo de doze meses.
+                do consumo já no primeiro ciclo de doze meses. Para o passo a passo detalhado —
+                projeto de DMAs, tipos de hidrômetro e ROI — veja nosso guia dedicado sobre{" "}
+                <Link to="/medicao-setorizada-de-agua/" className="text-primary underline">medição setorizada de água</Link>.
               </p>
             </section>
 
