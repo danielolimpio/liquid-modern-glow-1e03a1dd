@@ -190,6 +190,7 @@ const MedicaoSetorizadaAgua = () => {
           height={864}
           className="w-full rounded-2xl shadow-2xl"
           fetchPriority="high"
+          decoding="async"
         />
         <figcaption className="text-sm text-muted-foreground mt-3 text-center">
           Barrilete setorizado com hidrômetros independentes por área — a base física da gestão
