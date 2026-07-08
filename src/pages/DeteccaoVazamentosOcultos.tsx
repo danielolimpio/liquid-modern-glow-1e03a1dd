@@ -239,7 +239,10 @@ const DeteccaoVazamentosOcultos = () => {
                 projetos reais executados pela equipe da AcquaFlux em indústrias, condomínios
                 logísticos, hospitais, hotéis e edifícios corporativos — e mostra o passo a passo
                 que qualquer gestor pode aplicar para transformar vazamentos ocultos em economia
-                imediata.
+                imediata. Se você ainda está mapeando o panorama, comece pelo nosso pilar sobre{" "}
+                <Link to="/economia-de-agua/" className="text-primary underline">economia de água para empresas</Link>{" "}
+                e pelo diagnóstico das principais causas de{" "}
+                <Link to="/desperdicio-de-agua-empresas/" className="text-primary underline">desperdício de água nas empresas</Link>.
               </p>
             </section>
 
