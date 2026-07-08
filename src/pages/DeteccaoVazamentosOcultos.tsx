@@ -73,7 +73,12 @@ const DeteccaoVazamentosOcultos = () => {
           "Detecção de Vazamentos Ocultos em Empresas: guia com IoT, medição setorizada e prejuízos evitados",
         description:
           "Guia definitivo sobre detecção de vazamentos ocultos em empresas: IoT hídrico, setorização, teste noturno, geofonamento e como transformar cada litro em economia.",
-        image: ["https://acquaflux.com/assets/vazamentos-ocultos-capa.jpg"],
+        image: {
+          "@type": "ImageObject",
+          url: "https://acquaflux.com/og/vazamentos-ocultos-capa.jpg",
+          width: 1536,
+          height: 864,
+        },
         author: {
           "@type": "Person",
           name: "Equipe Técnica AcquaFlux",
@@ -85,12 +90,16 @@ const DeteccaoVazamentosOcultos = () => {
           logo: {
             "@type": "ImageObject",
             url: "https://acquaflux.com/favicon.png",
+            width: 512,
+            height: 512,
           },
         },
         datePublished: "2026-07-05",
         dateModified: "2026-07-05",
-        mainEntityOfPage:
-          "https://acquaflux.com/deteccao-vazamentos-ocultos-empresas/",
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": "https://acquaflux.com/deteccao-vazamentos-ocultos-empresas/",
+        },
         inLanguage: "pt-BR",
       },
       {
