@@ -191,6 +191,7 @@ const DeteccaoVazamentosOcultos = () => {
           height={864}
           className="w-full rounded-2xl shadow-2xl"
           fetchPriority="high"
+          decoding="async"
         />
         <figcaption className="text-sm text-muted-foreground mt-3 text-center">
           Inspeção técnica de vazamento oculto em barrilete industrial — a água só é vista quando o
