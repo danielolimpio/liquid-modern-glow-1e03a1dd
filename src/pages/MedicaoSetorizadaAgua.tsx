@@ -312,6 +312,7 @@ const MedicaoSetorizadaAgua = () => {
                   width={1536}
                   height={864}
                   loading="lazy"
+                  decoding="async"
                   className="w-full rounded-2xl shadow-xl"
                 />
                 <figcaption className="text-sm text-muted-foreground mt-3 text-center">
