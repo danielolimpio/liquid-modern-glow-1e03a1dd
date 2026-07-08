@@ -73,7 +73,12 @@ const DeteccaoVazamentosOcultos = () => {
           "Detecção de Vazamentos Ocultos em Empresas: guia com IoT, medição setorizada e prejuízos evitados",
         description:
           "Guia definitivo sobre detecção de vazamentos ocultos em empresas: IoT hídrico, setorização, teste noturno, geofonamento e como transformar cada litro em economia.",
-        image: ["https://acquaflux.com/assets/vazamentos-ocultos-capa.jpg"],
+        image: {
+          "@type": "ImageObject",
+          url: "https://acquaflux.com/og/vazamentos-ocultos-capa.jpg",
+          width: 1536,
+          height: 864,
+        },
         author: {
           "@type": "Person",
           name: "Equipe Técnica AcquaFlux",
@@ -85,12 +90,16 @@ const DeteccaoVazamentosOcultos = () => {
           logo: {
             "@type": "ImageObject",
             url: "https://acquaflux.com/favicon.png",
+            width: 512,
+            height: 512,
           },
         },
         datePublished: "2026-07-05",
         dateModified: "2026-07-05",
-        mainEntityOfPage:
-          "https://acquaflux.com/deteccao-vazamentos-ocultos-empresas/",
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": "https://acquaflux.com/deteccao-vazamentos-ocultos-empresas/",
+        },
         inLanguage: "pt-BR",
       },
       {
@@ -130,7 +139,7 @@ const DeteccaoVazamentosOcultos = () => {
         description="Vazamentos ocultos consomem até 40% da água da empresa sem aparecer. Aprenda a detectar com IoT, teste noturno e setorização — e a recuperar prejuízos evitáveis."
         canonical="/deteccao-vazamentos-ocultos-empresas/"
         keywords="detecção de vazamentos, vazamento oculto, vazamento de água empresa, monitoramento IoT água, medição setorizada, teste noturno hidrômetro, geofonamento, perdas hídricas, DMA, gestão de perdas de água, telemetria hídrica, sensor de vazão, vazamento invisível, conta de água alta, vazamento na rede hidráulica"
-        image="/assets/vazamentos-ocultos-capa.jpg"
+        image="/og/vazamentos-ocultos-capa.jpg"
         structuredData={structuredData}
       />
       <Header />

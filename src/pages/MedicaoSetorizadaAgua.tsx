@@ -72,7 +72,12 @@ const MedicaoSetorizadaAgua = () => {
           "Medição Setorizada de Água: como mapear a rede hidráulica e reduzir até 40% do consumo",
         description:
           "Guia técnico completo sobre medição setorizada de água em empresas: projeto de DMAs, tipos de hidrômetro, integração IoT, ROI e recuperação de créditos.",
-        image: ["https://acquaflux.com/assets/medicao-setorizada-capa.jpg"],
+        image: {
+          "@type": "ImageObject",
+          url: "https://acquaflux.com/og/medicao-setorizada-capa.jpg",
+          width: 1536,
+          height: 864,
+        },
         author: {
           "@type": "Person",
           name: "Equipe Técnica AcquaFlux",
@@ -84,11 +89,16 @@ const MedicaoSetorizadaAgua = () => {
           logo: {
             "@type": "ImageObject",
             url: "https://acquaflux.com/favicon.png",
+            width: 512,
+            height: 512,
           },
         },
         datePublished: "2026-07-05",
         dateModified: "2026-07-05",
-        mainEntityOfPage: "https://acquaflux.com/medicao-setorizada-de-agua/",
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": "https://acquaflux.com/medicao-setorizada-de-agua/",
+        },
         inLanguage: "pt-BR",
       },
       {
@@ -128,7 +138,7 @@ const MedicaoSetorizadaAgua = () => {
         description="Medição setorizada divide a rede hidráulica em zonas de consumo e revela onde a água escapa. Aprenda a projetar DMAs, escolher hidrômetros e reduzir sua fatura."
         canonical="/medicao-setorizada-de-agua/"
         keywords="medição setorizada, medição setorizada de água, DMA água, District Metered Area, hidrômetro setorial, submedição industrial, individualização de hidrômetros, rede hidráulica setorizada, gestão de perdas de água, telemetria hídrica, hidrômetro Woltmann, hidrômetro multijato, hidrômetro ultrassônico, IoT água, mapeamento hidráulico"
-        image="/assets/medicao-setorizada-capa.jpg"
+        image="/og/medicao-setorizada-capa.jpg"
         structuredData={structuredData}
       />
       <Header />
