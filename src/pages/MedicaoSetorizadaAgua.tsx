@@ -138,7 +138,7 @@ const MedicaoSetorizadaAgua = () => {
         description="Medição setorizada divide a rede hidráulica em zonas de consumo e revela onde a água escapa. Aprenda a projetar DMAs, escolher hidrômetros e reduzir sua fatura."
         canonical="/medicao-setorizada-de-agua/"
         keywords="medição setorizada, medição setorizada de água, DMA água, District Metered Area, hidrômetro setorial, submedição industrial, individualização de hidrômetros, rede hidráulica setorizada, gestão de perdas de água, telemetria hídrica, hidrômetro Woltmann, hidrômetro multijato, hidrômetro ultrassônico, IoT água, mapeamento hidráulico"
-        image="/assets/medicao-setorizada-capa.jpg"
+        image="/og/medicao-setorizada-capa.jpg"
         structuredData={structuredData}
       />
       <Header />
