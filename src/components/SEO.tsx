@@ -28,9 +28,24 @@ const SEO = ({
   noindex = false,
   structuredData,
   keywords,
+  preloadImage,
 }: SEOProps) => {
   const siteUrl = "https://acquaflux.com";
   const fullTitle = title.includes("AcquaFlux") ? title : `${title} | AcquaFlux`;
+
+  // Determina a melhor variante para preload (AVIF > WebP > src)
+  const preload =
+    typeof preloadImage === "string"
+      ? { href: preloadImage, type: undefined as string | undefined, srcset: undefined as string | undefined }
+      : preloadImage
+        ? (() => {
+            const s = preloadImage.sources;
+            if (s.avif) return { href: preloadImage.img.src, type: "image/avif", srcset: s.avif };
+            if (s.webp) return { href: preloadImage.img.src, type: "image/webp", srcset: s.webp };
+            return { href: preloadImage.img.src, type: undefined, srcset: undefined };
+          })()
+        : null;
+
 
   const normalizeCanonical = (p: string) => {
     // garante formato /rota/ (exceto raiz)
