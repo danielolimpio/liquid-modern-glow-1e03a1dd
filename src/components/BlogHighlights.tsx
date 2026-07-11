@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import { Calendar, Clock, ArrowRight, Sparkles } from "lucide-react";
-import reusoCapa from "@/assets/reuso-agua-empresas-capa.jpg";
-import revisaoCapa from "@/assets/revisao-tarifaria-agua-capa.jpg";
-import vazamentosCapa from "@/assets/vazamentos-ocultos-capa.jpg";
-import setorizadaCapa from "@/assets/medicao-setorizada-capa.jpg";
-import auditoriaCapa from "@/assets/auditoria-contas-agua-capa.jpg";
-import outorgaCapa from "@/assets/outorga-uso-agua-capa.jpg";
+import reusoCapa from "@/assets/reuso-agua-empresas-capa.jpg?picture";
+import revisaoCapa from "@/assets/revisao-tarifaria-agua-capa.jpg?picture";
+import vazamentosCapa from "@/assets/vazamentos-ocultos-capa.jpg?picture";
+import setorizadaCapa from "@/assets/medicao-setorizada-capa.jpg?picture";
+import auditoriaCapa from "@/assets/auditoria-contas-agua-capa.jpg?picture";
+import outorgaCapa from "@/assets/outorga-uso-agua-capa.jpg?picture";
 
 export type BlogPost = {
   href: string;
