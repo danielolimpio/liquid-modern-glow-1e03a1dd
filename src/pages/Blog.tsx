@@ -4,6 +4,7 @@ import { ArrowRight, Calendar, Clock, User, Sparkles, TrendingUp, Droplets, Leaf
 import { Link } from "react-router-dom";
 import SEO from "@/components/SEO";
 import BlogHighlights, { featuredPosts } from "@/components/BlogHighlights";
+import Picture from "@/components/Picture";
 
 const Blog = () => {
   const featuredCategories = [
