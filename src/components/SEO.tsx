@@ -75,6 +75,19 @@ const SEO = ({
       {/* Canonical */}
       {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
 
+      {/* LCP image preload */}
+      {preload && (
+        <link
+          rel="preload"
+          as="image"
+          href={preload.href}
+          {...(preload.srcset ? { imagesrcset: preload.srcset } : {})}
+          {...(preload.type ? { imagetype: preload.type } : {})}
+          fetchpriority="high"
+        />
+      )}
+
+
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={type} />
       <meta property="og:title" content={fullTitle} />
