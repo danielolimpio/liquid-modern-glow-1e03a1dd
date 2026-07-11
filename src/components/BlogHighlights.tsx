@@ -127,14 +127,16 @@ const BlogHighlights = ({
               className="group relative rounded-2xl overflow-hidden border border-border/50 bg-card hover:border-primary/40 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl"
             >
               <div className="relative aspect-[16/9] overflow-hidden">
-                <img
-                  src={post.cover}
+                <Picture
+                  image={post.cover}
                   alt={post.alt}
                   loading="lazy"
+                  decoding="async"
                   width={1536}
                   height={864}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
+
                 <div className="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-white/95 dark:bg-card/95 backdrop-blur-sm text-xs font-semibold text-foreground border border-border/50">
                   {post.category}
                 </div>
