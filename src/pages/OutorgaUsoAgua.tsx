@@ -186,7 +186,7 @@ const OutorgaUsoAgua = () => {
       {/* COVER */}
       <figure className="container mx-auto px-6 max-w-5xl mb-12">
         <Picture
-          src={capa}
+          image={capa}
           alt="Cabeça de poço artesiano em aço inox com manômetro e painel de controle da bomba submersível em unidade industrial brasileira"
           width={1536}
           height={864}
@@ -362,7 +362,7 @@ const OutorgaUsoAgua = () => {
 
               <figure className="my-8">
                 <Picture
-                  src={campo}
+                  image={campo}
                   alt="Engenheiro ambiental brasileiro com capacete amarelo medindo vazão em ponto de captação industrial na margem de rio com vegetação tropical"
                   width={1536}
                   height={864}

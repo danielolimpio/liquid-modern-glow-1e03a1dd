@@ -186,7 +186,7 @@ const AuditoriaContasAgua = () => {
       {/* COVER */}
       <figure className="container mx-auto px-6 max-w-5xl mb-12">
         <Picture
-          src={capa}
+          image={capa}
           alt="Fatura de água impressa sobre mesa de escritório com lupa, calculadora e laptop exibindo planilha analítica em auditoria financeira"
           width={1536}
           height={864}
@@ -376,7 +376,7 @@ const AuditoriaContasAgua = () => {
 
               <figure className="my-8">
                 <Picture
-                  src={analise}
+                  image={analise}
                   alt="Analista financeira de terno azul-marinho conferindo várias faturas de água impressas com marca-texto amarelo em mesa de reunião ao lado de laptop com dashboard financeiro"
                   width={1536}
                   height={864}

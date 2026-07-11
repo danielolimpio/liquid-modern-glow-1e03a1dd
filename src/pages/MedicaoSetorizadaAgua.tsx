@@ -185,7 +185,7 @@ const MedicaoSetorizadaAgua = () => {
       {/* COVER */}
       <figure className="container mx-auto px-6 max-w-5xl mb-12">
         <Picture
-          src={capa}
+          image={capa}
           alt="Barrilete industrial com múltiplos hidrômetros setoriais em cluster metálico, planta hidráulica em blueprint ao lado, tons azuis e detalhes em bronze"
           width={1536}
           height={864}
@@ -311,7 +311,7 @@ const MedicaoSetorizadaAgua = () => {
 
               <figure className="my-8">
                 <Picture
-                  src={engenheira}
+                  image={engenheira}
                   alt="Engenheira hídrica em uniforme escuro inspecionando bateria de hidrômetros setoriais alinhados em parede de utility room de edifício comercial"
                   width={1536}
                   height={864}

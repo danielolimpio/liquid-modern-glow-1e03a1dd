@@ -192,7 +192,7 @@ const ReusoDeAgua = () => {
       {/* COVER IMAGE */}
       <figure className="container mx-auto px-6 max-w-5xl mb-12">
         <Picture
-          src={capa}
+          image={capa}
           alt="Sistema de reuso de água em planta industrial brasileira com tanques transparentes, tubulações de aço inox e engenheiro operando painel de controle"
           width={1536}
           height={864}
@@ -429,7 +429,7 @@ const ReusoDeAgua = () => {
             {/* Imagem complementar */}
             <figure className="my-10">
               <Picture
-                src={sistemaFiltracao}
+                image={sistemaFiltracao}
                 alt="Módulos de filtração por osmose reversa e ultrafiltração em sistema de reuso de água industrial da AcquaFlux"
                 width={1400}
                 height={800}

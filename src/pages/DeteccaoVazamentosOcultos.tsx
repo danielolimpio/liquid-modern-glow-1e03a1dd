@@ -186,7 +186,7 @@ const DeteccaoVazamentosOcultos = () => {
       {/* COVER */}
       <figure className="container mx-auto px-6 max-w-5xl mb-12">
         <Picture
-          src={capa}
+          image={capa}
           alt="Técnico apontando lanterna para vazamento em tubulação industrial de aço inox com manômetros e chão molhado"
           width={1536}
           height={864}
@@ -393,7 +393,7 @@ const DeteccaoVazamentosOcultos = () => {
 
               <figure className="my-8">
                 <Picture
-                  src={iot}
+                  image={iot}
                   alt="Engenheiro com capacete branco e colete refletivo analisando dashboard IoT de vazão hídrica em tablet, ao lado de sensor ultrassônico instalado em tubulação industrial"
                   width={1536}
                   height={864}

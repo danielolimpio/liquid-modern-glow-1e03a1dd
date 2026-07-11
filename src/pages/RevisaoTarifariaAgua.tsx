@@ -199,7 +199,7 @@ const RevisaoTarifariaAgua = () => {
 
       <figure className="container mx-auto px-6 max-w-5xl mb-12">
         <Picture
-          src={capa}
+          image={capa}
           alt="Especialista analisando faturas de água com lupa, calculadora e planilhas no computador durante auditoria de revisão tarifária"
           width={1536}
           height={864}
@@ -374,7 +374,7 @@ const RevisaoTarifariaAgua = () => {
 
             <figure className="my-10">
               <Picture
-                src={hidrometro}
+                image={hidrometro}
                 alt="Hidrômetro comercial sendo inspecionado durante auditoria de revisão tarifária de água em empresa brasileira"
                 width={1400}
                 height={800}
