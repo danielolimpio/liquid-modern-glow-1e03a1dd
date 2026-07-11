@@ -4,6 +4,7 @@ import { ArrowRight, Calendar, Clock, User, Sparkles, TrendingUp, Droplets, Leaf
 import { Link } from "react-router-dom";
 import SEO from "@/components/SEO";
 import BlogHighlights, { featuredPosts } from "@/components/BlogHighlights";
+import Picture from "@/components/Picture";
 
 const Blog = () => {
   const featuredCategories = [
@@ -122,14 +123,16 @@ const Blog = () => {
           >
             <div className="grid lg:grid-cols-2 gap-0">
               <div className="relative h-64 lg:h-[450px] overflow-hidden">
-                <img
-                  src={featuredPosts[0].cover}
+                <Picture
+                  image={featuredPosts[0].cover}
                   alt={featuredPosts[0].alt}
                   width={1536}
                   height={864}
                   loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
+
                 <div className="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-white/95 dark:bg-card/95 backdrop-blur-sm text-xs font-semibold text-foreground border border-border/50">
                   {featuredPosts[0].category}
                 </div>

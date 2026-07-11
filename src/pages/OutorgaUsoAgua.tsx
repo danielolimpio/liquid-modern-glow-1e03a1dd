@@ -14,8 +14,9 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import capa from "@/assets/outorga-uso-agua-capa.jpg";
-import campo from "@/assets/outorga-uso-agua-campo.jpg";
+import Picture from "@/components/Picture";
+import capa from "@/assets/outorga-uso-agua-capa.jpg?picture";
+import campo from "@/assets/outorga-uso-agua-campo.jpg?picture";
 
 const WHATS_URL =
   "https://wa.me/5512981408992?text=Ol%C3%A1!%20Quero%20orienta%C3%A7%C3%A3o%20sobre%20outorga%20de%20uso%20da%20%C3%A1gua%20para%20minha%20empresa.";
@@ -184,8 +185,8 @@ const OutorgaUsoAgua = () => {
 
       {/* COVER */}
       <figure className="container mx-auto px-6 max-w-5xl mb-12">
-        <img
-          src={capa}
+        <Picture
+          image={capa}
           alt="Cabeça de poço artesiano em aço inox com manômetro e painel de controle da bomba submersível em unidade industrial brasileira"
           width={1536}
           height={864}
@@ -360,8 +361,8 @@ const OutorgaUsoAgua = () => {
               <h2 className="text-3xl font-bold text-foreground mt-4 mb-4">4. Quem emite: ANA ou órgão estadual?</h2>
 
               <figure className="my-8">
-                <img
-                  src={campo}
+                <Picture
+                  image={campo}
                   alt="Engenheiro ambiental brasileiro com capacete amarelo medindo vazão em ponto de captação industrial na margem de rio com vegetação tropical"
                   width={1536}
                   height={864}

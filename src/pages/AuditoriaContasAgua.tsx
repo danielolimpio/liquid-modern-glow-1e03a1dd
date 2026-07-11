@@ -14,8 +14,9 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import capa from "@/assets/auditoria-contas-agua-capa.jpg";
-import analise from "@/assets/auditoria-contas-agua-analise.jpg";
+import Picture from "@/components/Picture";
+import capa from "@/assets/auditoria-contas-agua-capa.jpg?picture";
+import analise from "@/assets/auditoria-contas-agua-analise.jpg?picture";
 
 const WHATS_URL =
   "https://wa.me/5512981408992?text=Ol%C3%A1!%20Quero%20uma%20auditoria%20nas%20contas%20de%20%C3%A1gua%20da%20minha%20empresa%20com%20a%20AcquaFlux.";
@@ -184,8 +185,8 @@ const AuditoriaContasAgua = () => {
 
       {/* COVER */}
       <figure className="container mx-auto px-6 max-w-5xl mb-12">
-        <img
-          src={capa}
+        <Picture
+          image={capa}
           alt="Fatura de água impressa sobre mesa de escritório com lupa, calculadora e laptop exibindo planilha analítica em auditoria financeira"
           width={1536}
           height={864}
@@ -374,8 +375,8 @@ const AuditoriaContasAgua = () => {
               <h2 className="text-3xl font-bold text-foreground mt-4 mb-4">4. Os sete erros tarifários mais comuns</h2>
 
               <figure className="my-8">
-                <img
-                  src={analise}
+                <Picture
+                  image={analise}
                   alt="Analista financeira de terno azul-marinho conferindo várias faturas de água impressas com marca-texto amarelo em mesa de reunião ao lado de laptop com dashboard financeiro"
                   width={1536}
                   height={864}

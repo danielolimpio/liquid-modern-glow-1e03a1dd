@@ -13,8 +13,9 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import capa from "@/assets/medicao-setorizada-capa.jpg";
-import engenheira from "@/assets/medicao-setorizada-engenheira.jpg";
+import Picture from "@/components/Picture";
+import capa from "@/assets/medicao-setorizada-capa.jpg?picture";
+import engenheira from "@/assets/medicao-setorizada-engenheira.jpg?picture";
 
 const WHATS_URL =
   "https://wa.me/5512981408992?text=Ol%C3%A1!%20Quero%20setorizar%20a%20rede%20hidr%C3%A1ulica%20da%20minha%20empresa%20com%20a%20AcquaFlux.";
@@ -183,8 +184,8 @@ const MedicaoSetorizadaAgua = () => {
 
       {/* COVER */}
       <figure className="container mx-auto px-6 max-w-5xl mb-12">
-        <img
-          src={capa}
+        <Picture
+          image={capa}
           alt="Barrilete industrial com múltiplos hidrômetros setoriais em cluster metálico, planta hidráulica em blueprint ao lado, tons azuis e detalhes em bronze"
           width={1536}
           height={864}
@@ -309,8 +310,8 @@ const MedicaoSetorizadaAgua = () => {
               <h2 className="text-3xl font-bold text-foreground mt-4 mb-4">4. Como projetar a setorização passo a passo</h2>
 
               <figure className="my-8">
-                <img
-                  src={engenheira}
+                <Picture
+                  image={engenheira}
                   alt="Engenheira hídrica em uniforme escuro inspecionando bateria de hidrômetros setoriais alinhados em parede de utility room de edifício comercial"
                   width={1536}
                   height={864}

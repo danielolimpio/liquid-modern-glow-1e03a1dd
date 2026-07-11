@@ -15,8 +15,9 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import capa from "@/assets/revisao-tarifaria-agua-capa.jpg";
-import hidrometro from "@/assets/revisao-tarifaria-hidrometro.jpg";
+import Picture from "@/components/Picture";
+import capa from "@/assets/revisao-tarifaria-agua-capa.jpg?picture";
+import hidrometro from "@/assets/revisao-tarifaria-hidrometro.jpg?picture";
 
 const WHATS_URL =
   "https://wa.me/5512981408992?text=Ol%C3%A1!%20Quero%20economizar%20%C3%A1gua%20agora%20com%20a%20AcquaFlux.";
@@ -197,8 +198,8 @@ const RevisaoTarifariaAgua = () => {
       </section>
 
       <figure className="container mx-auto px-6 max-w-5xl mb-12">
-        <img
-          src={capa}
+        <Picture
+          image={capa}
           alt="Especialista analisando faturas de água com lupa, calculadora e planilhas no computador durante auditoria de revisão tarifária"
           width={1536}
           height={864}
@@ -372,8 +373,8 @@ const RevisaoTarifariaAgua = () => {
             </div>
 
             <figure className="my-10">
-              <img
-                src={hidrometro}
+              <Picture
+                image={hidrometro}
                 alt="Hidrômetro comercial sendo inspecionado durante auditoria de revisão tarifária de água em empresa brasileira"
                 width={1400}
                 height={800}
