@@ -136,6 +136,7 @@ const OutorgaUsoAgua = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
+        preloadImage={capa}
         title="Outorga de Uso da Água: Guia Completo para Empresas 2026"
         description="Como conseguir outorga de uso da água na ANA e nos órgãos estaduais: quem precisa, documentos, prazos, custos, penalidades e integração com licenciamento ambiental."
         canonical="/outorga-uso-da-agua-empresas/"

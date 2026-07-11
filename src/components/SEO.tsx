@@ -1,4 +1,10 @@
+import type { LinkHTMLAttributes } from "react";
 import { Helmet } from "react-helmet-async";
+
+type PictureImport = {
+  sources: Record<string, string>;
+  img: { src: string; w: number; h: number };
+};
 
 interface SEOProps {
   title: string;
@@ -9,7 +15,10 @@ interface SEOProps {
   noindex?: boolean;
   structuredData?: object;
   keywords?: string;
+  /** Imagem LCP a ser pré-carregada (aceita objeto do vite-imagetools ou URL). */
+  preloadImage?: PictureImport | string;
 }
+
 
 const SEO = ({
   title,
@@ -20,9 +29,24 @@ const SEO = ({
   noindex = false,
   structuredData,
   keywords,
+  preloadImage,
 }: SEOProps) => {
   const siteUrl = "https://acquaflux.com";
   const fullTitle = title.includes("AcquaFlux") ? title : `${title} | AcquaFlux`;
+
+  // Determina a melhor variante para preload (AVIF > WebP > src)
+  const preload =
+    typeof preloadImage === "string"
+      ? { href: preloadImage, type: undefined as string | undefined, srcset: undefined as string | undefined }
+      : preloadImage
+        ? (() => {
+            const s = preloadImage.sources;
+            if (s.avif) return { href: preloadImage.img.src, type: "image/avif", srcset: s.avif };
+            if (s.webp) return { href: preloadImage.img.src, type: "image/webp", srcset: s.webp };
+            return { href: preloadImage.img.src, type: undefined, srcset: undefined };
+          })()
+        : null;
+
 
   const normalizeCanonical = (p: string) => {
     // garante formato /rota/ (exceto raiz)
@@ -51,6 +75,22 @@ const SEO = ({
       
       {/* Canonical */}
       {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+
+      {/* LCP image preload */}
+      {preload && (
+        <link
+          {...({
+            rel: "preload",
+            as: "image",
+            href: preload.href,
+            imagesrcset: preload.srcset,
+            imagetype: preload.type,
+            fetchpriority: "high",
+          } as unknown as LinkHTMLAttributes<HTMLLinkElement>)}
+        />
+      )}
+
+
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={type} />

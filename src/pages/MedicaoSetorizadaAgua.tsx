@@ -135,6 +135,7 @@ const MedicaoSetorizadaAgua = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
+        preloadImage={capa}
         title="Medição Setorizada de Água: Reduza até 40% do Consumo Empresarial"
         description="Medição setorizada divide a rede hidráulica em zonas de consumo e revela onde a água escapa. Aprenda a projetar DMAs, escolher hidrômetros e reduzir sua fatura."
         canonical="/medicao-setorizada-de-agua/"
