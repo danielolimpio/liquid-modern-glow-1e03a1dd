@@ -86,7 +86,7 @@ const SEO = ({
             imagesrcset: preload.srcset,
             imagetype: preload.type,
             fetchpriority: "high",
-          } as unknown as React.LinkHTMLAttributes<HTMLLinkElement>)}
+          } as unknown as LinkHTMLAttributes<HTMLLinkElement>)}
         />
       )}
 
