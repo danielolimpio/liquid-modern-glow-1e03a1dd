@@ -136,6 +136,7 @@ const AuditoriaContasAgua = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
+        preloadImage={capa}
         title="Auditoria de Contas de Água: Como Achar Cobranças Indevidas"
         description="Aprenda o método técnico de auditoria de contas de água empresariais: erros tarifários mais comuns, base legal, prazos e como transformar diagnóstico em restituição."
         canonical="/auditoria-contas-de-agua-empresas/"

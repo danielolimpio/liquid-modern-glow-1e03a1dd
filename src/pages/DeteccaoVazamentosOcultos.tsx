@@ -136,6 +136,7 @@ const DeteccaoVazamentosOcultos = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
+        preloadImage={capa}
         title="Detecção de Vazamentos Ocultos em Empresas: IoT e Setorização"
         description="Vazamentos ocultos consomem até 40% da água da empresa sem aparecer. Aprenda a detectar com IoT, teste noturno e setorização — e a recuperar prejuízos evitáveis."
         canonical="/deteccao-vazamentos-ocultos-empresas/"

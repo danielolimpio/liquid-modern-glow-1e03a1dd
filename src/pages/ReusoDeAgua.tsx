@@ -142,6 +142,7 @@ const ReusoDeAgua = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
+        preloadImage={capa}
         title="Reuso de Água nas Empresas: Guia Completo 2026 | AcquaFlux"
         description="Reuso de água nas empresas: normas ABNT, tipos, custos, ROI, cases brasileiros e integração com ESG. Reduza até 70% da captação com o guia técnico da AcquaFlux."
         canonical="/reuso-de-agua-nas-empresas/"

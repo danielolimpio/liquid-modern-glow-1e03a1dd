@@ -151,6 +151,7 @@ const RevisaoTarifariaAgua = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
+        preloadImage={capa}
         title="Revisão Tarifária de Água: Como Recuperar Créditos | AcquaFlux"
         description="Revisão tarifária de água e RCI-A: como auditar faturas de até 10 anos, recuperar cobranças indevidas e reduzir sua conta. Sem CAPEX. Base legal, prazos e cases."
         canonical="/revisao-tarifaria-de-agua/"
