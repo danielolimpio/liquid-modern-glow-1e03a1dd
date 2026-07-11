@@ -31,7 +31,9 @@ const routes = [
   '/reuso-de-agua-nas-empresas',
   '/revisao-tarifaria-de-agua',
   '/deteccao-vazamentos-ocultos-empresas',
-  '/medicao-setorizada-de-agua'
+  '/medicao-setorizada-de-agua',
+  '/auditoria-contas-de-agua-empresas',
+  '/outorga-uso-da-agua-empresas'
 ];
 
 // SEO metadata for each route
@@ -189,6 +191,20 @@ const seoData = {
     keywords: 'medição setorizada, medição setorizada de água, DMA água, District Metered Area, hidrômetro setorial, submedição industrial, individualização de hidrômetros, rede hidráulica setorizada, gestão de perdas de água, telemetria hídrica, hidrômetro Woltmann, hidrômetro multijato, hidrômetro ultrassônico, IoT água, mapeamento hidráulico',
     h1: 'Medição setorizada de água: como mapear a rede hidráulica e reduzir até 40% do consumo empresarial',
     h2: ['O que é medição setorizada', 'O conceito de DMA aplicado à empresa', 'Benefícios comprovados', 'Como projetar a setorização', 'Tipos de hidrômetro', 'Integração com telemetria IoT', 'Custos, payback e ROI', 'Perguntas frequentes']
+  },
+  '/auditoria-contas-de-agua-empresas': {
+    title: 'Auditoria de Contas de Água: Como Achar Cobranças Indevidas',
+    description: 'Aprenda o método técnico de auditoria de contas de água empresariais: erros tarifários mais comuns, base legal, prazos e como transformar diagnóstico em restituição.',
+    keywords: 'auditoria de contas de água, auditoria fatura de água, cobrança indevida água, revisão fatura água, erro tarifário água, enquadramento tarifário concessionária, esgoto cobrado a mais, categoria tarifária água empresa, análise fatura saneamento, repetição indébito água, restituição valores pagos água',
+    h1: 'Auditoria de contas de água: como identificar cobranças indevidas na fatura da sua empresa',
+    h2: ['O que é auditoria de conta de água', 'Por que sua fatura pode estar errada', 'Anatomia da fatura', 'Erros tarifários mais comuns', 'Método de auditoria em 7 etapas', 'Base legal e prazos', 'Cases reais', 'Quando vale contratar auditoria', 'Perguntas frequentes']
+  },
+  '/outorga-uso-da-agua-empresas': {
+    title: 'Outorga de Uso da Água: Guia Completo para Empresas 2026',
+    description: 'Como conseguir outorga de uso da água na ANA e nos órgãos estaduais: quem precisa, documentos, prazos, custos, penalidades e integração com licenciamento ambiental.',
+    keywords: 'outorga de uso da água, outorga ANA, outorga água poço artesiano, outorga captação superficial, outorga uso recursos hídricos, licenciamento ambiental água, CNARH, cobrança pelo uso da água, Lei 9433, Política Nacional de Recursos Hídricos, dispensa de outorga, renovação outorga, outorga preventiva, conformidade regulatória água',
+    h1: 'Outorga de uso da água: o guia completo de conformidade regulatória para empresas brasileiras',
+    h2: ['O que é outorga de uso da água', 'Quem precisa (e quem não precisa)', 'Tipos de outorga', 'ANA vs. órgãos estaduais', 'Documentação necessária', 'Passo a passo do processo', 'Cobrança pelo uso da água', 'Penalidades por irregularidade', 'Outorga e ESG', 'Perguntas frequentes']
   }
 };
 
