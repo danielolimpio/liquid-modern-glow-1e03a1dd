@@ -1,3 +1,4 @@
+import type { LinkHTMLAttributes } from "react";
 import { Helmet } from "react-helmet-async";
 
 type PictureImport = {
