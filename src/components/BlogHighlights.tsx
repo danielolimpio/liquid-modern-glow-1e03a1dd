@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { Calendar, Clock, ArrowRight, Sparkles } from "lucide-react";
+import Picture from "@/components/Picture";
+
 import reusoCapa from "@/assets/reuso-agua-empresas-capa.jpg?picture";
 import revisaoCapa from "@/assets/revisao-tarifaria-agua-capa.jpg?picture";
 import vazamentosCapa from "@/assets/vazamentos-ocultos-capa.jpg?picture";
