@@ -13,7 +13,10 @@ export type BlogPost = {
   href: string;
   title: string;
   excerpt: string;
-  cover: string;
+  cover: {
+    sources: Record<string, string>;
+    img: { src: string; w: number; h: number };
+  };
   alt: string;
   category: string;
   date: string;
