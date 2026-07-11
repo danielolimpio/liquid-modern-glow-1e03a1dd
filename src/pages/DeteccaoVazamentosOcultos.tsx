@@ -14,8 +14,9 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import capa from "@/assets/vazamentos-ocultos-capa.jpg";
-import iot from "@/assets/vazamentos-ocultos-iot.jpg";
+import Picture from "@/components/Picture";
+import capa from "@/assets/vazamentos-ocultos-capa.jpg?picture";
+import iot from "@/assets/vazamentos-ocultos-iot.jpg?picture";
 
 const WHATS_URL =
   "https://wa.me/5512981408992?text=Ol%C3%A1!%20Quero%20detectar%20vazamentos%20ocultos%20na%20minha%20empresa%20com%20a%20AcquaFlux.";
@@ -184,7 +185,7 @@ const DeteccaoVazamentosOcultos = () => {
 
       {/* COVER */}
       <figure className="container mx-auto px-6 max-w-5xl mb-12">
-        <img
+        <Picture
           src={capa}
           alt="Técnico apontando lanterna para vazamento em tubulação industrial de aço inox com manômetros e chão molhado"
           width={1536}
@@ -391,7 +392,7 @@ const DeteccaoVazamentosOcultos = () => {
               </p>
 
               <figure className="my-8">
-                <img
+                <Picture
                   src={iot}
                   alt="Engenheiro com capacete branco e colete refletivo analisando dashboard IoT de vazão hídrica em tablet, ao lado de sensor ultrassônico instalado em tubulação industrial"
                   width={1536}

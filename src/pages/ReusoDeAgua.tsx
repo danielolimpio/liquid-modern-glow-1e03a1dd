@@ -14,8 +14,9 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import capa from "@/assets/reuso-agua-empresas-capa.jpg";
-import sistemaFiltracao from "@/assets/reuso-agua-sistema-filtracao.jpg";
+import Picture from "@/components/Picture";
+import capa from "@/assets/reuso-agua-empresas-capa.jpg?picture";
+import sistemaFiltracao from "@/assets/reuso-agua-sistema-filtracao.jpg?picture";
 
 const WHATS_URL =
   "https://wa.me/5512981408992?text=Ol%C3%A1!%20Quero%20economizar%20%C3%A1gua%20agora%20com%20a%20AcquaFlux.";
@@ -190,7 +191,7 @@ const ReusoDeAgua = () => {
 
       {/* COVER IMAGE */}
       <figure className="container mx-auto px-6 max-w-5xl mb-12">
-        <img
+        <Picture
           src={capa}
           alt="Sistema de reuso de água em planta industrial brasileira com tanques transparentes, tubulações de aço inox e engenheiro operando painel de controle"
           width={1536}
@@ -427,7 +428,7 @@ const ReusoDeAgua = () => {
 
             {/* Imagem complementar */}
             <figure className="my-10">
-              <img
+              <Picture
                 src={sistemaFiltracao}
                 alt="Módulos de filtração por osmose reversa e ultrafiltração em sistema de reuso de água industrial da AcquaFlux"
                 width={1400}
