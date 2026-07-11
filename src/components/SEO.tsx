@@ -1,5 +1,10 @@
 import { Helmet } from "react-helmet-async";
 
+type PictureImport = {
+  sources: Record<string, string>;
+  img: { src: string; w: number; h: number };
+};
+
 interface SEOProps {
   title: string;
   description: string;
@@ -9,7 +14,10 @@ interface SEOProps {
   noindex?: boolean;
   structuredData?: object;
   keywords?: string;
+  /** Imagem LCP a ser pré-carregada (aceita objeto do vite-imagetools ou URL). */
+  preloadImage?: PictureImport | string;
 }
+
 
 const SEO = ({
   title,
