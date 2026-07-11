@@ -78,14 +78,17 @@ const SEO = ({
       {/* LCP image preload */}
       {preload && (
         <link
-          rel="preload"
-          as="image"
-          href={preload.href}
-          {...(preload.srcset ? { imagesrcset: preload.srcset } : {})}
-          {...(preload.type ? { imagetype: preload.type } : {})}
-          fetchpriority="high"
+          {...({
+            rel: "preload",
+            as: "image",
+            href: preload.href,
+            imagesrcset: preload.srcset,
+            imagetype: preload.type,
+            fetchpriority: "high",
+          } as unknown as React.LinkHTMLAttributes<HTMLLinkElement>)}
         />
       )}
+
 
 
       {/* Open Graph / Facebook */}
