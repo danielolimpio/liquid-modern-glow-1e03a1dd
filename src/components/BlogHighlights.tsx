@@ -4,6 +4,8 @@ import reusoCapa from "@/assets/reuso-agua-empresas-capa.jpg";
 import revisaoCapa from "@/assets/revisao-tarifaria-agua-capa.jpg";
 import vazamentosCapa from "@/assets/vazamentos-ocultos-capa.jpg";
 import setorizadaCapa from "@/assets/medicao-setorizada-capa.jpg";
+import auditoriaCapa from "@/assets/auditoria-contas-agua-capa.jpg";
+import outorgaCapa from "@/assets/outorga-uso-agua-capa.jpg";
 
 export type BlogPost = {
   href: string;
@@ -17,6 +19,28 @@ export type BlogPost = {
 };
 
 export const featuredPosts: BlogPost[] = [
+  {
+    href: "/auditoria-contas-de-agua-empresas",
+    title: "Auditoria de Contas de Água: Como Achar Cobranças Indevidas na Fatura Empresarial",
+    excerpt:
+      "3 em cada 10 faturas comerciais têm erros tarifários. Aprenda o método técnico de auditoria: anatomia da fatura, 7 erros mais comuns e como transformar diagnóstico em restituição.",
+    cover: auditoriaCapa,
+    alt: "Fatura de água sobre mesa com lupa e calculadora ao lado de laptop com planilha analítica",
+    category: "Auditoria & Fatura",
+    date: "10 Jul 2026",
+    readMinutes: 13,
+  },
+  {
+    href: "/outorga-uso-da-agua-empresas",
+    title: "Outorga de Uso da Água: Guia Completo de Conformidade para Empresas",
+    excerpt:
+      "Como conseguir outorga na ANA e órgãos estaduais: quem precisa, documentação, prazos, cobrança, penalidades por irregularidade e integração com ESG.",
+    cover: outorgaCapa,
+    alt: "Cabeça de poço artesiano industrial em aço inox com manômetro e engenheiro ambiental ao fundo",
+    category: "Compliance & ANA",
+    date: "10 Jul 2026",
+    readMinutes: 14,
+  },
   {
     href: "/deteccao-vazamentos-ocultos-empresas",
     title: "Detecção de Vazamentos Ocultos em Empresas: IoT, Setorização e Prejuízos Evitados",

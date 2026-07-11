@@ -26,6 +26,8 @@ import ReusoDeAgua from "./pages/ReusoDeAgua";
 import RevisaoTarifariaAgua from "./pages/RevisaoTarifariaAgua";
 import DeteccaoVazamentosOcultos from "./pages/DeteccaoVazamentosOcultos";
 import MedicaoSetorizadaAgua from "./pages/MedicaoSetorizadaAgua";
+import AuditoriaContasAgua from "./pages/AuditoriaContasAgua";
+import OutorgaUsoAgua from "./pages/OutorgaUsoAgua";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -60,6 +62,8 @@ const App = () => (
           <Route path="/revisao-tarifaria-de-agua" element={<RevisaoTarifariaAgua />} />
           <Route path="/deteccao-vazamentos-ocultos-empresas" element={<DeteccaoVazamentosOcultos />} />
           <Route path="/medicao-setorizada-de-agua" element={<MedicaoSetorizadaAgua />} />
+          <Route path="/auditoria-contas-de-agua-empresas" element={<AuditoriaContasAgua />} />
+          <Route path="/outorga-uso-da-agua-empresas" element={<OutorgaUsoAgua />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
